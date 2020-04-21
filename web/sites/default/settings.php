@@ -24,6 +24,12 @@ include __DIR__ . "/settings.pantheon.php";
  * https://www.drupal.org/project/drupal/issues/3091285
  */
 // $settings['skip_permissions_hardening'] = TRUE;
+if (!defined('PANTHEON_ENVIRONMENT') || $_ENV['PANTHEON_ENVIRONMENT'] == 'lando') {
+  $dev_settings = __DIR__ . "/settings.dev.php";
+  if (file_exists($dev_settings)) {
+    include $dev_settings;
+  }
+}
 
 /**
  * If there is a local settings file, then include it

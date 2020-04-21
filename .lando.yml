@@ -1,0 +1,11 @@
+name: ucpe
+recipe: pantheon
+config:
+  framework: drupal8
+  site: ucpe
+  id: d3f50927-9ebf-4479-8d38-a06824918c15
+services:
+  appserver:
+    build:
+    - /bin/sh -c "mkdir -p ~/.drush/site-aliases"
+    - /bin/sh -c "ln -sf /app/drush/ucpe.aliases.drushrc.php ~/.drush/site-aliases/ucpe.drushrc.php"

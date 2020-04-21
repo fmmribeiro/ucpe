@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ucpe_common.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ucpe_common_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ucpe_common module.
+    case 'help.page.ucpe_common':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Common code for UCPE') . '</p>';
+      return $output;
+
+    default:
+  }
+}
