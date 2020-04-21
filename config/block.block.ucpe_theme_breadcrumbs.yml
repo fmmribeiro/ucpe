@@ -1,0 +1,22 @@
+uuid: d160c9ae-532c-4d6f-b81e-3cab3543c643
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ucpe_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: ucpe_theme_breadcrumbs
+theme: ucpe_theme
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

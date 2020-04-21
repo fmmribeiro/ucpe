@@ -1,0 +1,19 @@
+uuid: 60b8c882-5c95-4126-ac4f-5354be8ed664
+langcode: en
+status: false
+dependencies: {  }
+id: local_config
+label: 'Local Config'
+description: 'Configuration for local development'
+folder: ../local_config
+module:
+  config_suite: 0
+  devel: 0
+  stage_file_proxy: 0
+  twig_xdebug: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

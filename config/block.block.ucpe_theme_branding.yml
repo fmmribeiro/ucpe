@@ -1,0 +1,25 @@
+uuid: 7b69001d-a9fc-45d1-8f5f-98bc0a0959fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ucpe_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: ucpe_theme_branding
+theme: ucpe_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

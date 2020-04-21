@@ -1,0 +1,5 @@
+name: 'ucpe_common'
+type: module
+description: 'Common code for UCPE'
+core: 8.x
+package: 'Custom'
