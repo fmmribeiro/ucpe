@@ -1,0 +1,33 @@
+#
+# behat.yml file for testing on Pantheon.
+#
+default:
+  suites:
+    default:
+      paths:
+        - %paths.base%/features
+        - %paths.base%/site-features
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - FailAid\Context\FailureContext
+  extensions:
+    Behat\MinkExtension:
+      files_path: './data-files'
+      base_url: 'http://ucpe.lndo.site'
+      sessions:
+        default:
+          goutte: ~
+
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drush'
+      drush:
+        alias: '@ucpe.lando'
+      drupal:
+        drupal_root: '/app/web'
+
+    DMore\ChromeExtension\Behat\ServiceContainer\ChromeExtension: ~
