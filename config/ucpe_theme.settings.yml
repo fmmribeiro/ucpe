@@ -4,7 +4,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: '/themes/custom/ucpe_theme/favicon.ico'
+  url: /themes/custom/ucpe_theme/favicon.ico
   use_default: true
 features:
   comment_user_picture: true
