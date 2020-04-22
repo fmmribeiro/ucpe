@@ -6,7 +6,7 @@ A base theme for a Drupal 8 site using Bootstrap, Webpack, and JS ES6.
 
 To build this site's theme you must have:
 
-1. Node version 11.
+1. Node version 11+. `node -v`
 2. The ability to run `npm` commands (probably using the console).
 
 ## Setup and use
@@ -15,7 +15,7 @@ A lot of the look of the site can be configured at
 `/admin/appearance/settings/ucpe_theme`, but if you need to update the sass,
 you can follow the instructions below:
 
-From within this directory:
+From within this directory (`web/themes/custom/ucpe_theme`):
 
 - Run `npm install` to install dependencies.
 - Run `npm run build` to run the production build.

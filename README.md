@@ -21,57 +21,80 @@ You must have the following on your machine to build this site:
 
 1. Pull down this repository. If you are on a Mac, place it somewhere OUTSIDE of the `~/Sites` directory.
 
-```yaml
-git clone git@github.com:thinkshout/ucpe.git
-```
+    ```yaml
+    git clone git@github.com:thinkshout/ucpe.git
+    ```
 
 2. Start up lando so you can run composer install:
 
-```yaml
-lando start
-lando composer install
-```
+    ```yaml
+    lando start
+    lando composer install
+    ```
+
+3. Continue to the [Each time you begin a new set of work.](#each-time-you-begin-a-new-set-of-work) instructions below.
 
 ## Each time you begin a new set of work.
 
 1. From within the root of this repo, see if lando is already running:
-```yaml
-lando list --app=ucpe
-```
+    ```yaml
+    lando list --app=ucpe
+    ```
 
-If not, start it up:
-```yaml
-lando start
-```
+    If not, start it up and verify you're logged in to Pantheon:
+    ```yaml
+    lando start
+    lando terminus auth:whoami
+    ```
+
+    If Pantheon doesn't know who you are, you can log in with:
+
+    ```yaml
+    lando terminus auth:login
+    ```
+
+    You can avoid this step by adding an SSH key to pantheon from your local machine (change the path as needed):
+
+    ```yaml
+    terminus ssh-key:add ~/.ssh/id_rsa.pub
+    ```
+
+    Or you can do it [through the Pantheon UI](https://pantheon.io/docs/ssh-keys).
 
 2. Pull the latest database backup down from Pantheon:
 
-```yaml
-lando composer db-install
-```
+    ```yaml
+    lando composer db-install
+    ```
 
-If the last backup on Pantheon is old, you can refresh it with:
-```yaml
-lando composer refresh-pantheon-backup
-```
+    If the last backup on Pantheon is old, you can refresh it with:
+    ```yaml
+    lando composer refresh-pantheon-backup
+    ```
 
-You should now have a built site at https://ucpe.lndo.site:44??/ (you can get the port from `lando info` -- look for the https one) with the latest code from the [dev server](http://dev-ucpe.pantheonsite.io/)
+    You should now have a built site at https://ucpe.lndo.site:44??/ (you can get the port from `lando info` -- look for the https one) with the latest code from the [dev server](http://dev-ucpe.pantheonsite.io/)
 
 3. Create a new branch for your changes:
 
-```yaml
-git checkout -b issue-#-my-work
-```
+    ```yaml
+    git checkout -b issue-#-my-work
+    ```
 
 4. Sync configuration:
 
-```yaml
-lando drush cim -y
-```
+    ```yaml
+    lando drush cim -y
+    ```
 
-You are now ready to work on your new feature!
+    You are now ready to work on your new feature!
 
 # How to...
+
+## Log into the site as user 1
+
+```yaml
+lando drush user:login
+```
 
 ## Install a new module
 
@@ -107,6 +130,12 @@ lando ssh
 ## Build your theme
 
 Instructions are in the [theme's README](https://github.com/thinkshout/ucpe/tree/master/web/themes/custom/ucpe_theme/README.md).
+
+All commands in that README.md should be run within your theme directory
+
+```yaml
+cd web/themes/custom/ucpe_theme
+```
 
 ## Work with the Visual Regression (backstop) tool
 
