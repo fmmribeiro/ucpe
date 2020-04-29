@@ -16,6 +16,10 @@
 // jQuery UI style overrides.
 @import "drupal-bootstrap/jquery-ui/autocomplete";
 
+body {
+  background: red;
+}
+
 ol,
 ul {
   padding-left: 1.5em;
