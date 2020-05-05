@@ -1,0 +1,8 @@
+uuid: 98f6775f-765e-4a6c-a056-f2681d4a9790
+langcode: en
+status: true
+dependencies: {  }
+name: 'Format Options'
+vid: format_options
+description: 'How does a student attend the course'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 5b3574ea-575d-4bf1-a873-65923b7b9090
+langcode: en
+status: true
+dependencies: {  }
+name: Duration
+vid: duration
+description: 'How long a program takes to complete'
+weight: 0
