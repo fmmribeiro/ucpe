@@ -1,0 +1,8 @@
+uuid: 2eae35ef-e668-422f-9e87-eecdc05113e9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Area of Interest'
+vid: area_of_interest
+description: 'Areas of interest for programs'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: d496de3b-0f0d-4d87-a699-2e9088a80aea
+langcode: en
+status: true
+dependencies: {  }
+name: 'Enrollment Options'
+vid: enrollment_options
+description: 'Open Enrollment, Part-time, Full-time'
+weight: 0

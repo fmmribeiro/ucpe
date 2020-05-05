@@ -1,0 +1,8 @@
+uuid: d263248c-963e-4c0b-8c19-f2c116101a1a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Program Type'
+vid: program_type
+description: 'Type of programs available from UChicago'
+weight: 0

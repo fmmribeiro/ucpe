@@ -1,0 +1,8 @@
+uuid: 6c29feb0-9d30-4a15-a111-5c5243ed1070
+langcode: en
+status: true
+dependencies: {  }
+name: 'Alumni Status'
+vid: alumni_status
+description: 'Does this program confer alumni status?'
+weight: 0
