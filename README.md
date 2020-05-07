@@ -88,6 +88,9 @@ You must have the following on your machine to build this site:
 
     You are now ready to work on your new feature!
 
+# Development workflow
+See the wiki for a video and flowchart of the [development workflow](https://github.com/thinkshout/ucpe/wiki/Development-workflow).
+
 # How to...
 
 ## Log into the site as user 1
