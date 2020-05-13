@@ -115,7 +115,7 @@
             "drush sql:drop -y",
             "zcat database.sql.gz | drush sqlc",
             "drush updb -y",
-            "drush csim -y"
+            "drush cim -y"
         ]
     },
     "extra": {
