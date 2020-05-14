@@ -19,7 +19,6 @@ settings:
           items:
             - Bold
             - Italic
-            - Strike
             - Superscript
             - Subscript
             - '-'
@@ -45,11 +44,16 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - ShowBlocks
             - Source
+        -
+          name: Accessibility
+          items:
+            - A11ychecker
   plugins:
     stylescombo:
       styles: ''
