@@ -1,0 +1,61 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  font-family: $sans-serif-font-family;
+}
+
+a {
+  color: $primary-link-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: darken($primary-link-color, 5%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+p {
+}
+
+ol,
+ul {
+  li {
+  }
+}
+
+dt,
+dd {
+}
+
+dt {
+}
+
+dd {
+}
+
+strong,
+thead,
+dt {
+}
