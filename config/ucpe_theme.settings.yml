@@ -3,9 +3,9 @@ schemas:
   ucpe_theme: 8000
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: themes/custom/ucpe_theme/favicon.ico
   url: 'http://localhost:32774/themes/custom/ucpe_theme/favicon.ico'
-  use_default: true
+  use_default: false
 table_responsive: '-1'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
@@ -17,7 +17,7 @@ table: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
-  favicon: true
+  favicon: false
   node_user_picture: true
 logo:
   path: ''
