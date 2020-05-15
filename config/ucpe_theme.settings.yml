@@ -4,16 +4,7 @@ schemas:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: /themes/custom/ucpe_theme/favicon.ico
-  use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
+  url: 'http://localhost:32774/themes/custom/ucpe_theme/favicon.ico'
   use_default: true
 table_responsive: '-1'
 cdn_theme: bootstrap
@@ -23,3 +14,13 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+button_size: btn-sm
