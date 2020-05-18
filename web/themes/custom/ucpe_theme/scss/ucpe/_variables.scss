@@ -31,16 +31,24 @@ $breakpoints: (
 // }
 
 // FONTS
-//$serif-font-family:  'Noe Text','Adobe Garamond Pro', 'garamond-premier-pro-display', Garamond, Georgia, ' Times New Roman', Times, serif;
-$serif-font-family: "Noe Text";
-$sans-serif-font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial,
-  sans-serif;
-// $bold: ;
-// $book: ;
-// $ital: ;
+$serif-font: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+$sans-serif-font: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+$regular: 300;
+$semi-bold: 600;
+$bold: 900;
 
-@mixin font-sans($size: false, $color: false, $weight: false, $lh: false) {
-  font-family: $sans-serif-font-family;
+$italic: italic;
+
+@mixin font(
+  $fontfamily: false,
+  $size: false,
+  $color: false,
+  $weight: false,
+  $lh: false
+) {
+  @if $fontfamily {
+    font-family: $fontfamily;
+  }
   @if $size {
     font-size: $size;
   }
@@ -54,24 +62,6 @@ $sans-serif-font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial,
     line-height: $lh;
   }
 }
-
-@mixin font-serif($size: false, $color: false, $weight: false, $lh: false) {
-  font-family: $serif-font-family;
-  @if $size {
-    font-size: $size;
-  }
-  @if $color {
-    color: $color;
-  }
-  @if $weight {
-    font-weight: $weight;
-  }
-  @if $lh {
-    line-height: $lh;
-  }
-}
-
-// @include font-sans($baseline, $maroon, $bold, $baseline);
 
 // COLORS
 // primary

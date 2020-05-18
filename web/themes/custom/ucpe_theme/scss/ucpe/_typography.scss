@@ -3,7 +3,7 @@ html {
 }
 
 * {
-  font-family: $sans-serif-font-family;
+  font-family: $sans-serif-font;
 }
 
 a {
@@ -21,9 +21,11 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $sans-serif-font;
 }
 
 h1 {
+  @include font($serif-font, 5rem, blue, $semi-bold, 5rem);
 }
 h2 {
 }
