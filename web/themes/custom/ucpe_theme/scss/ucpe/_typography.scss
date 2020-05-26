@@ -25,25 +25,149 @@ h6 {
 }
 
 h1 {
-  @include font($serif-font, 5rem, blue, $semi-bold, 5rem);
+  @include font($serif-font, 5rem, blue, $serif-semibold, 5rem);
 }
+
 h2 {
 }
+
 h3 {
 }
+
 h4 {
 }
+
 h5 {
 }
+
 h6 {
 }
 
 p {
+  @include font(
+    $sans-serif-font,
+    $baseline,
+    $black,
+    $sans-serif-regular,
+    $baseline * 1.5
+  );
 }
 
 ol,
 ul {
+  margin: $baseline 0;
+  //padding: 0 ;
+  list-style: none;
+
   li {
+    padding: 0 0 0 $baseline * 1.5;
+    @include font($sans-serif-font, 1rem, $black, $sans-serif-regular, 1.5rem);
+    position: relative;
+
+    &:before {
+      font-size: 1rem;
+      left: 0;
+      position: absolute;
+    }
+
+    ul {
+      margin: $baseline/2 0;
+      li:before {
+        @include iconfont($black, "\66");
+      }
+    }
+  }
+}
+
+ul li {
+  margin: 0 0 $baseline/2;
+
+  &:before {
+    @include iconfont($maroon, "\2022");
+    top: 3px;
+  }
+}
+
+ol {
+  counter-reset: ucpe_counter;
+  li {
+    counter-increment: ucpe_counter;
+
+    &:before {
+      content: counter(ucpe_counter) ".";
+      color: $maroon;
+      font-weight: $sans-serif-semibold;
+    }
+  }
+}
+
+blockquote {
+  border-left: 0;
+  margin: $baseline * 3 0;
+  padding: 0;
+
+  .q {
+    border-left: 4px $salmon solid;
+    padding-left: $baseline * 3.5;
+    font-style: $italic;
+    @include font($serif-font, 1.625rem, $black, $serif-regular, 2.5rem);
+
+    p {
+      font-family: inherit;
+    }
+
+    footer {
+      font-style: normal;
+      @include font(
+        $sans-serif-font,
+        1rem,
+        $black,
+        $sans-serif-regular,
+        1.5rem
+      );
+    }
+  }
+
+  //with headshot
+  &.w_hs {
+    figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include screen("phablet") {
+      display: flex;
+      figure {
+        flex: 0 0 $baseline * 5;
+      }
+    }
+
+    .q {
+      border-left: 0;
+    }
+  }
+
+  a {
+    font-style: normal;
+    @include font($sans-serif-font, 1rem, $plum, $sans-serif-semibold, 1.5rem);
+    padding-bottom: 2px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      &:after {
+        padding-left: $baseline/2;
+      }
+    }
+
+    &:after {
+      @include iconfont(inherit, "\66");
+      font-size: 1.5rem;
+      vertical-align: middle;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
   }
 }
 
