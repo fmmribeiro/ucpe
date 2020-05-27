@@ -1,0 +1,23 @@
+uuid: be99544b-3172-416d-b468-2a5b2a11ae35
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.blockquotes.field_blockquotes
+    - paragraphs.paragraphs_type.blockquotes
+id: paragraph.blockquotes.preview
+targetEntityType: paragraph
+bundle: blockquotes
+mode: preview
+content:
+  field_blockquotes:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

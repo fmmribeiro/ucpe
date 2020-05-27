@@ -1,0 +1,19 @@
+uuid: 124edfc6-f8f4-4cf5-88d1-47a4bde05d2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.storage.block_content.field_number
+id: block_content.statistic.field_number
+field_name: field_number
+entity_type: block_content
+bundle: statistic
+label: Number
+description: 'Add a number here, limited to 5 characters. Keep it abbreviated to fit in the design. (1.5, 5, 100, 59, etc.)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

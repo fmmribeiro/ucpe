@@ -1,0 +1,8 @@
+uuid: 429a5a84-d599-4729-9dda-500af8f0b67a
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote_with_photo_
+label: 'Blockquote (with photo)'
+revision: 0
+description: 'Blockquote with image to the left and attribution under quote. '

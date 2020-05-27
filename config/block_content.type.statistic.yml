@@ -1,0 +1,8 @@
+uuid: 4d8d05da-f9c0-4b29-8fed-00de3ebff19e
+langcode: en
+status: true
+dependencies: {  }
+id: statistic
+label: Statistic
+revision: 0
+description: 'Statistic to left of paragraph text. '

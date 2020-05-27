@@ -1,0 +1,47 @@
+uuid: d9dc42bb-ddfb-47a5-9891-039137d634cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.three_up_statistic
+    - field.field.block_content.three_up_statistic.body
+    - field.field.block_content.three_up_statistic.field_number
+    - field.field.block_content.three_up_statistic.field_post_number
+    - field.field.block_content.three_up_statistic.field_pre_number
+  module:
+    - text
+id: block_content.three_up_statistic.default
+targetEntityType: block_content
+bundle: three_up_statistic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_number:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_post_number:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pre_number:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,68 @@
+uuid: d62ea061-84bb-4e8b-aae9-ccf97b0ac604
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_statistic.field_after_number
+    - field.field.paragraph.three_up_statistic.field_before_number
+    - field.field.paragraph.three_up_statistic.field_number
+    - field.field.paragraph.three_up_statistic.field_statistic_sentence
+    - paragraphs.paragraphs_type.three_up_statistic
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      visible:
+        - field_before_number
+        - field_number
+        - field_after_number
+        - field_statistic_sentence
+id: paragraph.three_up_statistic.default
+targetEntityType: paragraph
+bundle: three_up_statistic
+mode: default
+content:
+  field_after_number:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: visible
+  field_before_number:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: visible
+  field_number:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: visible
+  field_statistic_sentence:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: visible
+hidden: {  }

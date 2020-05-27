@@ -1,0 +1,10 @@
+uuid: e5ecac9f-2314-4648-8ac7-3c6bc9b8160f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.read_their_story
+label: 'Read their story'
+targetEntityType: node
+cache: true

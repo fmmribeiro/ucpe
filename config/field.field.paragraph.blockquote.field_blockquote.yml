@@ -1,0 +1,33 @@
+uuid: 0044693e-6bee-4f46-b754-2d82aefc0eb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote
+    - block_content.type.blockquote_photo_and_link_
+    - block_content.type.blockquote_with_photo_
+    - field.storage.paragraph.field_blockquote
+    - paragraphs.paragraphs_type.blockquote
+id: paragraph.blockquote.field_blockquote
+field_name: field_blockquote
+entity_type: paragraph
+bundle: blockquote
+label: Blockquote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      blockquote: blockquote
+      blockquote_with_photo_: blockquote_with_photo_
+      blockquote_photo_and_link_: blockquote_photo_and_link_
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: blockquote
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: e69774fa-1a62-48ce-9e93-5dbece3565c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.three_up_statistic
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.three_up_statistic.body
+field_name: body
+entity_type: block_content
+bundle: three_up_statistic
+label: 'Statistic Paragraph'
+description: 'Content that accompanies the statistic above. Keep it around 50 characters.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

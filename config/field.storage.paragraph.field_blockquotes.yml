@@ -1,0 +1,20 @@
+uuid: 83d9dc73-438f-46f6-b585-f61746044691
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - paragraphs
+id: paragraph.field_blockquotes
+field_name: field_blockquotes
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

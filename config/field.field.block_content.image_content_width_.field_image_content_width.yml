@@ -1,0 +1,28 @@
+uuid: de3ae889-9868-4282-ba25-ee6e8ce331ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_content_width_
+    - field.storage.block_content.field_image_content_width
+    - media.type.image
+id: block_content.image_content_width_.field_image_content_width
+field_name: field_image_content_width
+entity_type: block_content
+bundle: image_content_width_
+label: Image
+description: 'Upload or use an image that is at least 1200px wide. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

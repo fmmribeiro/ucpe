@@ -1,11 +1,11 @@
 uuid: fffd07a4-8e98-4800-ae66-6df409db6446
-name: ucpe
+name: 'University of Chicago Professional Development'
 mail: maria.fisher@thinkshout.org
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/6
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

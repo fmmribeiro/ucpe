@@ -1,0 +1,23 @@
+uuid: 62555df9-ce14-49e7-b1d0-068d67958474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_style
+    - paragraphs.paragraphs_type.text_two_thirds_one_third
+  module:
+    - options
+id: paragraph.text_two_thirds_one_third.field_column_style
+field_name: field_column_style
+entity_type: paragraph
+bundle: text_two_thirds_one_third
+label: 'Column Style'
+description: 'Choose the layout of this text block. '
+required: true
+translatable: false
+default_value:
+  -
+    value: one-third-two-thirds
+default_value_callback: ''
+settings: {  }
+field_type: list_string

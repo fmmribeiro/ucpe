@@ -1,0 +1,30 @@
+uuid: f3bde917-833b-463d-b83b-f2acfeb516f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_horizontal_rule
+    - paragraphs.paragraphs_type.horizontal_rule
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.horizontal_rule.field_horizontal_rule
+field_name: field_horizontal_rule
+entity_type: paragraph
+bundle: horizontal_rule
+label: 'Horizontal Rule'
+description: 'A short horizontal rule that aligns to the left. Used when a thematic break in content is needed.  Do not alter the field, insert as is. '
+required: false
+translatable: false
+default_value:
+  -
+    value: '<hr>'
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text

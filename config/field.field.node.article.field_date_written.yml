@@ -1,0 +1,24 @@
+uuid: 205ce7d5-20e4-4720-8b68-2f964b14a093
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_written
+    - node.type.article
+  module:
+    - datetime
+id: node.article.field_date_written
+field_name: field_date_written
+entity_type: node
+bundle: article
+label: 'Date Written'
+description: 'The date you want to show when the article was written. '
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

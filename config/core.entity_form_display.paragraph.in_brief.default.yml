@@ -1,0 +1,25 @@
+uuid: e4f32f9d-c956-4b15-aa28-c5e5d88863ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.in_brief.field_in_brief
+    - paragraphs.paragraphs_type.in_brief
+  module:
+    - text
+id: paragraph.in_brief.default
+targetEntityType: paragraph
+bundle: in_brief
+mode: default
+content:
+  field_in_brief:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

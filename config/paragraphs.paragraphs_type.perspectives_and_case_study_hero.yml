@@ -1,0 +1,10 @@
+uuid: 159f88df-7a14-4bb1-8d66-da6d9e51c310
+langcode: en
+status: true
+dependencies: {  }
+id: perspectives_and_case_study_hero
+label: 'Perspectives and Case Study: Hero Image 1400px'
+icon_uuid: null
+icon_default: null
+description: 'Hero image and image attribution. '
+behavior_plugins: {  }

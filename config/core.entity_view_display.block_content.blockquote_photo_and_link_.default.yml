@@ -1,0 +1,85 @@
+uuid: 64faeada-c663-49e5-b145-1a68e6913489
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote_photo_and_link_
+    - field.field.block_content.blockquote_photo_and_link_.body
+    - field.field.block_content.blockquote_photo_and_link_.field_blockquote_image
+    - field.field.block_content.blockquote_photo_and_link_.field_quote_attribute
+    - field.field.block_content.blockquote_photo_and_link_.field_read_their_story
+  module:
+    - ds
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left:
+            blockquote_first_column: blockquote_first_column
+          right:
+            blockquote_second_column: blockquote_second_column
+    regions:
+      left:
+        - field_blockquote_image
+        - field_quote_attribute
+      right:
+        - body
+        - field_read_their_story
+id: block_content.blockquote_photo_and_link_.default
+targetEntityType: block_content
+bundle: blockquote_photo_and_link_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: right
+  field_blockquote_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: blockquote_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: left
+  field_quote_attribute:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+  field_read_their_story:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: right
+hidden: {  }

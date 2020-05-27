@@ -36,8 +36,7 @@ settings:
         -
           name: Media
           items:
-            - Blockquote
-            - DrupalMediaLibrary
+            - media
             - Table
             - HorizontalRule
         -
@@ -56,7 +55,7 @@ settings:
             - A11ychecker
   plugins:
     stylescombo:
-      styles: ''
+      styles: Noe|Noe
     language:
       language_list: un
 image_upload:

@@ -1,0 +1,20 @@
+uuid: 702dc68b-4abe-4488-87c6-f40201fe8894
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_content_width_image
+field_name: field_content_width_image
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

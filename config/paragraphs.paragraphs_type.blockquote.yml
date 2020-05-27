@@ -1,0 +1,10 @@
+uuid: ed9edaaa-ef7d-45e6-86e3-2e53c29dc47b
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote
+label: Blockquote
+icon_uuid: null
+icon_default: null
+description: 'Add a blockquote.'
+behavior_plugins: {  }

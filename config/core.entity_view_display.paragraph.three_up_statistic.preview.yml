@@ -1,0 +1,47 @@
+uuid: 84c55629-99e4-4cb0-8d70-505197f54752
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.three_up_statistic.field_after_number
+    - field.field.paragraph.three_up_statistic.field_before_number
+    - field.field.paragraph.three_up_statistic.field_number
+    - field.field.paragraph.three_up_statistic.field_statistic_sentence
+    - paragraphs.paragraphs_type.three_up_statistic
+  module:
+    - text
+id: paragraph.three_up_statistic.preview
+targetEntityType: paragraph
+bundle: three_up_statistic
+mode: preview
+content:
+  field_after_number:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_before_number:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_number:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_statistic_sentence:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

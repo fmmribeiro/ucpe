@@ -1,0 +1,27 @@
+uuid: 84fcdb0a-31bf-4494-8228-c65edc4a1b5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_content_width_
+    - field.storage.block_content.field_image_attribution_2
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.image_content_width_.field_image_attribution_2
+field_name: field_image_attribution_2
+entity_type: block_content
+bundle: image_content_width_
+label: 'Image Attribution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

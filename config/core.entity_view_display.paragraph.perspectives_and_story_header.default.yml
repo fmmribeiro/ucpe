@@ -1,0 +1,33 @@
+uuid: 3eed7736-6528-4df1-9fb2-94bd73c8984e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.perspectives_and_story_header.field_lede
+    - field.field.paragraph.perspectives_and_story_header.field_shown_date
+    - paragraphs.paragraphs_type.perspectives_and_story_header
+  module:
+    - datetime
+    - text
+id: paragraph.perspectives_and_story_header.default
+targetEntityType: paragraph
+bundle: perspectives_and_story_header
+mode: default
+content:
+  field_lede:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_shown_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: America/Chicago
+      format_type: full_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

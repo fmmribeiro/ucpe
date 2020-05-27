@@ -1,0 +1,27 @@
+uuid: 38a55621-9ae8-40bd-993c-6c6b9bdd1e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lede
+    - paragraphs.paragraphs_type.perspectives_and_story_header
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+    basic_html: '0'
+id: paragraph.perspectives_and_story_header.field_lede
+field_name: field_lede
+entity_type: paragraph
+bundle: perspectives_and_story_header
+label: Lede
+description: 'This is the short intro sentence under the title '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

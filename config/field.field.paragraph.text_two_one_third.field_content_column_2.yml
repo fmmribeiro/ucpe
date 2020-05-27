@@ -1,0 +1,27 @@
+uuid: 4bd059f7-b8ab-4f27-b53b-48b113b8fefa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_2
+    - paragraphs.paragraphs_type.text_two_one_third
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.text_two_one_third.field_content_column_2
+field_name: field_content_column_2
+entity_type: paragraph
+bundle: text_two_one_third
+label: 'Content Column 2'
+description: '1/3 Column'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

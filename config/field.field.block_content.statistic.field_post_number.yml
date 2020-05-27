@@ -1,0 +1,27 @@
+uuid: 902ab0cb-ca2b-43a5-9a0c-c181876b2f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.storage.block_content.field_post_number
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.statistic.field_post_number
+field_name: field_post_number
+entity_type: block_content
+bundle: statistic
+label: Post-number
+description: 'To show what unit of measurement your number is if not using currency in the pre-number field. (%, k, m, b, t, years, etc.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

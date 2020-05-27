@@ -1,0 +1,27 @@
+uuid: 3da7c843-3923-4cf5-ac49-d7765c387577
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_before_number
+    - paragraphs.paragraphs_type.three_up_statistic
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.three_up_statistic.field_before_number
+field_name: field_before_number
+entity_type: paragraph
+bundle: three_up_statistic
+label: Pre-number
+description: 'Typically something like currency.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

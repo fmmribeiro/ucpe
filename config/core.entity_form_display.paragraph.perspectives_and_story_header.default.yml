@@ -1,0 +1,33 @@
+uuid: 20954ef1-f2ef-4cac-92c4-1c182504dafe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.perspectives_and_story_header.field_lede
+    - field.field.paragraph.perspectives_and_story_header.field_shown_date
+    - paragraphs.paragraphs_type.perspectives_and_story_header
+  module:
+    - datetime
+    - text
+id: paragraph.perspectives_and_story_header.default
+targetEntityType: paragraph
+bundle: perspectives_and_story_header
+mode: default
+content:
+  field_lede:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_shown_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  created: true
+  status: true

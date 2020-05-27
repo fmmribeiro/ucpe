@@ -1,0 +1,34 @@
+uuid: 1daf4454-b8ef-4167-a1ef-6ae3030326d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.statistics.field_statistic
+    - paragraphs.paragraphs_type.statistics
+  module:
+    - inline_entity_form
+id: paragraph.statistics.default
+targetEntityType: paragraph
+bundle: statistics
+mode: default
+content:
+  field_statistic:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true

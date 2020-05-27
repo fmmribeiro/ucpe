@@ -1,0 +1,52 @@
+uuid: 7b6268b5-a734-4cbc-aa96-67ac7d6fc755
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_statistic.field_after_number
+    - field.field.paragraph.three_up_statistic.field_before_number
+    - field.field.paragraph.three_up_statistic.field_number
+    - field.field.paragraph.three_up_statistic.field_statistic_sentence
+    - paragraphs.paragraphs_type.three_up_statistic
+  module:
+    - text
+id: paragraph.three_up_statistic.default
+targetEntityType: paragraph
+bundle: three_up_statistic
+mode: default
+content:
+  field_after_number:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_before_number:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_number:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_statistic_sentence:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,8 @@
+uuid: 4593c89a-e6e5-448e-b56b-394403931ff5
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote
+label: Blockquote
+revision: 0
+description: 'Simple blockquote with vertical line to the left. '

@@ -1,0 +1,17 @@
+uuid: 9ee8743d-370a-414b-94fe-0597e89c8b1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Story
+type: story
+description: 'Use the <em>Story</em> content type to add a story about an instructor or student. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

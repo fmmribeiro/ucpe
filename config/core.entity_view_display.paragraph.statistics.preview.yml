@@ -1,0 +1,23 @@
+uuid: 77a1a8eb-9af7-4153-ab9d-8609399bf112
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.statistics.field_statistic
+    - paragraphs.paragraphs_type.statistics
+id: paragraph.statistics.preview
+targetEntityType: paragraph
+bundle: statistics
+mode: preview
+content:
+  field_statistic:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

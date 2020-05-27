@@ -1,0 +1,8 @@
+uuid: 18a651a6-0f4e-4017-b9d6-0a884a8ac771
+langcode: en
+status: true
+dependencies: {  }
+id: blockquote_photo_and_link_
+label: 'Blockquote (with photo and link)'
+revision: 0
+description: 'Blockquote with image to the left with name underneath and link to read their story under the quote.'

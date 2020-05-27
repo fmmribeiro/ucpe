@@ -1,0 +1,29 @@
+uuid: 4ddab3cc-c493-46ae-b7a3-82ff8909e9af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topics
+    - node.type.article
+    - taxonomy.vocabulary.tags
+id: node.article.field_topics
+field_name: field_topics
+entity_type: node
+bundle: article
+label: Topics
+description: "Use an existing topic first before creating one that may be similar. These will auto populate the filtering on the main <em>Perspectives</em> page. \r\nAdd multiple tags by using a comma.  Max 3."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

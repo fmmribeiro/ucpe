@@ -1,0 +1,19 @@
+uuid: 447ba83c-dccd-4634-b3b0-6755f3dcce63
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote_with_photo_
+    - field.storage.block_content.field_quote_attribute
+id: block_content.blockquote_with_photo_.field_quote_attribute
+field_name: field_quote_attribute
+entity_type: block_content
+bundle: blockquote_with_photo_
+label: 'Quote Attribute'
+description: 'Person who is quoted'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

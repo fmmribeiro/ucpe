@@ -1,0 +1,8 @@
+uuid: 1a42caa6-4be1-44ea-96cc-1bf84544fad0
+langcode: en
+status: true
+dependencies: {  }
+name: Program
+vid: program
+description: 'Academic Program'
+weight: 0

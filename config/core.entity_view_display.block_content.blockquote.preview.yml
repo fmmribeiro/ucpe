@@ -1,0 +1,44 @@
+uuid: d85e38b7-cbf9-4830-a3c1-17994b014af1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote
+    - core.entity_view_mode.block_content.preview
+    - field.field.block_content.blockquote.body
+    - field.field.block_content.blockquote.field_quote_attribute
+  module:
+    - smart_trim
+id: block_content.blockquote.preview
+targetEntityType: block_content
+bundle: blockquote
+mode: preview
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 0
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_quote_attribute:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

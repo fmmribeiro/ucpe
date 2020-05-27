@@ -1,0 +1,10 @@
+uuid: 40d30c22-784b-488b-90b1-acc9b442c2aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.blockquote
+label: Blockquote
+targetEntityType: block_content
+cache: true

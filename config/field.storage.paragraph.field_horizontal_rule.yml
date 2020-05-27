@@ -1,0 +1,20 @@
+uuid: fbd2465d-0f7a-416a-b755-c7f730c09e41
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_horizontal_rule
+field_name: field_horizontal_rule
+entity_type: paragraph
+type: text
+settings:
+  max_length: 6
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

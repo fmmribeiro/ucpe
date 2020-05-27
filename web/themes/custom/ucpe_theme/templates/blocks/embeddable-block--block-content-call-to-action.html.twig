@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - content.visible: The content region
+ */
+#}
+{%
+set classes = [
+   'call-to-action',
+    content.field_image|field_value ? 'has-background',
+    content.field_sticky|field_value|render == 'On' ? 'enable-sticky',
+    content.field_background_color|field_value|render
+]
+%}
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {% if label %}
+        <h2{{ title_attributes }}>{{ label }}</h2>
+    {% endif %}
+    {{ title_suffix }}
+    <div{{ create_attribute({'class': classes}) }}>
+    <span class="close">×</span>
+    {% block content %}
+        {{ content.visible|without('field_sticky', 'field_background_color') }}
+    {% endblock %}
+    </div>
+</div>

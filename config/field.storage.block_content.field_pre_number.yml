@@ -1,0 +1,20 @@
+uuid: 47dc3660-396b-47fd-8292-588970aad27c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_pre_number
+field_name: field_pre_number
+entity_type: block_content
+type: text
+settings:
+  max_length: 1
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

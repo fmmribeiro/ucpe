@@ -1,0 +1,27 @@
+uuid: cdbf2044-308a-41d1-95a8-fc4e88fe9da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_column_1
+    - paragraphs.paragraphs_type.text_two_thirds_one_third
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.text_two_thirds_one_third.field_content_column_1
+field_name: field_content_column_1
+entity_type: paragraph
+bundle: text_two_thirds_one_third
+label: 'Content Column 1'
+description: 'First column.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

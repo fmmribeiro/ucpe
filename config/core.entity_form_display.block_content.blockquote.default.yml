@@ -1,0 +1,42 @@
+uuid: 947cc1b6-2ba1-4bf8-b092-c8a0e06e33b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote
+    - field.field.block_content.blockquote.body
+    - field.field.block_content.blockquote.field_quote_attribute
+  module:
+    - text
+id: block_content.blockquote.default
+targetEntityType: block_content
+bundle: blockquote
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_quote_attribute:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

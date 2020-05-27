@@ -1,0 +1,10 @@
+uuid: 1a0fd804-3e24-4890-b6b4-a7deda1a37d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.preview
+label: Preview
+targetEntityType: node
+cache: true

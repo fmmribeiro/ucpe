@@ -1,0 +1,76 @@
+uuid: cf118796-7d7d-4789-99dc-a898afe6a71c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_sections
+    - node.type.article
+    - paragraphs.paragraphs_type.blockquotes
+    - paragraphs.paragraphs_type.full_width_content
+    - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.statistics
+    - paragraphs.paragraphs_type.text_one_two_third
+    - paragraphs.paragraphs_type.text_two_one_third
+    - paragraphs.paragraphs_type.three_up_statistics_combined
+  module:
+    - entity_reference_revisions
+id: node.article.field_content_sections
+field_name: field_content_sections
+entity_type: node
+bundle: article
+label: 'Content Sections'
+description: 'Add content sections to your page. You can create new content pieces or reference existing pieces like blockquotes. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      blockquotes: blockquotes
+      full_width_content: full_width_content
+      statistics: statistics
+      text_one_two_third: text_one_two_third
+      text_two_one_third: text_two_one_third
+      horizontal_rule: horizontal_rule
+      three_up_statistics_combined: three_up_statistics_combined
+    target_bundles_drag_drop:
+      blockquotes:
+        enabled: true
+        weight: -19
+      intro_paragraph:
+        weight: -18
+        enabled: false
+      full_width_content:
+        enabled: true
+        weight: -17
+      in_brief:
+        weight: -16
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: -15
+        enabled: false
+      perspectives_and_story_header:
+        weight: -14
+        enabled: false
+      statistics:
+        enabled: true
+        weight: -13
+      text_one_two_third:
+        enabled: true
+        weight: -12
+      text_two_one_third:
+        enabled: true
+        weight: -11
+      horizontal_rule:
+        enabled: true
+        weight: 13
+      three_up_statistic:
+        weight: 23
+        enabled: false
+      three_up_statistics_combined:
+        enabled: true
+        weight: 24
+field_type: entity_reference_revisions

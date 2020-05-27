@@ -1,0 +1,17 @@
+embeddable_block:
+  label: Embeddable Block
+  category: UCPE
+  type: partial
+  template: templates/ds-layouts/embeddable-block
+  regions:
+    visible:
+      label: Visible
+  class: '\Drupal\ds\Plugin\DsLayout'
+three_up_block:
+  label: Three-up Block layout
+  category: UCPE
+  type: partial
+  template: templates/ds-layouts/three-up-block
+  regions:
+    visible:
+      label: Visible

@@ -1,0 +1,20 @@
+uuid: 82cad797-3d89-4b5a-b8d1-0826820b4dd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_blockquote_image
+field_name: field_blockquote_image
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

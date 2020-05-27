@@ -1,0 +1,10 @@
+uuid: 40a3930a-584c-4620-b0ea-1f3439d191c6
+langcode: en
+status: true
+dependencies: {  }
+id: perspectives_and_story_header
+label: 'Date and Lede'
+icon_uuid: null
+icon_default: null
+description: 'Date and Lede fields used in Perspectives and Story content types.'
+behavior_plugins: {  }

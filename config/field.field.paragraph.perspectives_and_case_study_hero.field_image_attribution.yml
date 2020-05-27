@@ -1,0 +1,19 @@
+uuid: 68ec487c-dc72-4e3a-a922-6d936ce08b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_attribution
+    - paragraphs.paragraphs_type.perspectives_and_case_study_hero
+id: paragraph.perspectives_and_case_study_hero.field_image_attribution
+field_name: field_image_attribution
+entity_type: paragraph
+bundle: perspectives_and_case_study_hero
+label: 'Image Attribution'
+description: 'If the image requires attribution, add the name here. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

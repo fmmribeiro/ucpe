@@ -1,0 +1,27 @@
+uuid: a3dcb8c2-341f-4415-9f39-d04555739674
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_width_content
+    - paragraphs.paragraphs_type.full_width_content
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.full_width_content.field_full_width_content
+field_name: field_full_width_content
+entity_type: paragraph
+bundle: full_width_content
+label: 'Full-width Content'
+description: 'Text that spans the full width of the content area of a page. You may embed left or right floating images as well.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
