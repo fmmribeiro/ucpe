@@ -1,0 +1,277 @@
+//Buttons
+.btn-group {
+  .btn {
+    margin-right: 1em;
+  }
+}
+
+.btn {
+  background-color: $maroon;
+  border: solid 2px $maroon;
+  border-radius: 0;
+  color: $white;
+  @include font($sans-serif-font, 1rem, $white, $sans-serif-regular, 1rem);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+
+  //this applies to all icons
+  &:after,
+  &:before {
+    font-size: 1.25rem;
+    vertical-align: -5px;
+  }
+
+  &.external:after,
+  &.arrow-right:after,
+  &.arrow-down:after {
+    margin-left: 10px;
+  }
+  &.external:after {
+    @include iconfont(inherit, "\77");
+  }
+  &.arrow-right:after {
+    @include iconfont(inherit, "\3e");
+  }
+  &.arrow-down:after {
+    @include iconfont(inherit, "\67");
+  }
+
+  &.arrow-left:before {
+    font-size: 1.25rem;
+    @include iconfont(inherit, "\3c");
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $plum;
+  }
+
+  &.secondary {
+    background-color: $gold;
+    border-color: $gold;
+    color: $plum;
+
+    &:hover {
+      border-color: $maroon;
+      background-color: $white;
+    }
+  }
+
+  &.tertiary {
+    background-color: $white;
+    border-color: $plum;
+    color: $plum;
+
+    &:after {
+      color: $maroon;
+    }
+
+    &:hover {
+      border-color: $maroon;
+    }
+  }
+
+  &.quaternary {
+    background-color: $white;
+    border-color: $divider-gray;
+    color: $plum;
+
+    &:after {
+      color: $maroon;
+    }
+    &:hover {
+      border-color: $maroon;
+    }
+  }
+
+  &.text {
+    border: 0;
+    background-color: transparent;
+    color: $plum;
+    transition-duration: 0.2s;
+    // -webkit-transition: all 0.2s;
+    // -moz-transition: all 0.2s;
+    // transition: all 0.2s;
+
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+
+  &.primary {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px $maroon;
+    color: $plum;
+    padding: 0 0 2px;
+    margin: 0.75rem 0;
+    transition-duration: 0.2s;
+
+    &:hover {
+      border-color: $black;
+      color: $black;
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+}
+
+// LINK LIST
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 0 !important;
+    a {
+      border-bottom: solid 2px $maroon;
+      display: inline-block;
+      @include font($serif-font, 1rem, $black, $serif-regular, 1rem);
+      padding-bottom: 2px;
+      text-decoration: none;
+      margin: $baseline/2 0;
+
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: $black;
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+// PHOTOS
+
+// Headshot Photos
+
+.headshot {
+  display: block;
+  border-radius: 50%;
+  width: $baseline * 5;
+  height: $baseline * 5;
+  margin-bottom: $baseline * 4;
+  position: relative;
+
+  img {
+    border-radius: 50%;
+    max-width: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: $gold;
+    display: block;
+    top: -$baseline/4;
+    left: -$baseline/4;
+    border-top-left-radius: $baseline * 5 + $baseline/2;
+    border-bottom-left-radius: $baseline * 5 + $baseline/2;
+    width: $baseline * 2.875;
+    height: $baseline * 5 + $baseline/2;
+  }
+
+  figcaption {
+    font-size: 80%;
+    margin-top: $baseline;
+    text-align: center;
+  }
+}
+
+// STATS
+
+.stat {
+  position: relative;
+  text-align: center;
+
+  span {
+    vertical-align: top;
+  }
+
+  .num {
+    @include font(
+      $sans-serif-font,
+      $baseline * 4,
+      $black,
+      $sans-serif-semibold,
+      $baseline * 4
+    );
+  }
+  .pre,
+  .post {
+    @include font(
+      $sans-serif-font,
+      $baseline * 2,
+      $black,
+      $sans-serif-semibold,
+      $baseline * 3
+    );
+  }
+
+  &:after {
+    @include dash($maroon, 8px, $baseline * 3, $position: true);
+    bottom: -$baseline;
+  }
+}
+
+// THREE UP PROMO
+
+.three-up-promo {
+  display: block;
+
+  @include screen("tablet") {
+    display: flex;
+  }
+
+  .col {
+    @include screen("tablet") {
+      flex: 1;
+
+      .bottom {
+        text-align: center;
+      }
+    }
+    .top {
+      text-align: center;
+    }
+
+    .bottom {
+      padding: $baseline * 2;
+
+      h3 {
+        @include font(
+          $serif-font,
+          $baseline * 1.5,
+          $maroon,
+          $sans-serif-regular,
+          $baseline * 2
+        );
+        font-weight: $serif-bold;
+      }
+    }
+
+    // background colors
+    &:nth-child(odd) {
+      background-color: $bg-02;
+
+      .top {
+        background: linear-gradient(180deg, $white 50%, $bg-02 50%);
+      }
+    }
+  }
+}
