@@ -1,0 +1,10 @@
+uuid: e1fdfa9c-9e27-4f06-b682-cb0d7e22e59c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.image_in_wysiwyg
+label: 'Image in WYSIWYG'
+targetEntityType: media
+cache: true

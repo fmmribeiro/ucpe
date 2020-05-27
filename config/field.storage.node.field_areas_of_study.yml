@@ -1,0 +1,20 @@
+uuid: 928ca730-818c-47e7-93c3-7f28d33b1742
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_areas_of_study
+field_name: field_areas_of_study
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 045f35d6-9563-43e8-a6fe-491009ff951f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_name
+    - node.type.person
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    full_html: '0'
+    basic_html: '0'
+id: node.person.field_first_name
+field_name: field_first_name
+entity_type: node
+bundle: person
+label: 'First Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

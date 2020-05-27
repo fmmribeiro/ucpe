@@ -1,0 +1,27 @@
+uuid: db150c92-edf3-47e7-9a5d-2ad973f6a4b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.storage.block_content.field_pre_number
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.statistic.field_pre_number
+field_name: field_pre_number
+entity_type: block_content
+bundle: statistic
+label: Pre-number
+description: 'Typically something like currency.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

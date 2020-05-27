@@ -1,0 +1,23 @@
+uuid: ee5dabd6-65b0-464d-9489-737ea0d46949
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.horizontal_rule.field_horizontal_rule
+    - paragraphs.paragraphs_type.horizontal_rule
+  module:
+    - text
+id: paragraph.horizontal_rule.preview
+targetEntityType: paragraph
+bundle: horizontal_rule
+mode: preview
+content:
+  field_horizontal_rule:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

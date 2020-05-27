@@ -1,0 +1,10 @@
+uuid: 553ab950-4727-4041-a37d-e2fe5a39409c
+langcode: en
+status: true
+dependencies: {  }
+id: full_width_content
+label: 'Full-Width Content'
+icon_uuid: null
+icon_default: null
+description: 'Content that spans the full-width of the content area. '
+behavior_plugins: {  }

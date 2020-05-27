@@ -1,0 +1,10 @@
+uuid: e1c0b859-802f-4758-b71d-2a07cc585e25
+langcode: en
+status: true
+dependencies: {  }
+id: statistics
+label: Statistic
+icon_uuid: null
+icon_default: null
+description: 'Stat with a paragraph to the left'
+behavior_plugins: {  }

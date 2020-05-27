@@ -1,0 +1,10 @@
+uuid: 6997fada-19a4-48b3-a9f5-e3c515d9c612
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.blockquotes
+label: Blockquotes
+targetEntityType: paragraph
+cache: true

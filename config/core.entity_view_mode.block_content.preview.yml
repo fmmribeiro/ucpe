@@ -1,0 +1,10 @@
+uuid: 2983d351-1000-4ac2-9837-d00ea885a8f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.preview
+label: Preview
+targetEntityType: block_content
+cache: true

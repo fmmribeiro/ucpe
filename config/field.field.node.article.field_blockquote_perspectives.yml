@@ -1,0 +1,43 @@
+uuid: 67193859-1b9c-4593-9544-f9c3de367904
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blockquote_perspectives
+    - node.type.article
+    - paragraphs.paragraphs_type.blockquotes
+  module:
+    - entity_reference_revisions
+id: node.article.field_blockquote_perspectives
+field_name: field_blockquote_perspectives
+entity_type: node
+bundle: article
+label: Blockquote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      blockquotes: blockquotes
+    target_bundles_drag_drop:
+      blockquotes:
+        enabled: true
+        weight: 6
+      intro_paragraph:
+        weight: 7
+        enabled: false
+      in_brief:
+        weight: 8
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 9
+        enabled: false
+      perspectives_and_story_header:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

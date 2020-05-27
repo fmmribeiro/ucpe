@@ -1,0 +1,10 @@
+uuid: ea86bed3-030e-4989-ac2a-e52d48a5ef5f
+langcode: en
+status: true
+dependencies: {  }
+id: intro_paragraph
+label: 'Intro Paragraph'
+icon_uuid: null
+icon_default: null
+description: 'Intro paragraph (one paragraph) that is in large, bold, serif font. '
+behavior_plugins: {  }

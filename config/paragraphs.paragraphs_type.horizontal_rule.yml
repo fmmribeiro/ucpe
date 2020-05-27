@@ -1,0 +1,10 @@
+uuid: 2ad5c78f-dcdf-4c27-ac50-01b940ef912f
+langcode: en
+status: true
+dependencies: {  }
+id: horizontal_rule
+label: 'Horizontal Rule'
+icon_uuid: null
+icon_default: null
+description: 'A short horizontal rule that aligns to the left. Used when a thematic break in content is needed. '
+behavior_plugins: {  }

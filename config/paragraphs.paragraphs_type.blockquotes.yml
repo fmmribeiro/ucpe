@@ -1,0 +1,10 @@
+uuid: f0097553-11dd-48ca-88b3-3aa6c9e81bbc
+langcode: en
+status: true
+dependencies: {  }
+id: blockquotes
+label: Blockquotes
+icon_uuid: null
+icon_default: null
+description: '3 blockquote styles for adding to content'
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 567917ad-6b83-4d62-891b-fc546d0e29a3
+langcode: en
+status: true
+dependencies: {  }
+id: content_sections
+label: 'Content Sections'
+icon_uuid: null
+icon_default: null
+description: 'Add a content section to the page.'
+behavior_plugins: {  }

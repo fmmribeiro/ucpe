@@ -1,0 +1,27 @@
+uuid: be3435e8-e0d3-442e-affb-81422e969a35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statistic_sentence
+    - paragraphs.paragraphs_type.three_up_statistic
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.three_up_statistic.field_statistic_sentence
+field_name: field_statistic_sentence
+entity_type: paragraph
+bundle: three_up_statistic
+label: 'Statistic Sentence'
+description: 'The sentence that completes the statistic. Keep to under 60 characters.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

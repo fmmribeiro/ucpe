@@ -1,0 +1,40 @@
+uuid: 33b3508f-98fe-45a0-a29e-5fe872bf18f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_in_brief_perspective
+    - node.type.article
+    - paragraphs.paragraphs_type.in_brief
+  module:
+    - entity_reference_revisions
+id: node.article.field_in_brief_perspective
+field_name: field_in_brief_perspective
+entity_type: node
+bundle: article
+label: 'In Brief'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      in_brief: in_brief
+    target_bundles_drag_drop:
+      intro_paragraph:
+        weight: 5
+        enabled: false
+      in_brief:
+        enabled: true
+        weight: 6
+      perspectives_and_case_study_hero:
+        weight: 7
+        enabled: false
+      perspectives_and_story_header:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

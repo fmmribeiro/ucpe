@@ -1,0 +1,10 @@
+uuid: 2455758d-6636-4577-bbe9-6d901ed8f8aa
+langcode: en
+status: true
+dependencies: {  }
+id: text_one_two_third
+label: 'Text (⅓ + ⅔)'
+icon_uuid: null
+icon_default: null
+description: 'Add content in the format of a (⅓ + ⅔) column format.'
+behavior_plugins: {  }

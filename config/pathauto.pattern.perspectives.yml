@@ -1,0 +1,22 @@
+uuid: 9a8ba3ab-30f0-4ad4-9feb-90f683c55b5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: perspectives
+label: Perspectives
+type: 'canonical_entities:node'
+pattern: '/perspectives/[node:title]'
+selection_criteria:
+  4d030ea7-16a0-4d2b-8d0d-644bce40e763:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4d030ea7-16a0-4d2b-8d0d-644bce40e763
+selection_logic: and
+weight: -5
+relationships: {  }

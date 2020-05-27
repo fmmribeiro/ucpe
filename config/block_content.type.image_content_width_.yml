@@ -1,0 +1,8 @@
+uuid: 87e4d0f8-df32-436b-a1ec-b098a233a779
+langcode: en
+status: true
+dependencies: {  }
+id: image_content_width_
+label: 'Image (Content Width)'
+revision: 0
+description: 'Image that spans the width of the content area'

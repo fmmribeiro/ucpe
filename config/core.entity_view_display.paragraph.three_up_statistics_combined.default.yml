@@ -1,0 +1,46 @@
+uuid: f8fde75d-e235-4647-92bb-9532da0c39d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_statistics_combined.field_statistics_3_up_
+    - paragraphs.paragraphs_type.three_up_statistics_combined
+  module:
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_statistics_3_up_
+id: paragraph.three_up_statistics_combined.default
+targetEntityType: paragraph
+bundle: three_up_statistics_combined
+mode: default
+content:
+  field_statistics_3_up_:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden: {  }

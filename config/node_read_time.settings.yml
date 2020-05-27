@@ -1,0 +1,16 @@
+reading_time:
+  submit: 'Save configuration'
+  container:
+    article:
+      is_activated: 1
+    page:
+      is_activated: 0
+    story:
+      is_activated: 1
+  words_per_minute: '225'
+  form_build_id: form-0mRg_nBoUmAd_pKg0CuA5WnavJrEIvs42P92hJqXjgE
+  form_token: e5ppJ3qcfFt9nfQVxRcSunxr8L2ukJ-KRVRZUYOgWqM
+  form_id: reading_time
+  op: 'Save configuration'
+_core:
+  default_config_hash: U_DCDVluEGXnxG442HYxOe_C1eHt1ukDIE7n8V23oIE

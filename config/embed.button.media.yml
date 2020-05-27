@@ -1,0 +1,26 @@
+uuid: 098006ed-174b-4a8c-b9d3-13e2835601e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.image_in_wysiwyg
+    - entity_browser.browser.media_embed
+  module:
+    - entity_embed
+    - media
+label: Media
+id: media
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles: {  }
+  display_plugins:
+    - 'view_mode:media.image_in_wysiwyg'
+    - 'entity_reference:media_thumbnail'
+  entity_browser: media_embed
+  entity_browser_settings:
+    display_review: false
+icon:
+  data: iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAA4klEQVR42n3QoUsEQRTH8afJKCJYvwsOXDzB/0BuedHgH2KyXBTMJpvZYDispuPCFYNBtLooiEGwnLq6nj9xOGVnXY5fmOHNZx7zxmTzY5naUwNt9xqgP8ir/mAOyKuu8ioFdNhjxHWjgy/41gxMEeK98QY/DPKTCH4y5TkCX/GxH8t8JyhTkBeZOGeXDpeWyU/9Nshf/MwfmmNG8JvN2br+B1ikaPko6h3u/30RXV5ZkxG42L5jkh5uMOSKN1Zl3MQ5vlLwFIsVyzKKuP9MwUcslizJ6PHIhKMUHFBSsl+vfQMHvf9qSenrhQAAAABJRU5ErkJggg==
+  uri: 'public://embed_buttons/drupalmedialibrary.png'
+icon_uuid: null

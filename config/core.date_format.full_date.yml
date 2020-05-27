@@ -1,0 +1,8 @@
+uuid: a5e0ad2f-dc32-4d9a-ad2c-7b5deaf55342
+langcode: en
+status: true
+dependencies: {  }
+id: full_date
+label: 'Full Date'
+locked: false
+pattern: 'F j, Y'

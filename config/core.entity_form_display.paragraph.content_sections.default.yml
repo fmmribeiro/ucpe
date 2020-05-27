@@ -1,0 +1,14 @@
+uuid: 96a6a7ef-0910-4c1e-9210-a1a07f912c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_sections
+id: paragraph.content_sections.default
+targetEntityType: paragraph
+bundle: content_sections
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

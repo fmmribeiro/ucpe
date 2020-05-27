@@ -1,0 +1,21 @@
+uuid: ee4255d9-88a5-4aa0-aa31-892dac987084
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_content_width_
+    - field.storage.block_content.field_content_width_image
+id: block_content.image_content_width_.field_content_width_image
+field_name: field_content_width_image
+entity_type: block_content
+bundle: image_content_width_
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 05593da7-da89-4075-a271-5d1f85111c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.in_brief.field_in_brief
+    - paragraphs.paragraphs_type.in_brief
+  module:
+    - text
+id: paragraph.in_brief.default
+targetEntityType: paragraph
+bundle: in_brief
+mode: default
+content:
+  field_in_brief:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

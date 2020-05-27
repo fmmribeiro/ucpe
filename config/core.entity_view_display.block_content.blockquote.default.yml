@@ -1,0 +1,31 @@
+uuid: 861a8dda-9c61-46c7-9c14-89ec73c796e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote
+    - field.field.block_content.blockquote.body
+    - field.field.block_content.blockquote.field_quote_attribute
+  module:
+    - text
+id: block_content.blockquote.default
+targetEntityType: block_content
+bundle: blockquote
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_quote_attribute:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

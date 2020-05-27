@@ -1,0 +1,27 @@
+uuid: e78ca2cc-3805-45d3-9152-12eefa72c2e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_intro_paragraph
+    - paragraphs.paragraphs_type.intro_paragraph
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.intro_paragraph.field_intro_paragraph
+field_name: field_intro_paragraph
+entity_type: paragraph
+bundle: intro_paragraph
+label: 'Intro Paragraph'
+description: 'One paragraph as an intro to the content below. Do not use for more than one paragraph. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

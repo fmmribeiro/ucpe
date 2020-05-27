@@ -1,0 +1,33 @@
+uuid: d219863a-3f9c-4409-b9f5-c9766d34ecae
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote
+    - block_content.type.blockquote_photo_and_link_
+    - block_content.type.blockquote_with_photo_
+    - field.storage.paragraph.field_blockquotes
+    - paragraphs.paragraphs_type.blockquotes
+id: paragraph.blockquotes.field_blockquotes
+field_name: field_blockquotes
+entity_type: paragraph
+bundle: blockquotes
+label: Blockquotes
+description: 'Add a regular blockquote, blockquote with photo, or blockquote with photo and link to your page. Choose which type you want to add in the dropdown. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      blockquote: blockquote
+      blockquote_with_photo_: blockquote_with_photo_
+      blockquote_photo_and_link_: blockquote_photo_and_link_
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: blockquote
+field_type: entity_reference

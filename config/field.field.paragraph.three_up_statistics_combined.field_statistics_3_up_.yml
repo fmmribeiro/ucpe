@@ -1,0 +1,64 @@
+uuid: 6ed3a1b3-3f8c-4d20-92be-8d35aa33886a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statistics_3_up_
+    - paragraphs.paragraphs_type.three_up_statistic
+    - paragraphs.paragraphs_type.three_up_statistics_combined
+  module:
+    - entity_reference_revisions
+id: paragraph.three_up_statistics_combined.field_statistics_3_up_
+field_name: field_statistics_3_up_
+entity_type: paragraph
+bundle: three_up_statistics_combined
+label: 'Statistics (3-up)'
+description: 'Add 3 statistics with text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      three_up_statistic: three_up_statistic
+    target_bundles_drag_drop:
+      blockquotes:
+        weight: 13
+        enabled: false
+      full_width_content:
+        weight: 14
+        enabled: false
+      horizontal_rule:
+        weight: 15
+        enabled: false
+      intro_paragraph:
+        weight: 16
+        enabled: false
+      in_brief:
+        weight: 17
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 18
+        enabled: false
+      perspectives_and_story_header:
+        weight: 19
+        enabled: false
+      statistics:
+        weight: 20
+        enabled: false
+      text_one_two_third:
+        weight: 21
+        enabled: false
+      text_two_one_third:
+        weight: 22
+        enabled: false
+      three_up_statistic:
+        enabled: true
+        weight: 23
+      three_up_statistics_combined:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,61 @@
+uuid: 667a13f0-b14c-47e0-a6df-8ca8db11d2d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.preview
+    - field.field.node.person.body
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_headshot
+    - field.field.node.person.field_job_title
+    - field.field.node.person.field_last_name
+    - node.type.person
+  module:
+    - media
+    - smart_trim
+    - user
+id: node.person.preview
+targetEntityType: node
+bundle: person
+mode: preview
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_headshot:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_email: true
+  field_first_name: true
+  field_job_title: true
+  field_last_name: true

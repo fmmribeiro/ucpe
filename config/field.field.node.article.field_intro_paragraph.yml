@@ -1,0 +1,37 @@
+uuid: 8eeb34ad-a0a8-4c26-a854-a634f6e83f6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_paragraph
+    - node.type.article
+    - paragraphs.paragraphs_type.intro_paragraph
+  module:
+    - entity_reference_revisions
+id: node.article.field_intro_paragraph
+field_name: field_intro_paragraph
+entity_type: node
+bundle: article
+label: 'Intro Paragraph'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      intro_paragraph: intro_paragraph
+    target_bundles_drag_drop:
+      intro_paragraph:
+        enabled: true
+        weight: 4
+      perspectives_and_case_study_hero:
+        weight: 5
+        enabled: false
+      perspectives_and_story_header:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

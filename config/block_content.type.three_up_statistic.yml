@@ -1,0 +1,8 @@
+uuid: a4a99b8c-5649-4423-9889-a68049de53ff
+langcode: en
+status: true
+dependencies: {  }
+id: three_up_statistic
+label: 'Three-up Statistic'
+revision: 0
+description: 'Three side-by-side statistics with text. '

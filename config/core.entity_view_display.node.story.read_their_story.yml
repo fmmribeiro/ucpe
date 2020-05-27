@@ -1,0 +1,39 @@
+uuid: f9b939a5-796b-43d1-80b2-3e8771baf098
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.read_their_story
+    - field.field.node.story.body
+    - field.field.node.story.field_date_and_lede
+    - node.type.story
+  module:
+    - entity_reference_revisions
+    - user
+id: node.story.read_their_story
+targetEntityType: node
+bundle: story
+mode: read_their_story
+content:
+  field_date_and_lede:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  reading_time:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  body: true

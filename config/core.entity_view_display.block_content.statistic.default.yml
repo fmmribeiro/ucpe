@@ -1,0 +1,77 @@
+uuid: fe0af77a-e83c-4a14-a474-6a3c422314e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.field.block_content.statistic.body
+    - field.field.block_content.statistic.field_number
+    - field.field.block_content.statistic.field_post_number
+    - field.field.block_content.statistic.field_pre_number
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left:
+            statistic_first_column: statistic_first_column
+          right:
+            statistic_second_column: statistic_second_column
+    regions:
+      left:
+        - field_pre_number
+        - field_number
+        - field_post_number
+      right:
+        - body
+id: block_content.statistic.default
+targetEntityType: block_content
+bundle: statistic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: right
+  field_number:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+  field_post_number:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_pre_number:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+hidden: {  }

@@ -2,8 +2,11 @@ uuid: 94ae3d1c-5699-468b-9392-63deda27a0e2
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.image_in_wysiwyg
   module:
     - editor
+    - entity_embed
     - media
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
@@ -15,48 +18,72 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: 8
+    weight: -48
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 9
+    weight: -47
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
     status: true
-    weight: 10
+    weight: -45
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
-    status: false
-    weight: 11
+    status: true
+    weight: -40
     settings: {  }
   filter_url:
     id: filter_url
     provider: filter
     status: true
-    weight: 0
+    weight: -49
     settings:
       filter_url_length: 72
   filter_html:
     id: filter_html
     provider: filter
     status: true
-    weight: -10
+    weight: -50
     settings:
-      allowed_html: '<a href hreflang target class rel> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
-      filter_html_help: true
+      allowed_html: '<a href hreflang target class rel> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button alt title>'
+      filter_html_help: false
       filter_html_nofollow: false
   media_embed:
     id: media_embed
     provider: media
-    status: true
-    weight: 100
+    status: false
+    weight: -44
     settings:
-      default_view_mode: default
+      default_view_mode: image_in_wysiwyg
       allowed_media_types: {  }
       allowed_view_modes: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: -46
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -41
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -42
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }

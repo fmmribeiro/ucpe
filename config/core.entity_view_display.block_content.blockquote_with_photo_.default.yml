@@ -1,0 +1,70 @@
+uuid: 19cf7831-ade0-473e-9e49-17ec9143a4a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote_with_photo_
+    - field.field.block_content.blockquote_with_photo_.body
+    - field.field.block_content.blockquote_with_photo_.field_blockquote_image
+    - field.field.block_content.blockquote_with_photo_.field_quote_attribute
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left:
+            blockquote_first_column: blockquote_first_column
+          right:
+            blockquote_second_column: blockquote_second_column
+    regions:
+      left:
+        - field_blockquote_image
+      right:
+        - body
+        - field_quote_attribute
+id: block_content.blockquote_with_photo_.default
+targetEntityType: block_content
+bundle: blockquote_with_photo_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: right
+  field_blockquote_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: blockquote_image
+      link: false
+    third_party_settings: {  }
+    region: left
+  field_quote_attribute:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+hidden: {  }

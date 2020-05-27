@@ -1,0 +1,10 @@
+uuid: e5f28ea0-96fb-4477-b1bc-9136749ff849
+langcode: en
+status: true
+dependencies: {  }
+id: in_brief
+label: 'In Brief'
+icon_uuid: null
+icon_default: null
+description: 'In Brief is used on Perspectives to give a TLDR summary of the article. '
+behavior_plugins: {  }

@@ -1,0 +1,27 @@
+uuid: 4dd12e04-0ed6-416b-90f8-be19d71efec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.person
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: node.person.field_title
+field_name: field_title
+entity_type: node
+bundle: person
+label: Title
+description: 'Person''s title (Deputy Director, Center for Research Informatics)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,89 @@
+uuid: 064e0892-1018-4978-9733-d3e60aa251c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - core.entity_view_mode.block_content.preview
+    - field.field.block_content.statistic.body
+    - field.field.block_content.statistic.field_number
+    - field.field.block_content.statistic.field_post_number
+    - field.field.block_content.statistic.field_pre_number
+  module:
+    - ds
+    - smart_trim
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_pre_number
+        - field_number
+        - field_post_number
+      right:
+        - body
+id: block_content.statistic.preview
+targetEntityType: block_content
+bundle: statistic
+mode: preview
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: right
+  field_number:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+  field_post_number:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_pre_number:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+hidden: {  }

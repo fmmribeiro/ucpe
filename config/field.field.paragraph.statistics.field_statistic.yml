@@ -1,0 +1,28 @@
+uuid: d085f6ba-0305-4d57-aa95-75e98c9a6d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.storage.paragraph.field_statistic
+    - paragraphs.paragraphs_type.statistics
+id: paragraph.statistics.field_statistic
+field_name: field_statistic
+entity_type: paragraph
+bundle: statistics
+label: Statistic
+description: 'Add one stat with paragraph'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      statistic: statistic
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: statistic
+field_type: entity_reference

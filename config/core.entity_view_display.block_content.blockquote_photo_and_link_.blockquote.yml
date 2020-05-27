@@ -1,0 +1,96 @@
+uuid: 86aa94a0-0181-49dc-b7e2-6d379244237c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote_photo_and_link_
+    - core.entity_view_mode.block_content.blockquote
+    - field.field.block_content.blockquote_photo_and_link_.body
+    - field.field.block_content.blockquote_photo_and_link_.field_blockquote_image
+    - field.field.block_content.blockquote_photo_and_link_.field_quote_attribute
+    - field.field.block_content.blockquote_photo_and_link_.field_read_their_story
+  module:
+    - ds
+    - link
+    - smart_trim
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_blockquote
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+          variant: image_link
+    regions:
+      body:
+        - body
+      field_quote_attribute:
+        - field_quote_attribute
+      field_read_their_story:
+        - field_read_their_story
+      field_blockquote_image:
+        - field_blockquote_image
+id: block_content.blockquote_photo_and_link_.blockquote
+targetEntityType: block_content
+bundle: blockquote_photo_and_link_
+mode: blockquote
+content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: body
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
+  field_blockquote_image:
+    type: entity_reference_entity_view
+    weight: 3
+    region: field_blockquote_image
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_quote_attribute:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
+    type: smart_trim
+    region: field_quote_attribute
+  field_read_their_story:
+    type: link
+    weight: 2
+    region: field_read_their_story
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden: {  }

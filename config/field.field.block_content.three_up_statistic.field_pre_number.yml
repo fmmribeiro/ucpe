@@ -1,0 +1,27 @@
+uuid: e544ec7e-5752-4a49-88a3-29fabab25794
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.three_up_statistic
+    - field.storage.block_content.field_pre_number
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.three_up_statistic.field_pre_number
+field_name: field_pre_number
+entity_type: block_content
+bundle: three_up_statistic
+label: Pre-number
+description: 'Typically something like currency.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

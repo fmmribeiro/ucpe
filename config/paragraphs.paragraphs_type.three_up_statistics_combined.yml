@@ -1,0 +1,10 @@
+uuid: fe14a575-079a-4bf4-bc37-482a3f67a158
+langcode: en
+status: true
+dependencies: {  }
+id: three_up_statistics_combined
+label: 'Three-up Statistics'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

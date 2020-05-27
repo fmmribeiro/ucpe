@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+set classes = [
+'three-up-block',
+]
+%}
+{% if content %}
+    <div{{ attributes.addClass(classes) }}>
+        {{ title_prefix }}
+        {{ title_suffix }}
+        <div class="layout-region layout-region--content">
+            {{ content.visible }}
+        </div>
+    </div>
+{% endif %}

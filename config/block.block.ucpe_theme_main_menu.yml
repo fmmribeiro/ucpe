@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: ucpe_theme_main_menu
 theme: ucpe_theme
-region: navigation
-weight: 0
+region: header
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

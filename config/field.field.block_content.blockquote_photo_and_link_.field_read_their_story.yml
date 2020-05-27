@@ -1,0 +1,23 @@
+uuid: 4e41b663-2175-4418-8810-d09124bfd440
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.blockquote_photo_and_link_
+    - field.storage.block_content.field_read_their_story
+  module:
+    - link
+id: block_content.blockquote_photo_and_link_.field_read_their_story
+field_name: field_read_their_story
+entity_type: block_content
+bundle: blockquote_photo_and_link_
+label: 'Read their story'
+description: 'Link to story'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 2
+field_type: link
