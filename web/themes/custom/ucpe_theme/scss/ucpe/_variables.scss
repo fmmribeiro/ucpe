@@ -1,3 +1,30 @@
+html {
+  font-size: 16px;
+}
+
+@mixin make-container-fluid() {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin make-container() {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
 // BREAKPOINTS
 
 $breakpoints: (
@@ -33,9 +60,12 @@ $breakpoints: (
 // FONTS
 $serif-font: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
 $sans-serif-font: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-$regular: 300;
-$semi-bold: 600;
-$bold: 900;
+
+$serif-regular: 300;
+$serif-semibold: 600;
+$serif-bold: 900;
+$sans-serif-regular: 400;
+$sans-serif-semibold: 500;
 
 $italic: italic;
 
@@ -103,8 +133,8 @@ $baseline: 1rem;
 
 $minScreen: 20rem;
 $maxScreen: 50rem;
-$minFont: 0.8rem;
-$maxFont: 2rem;
+$minFont: 0.875rem;
+$maxFont: 1.125rem;
 
 $h1: 2rem;
 $h2: 1.5rem;
@@ -169,6 +199,20 @@ body {
     }
   } @else {
     padding-top: $padding;
+  }
+}
+
+@mixin dash($color, $height, $width, $position: false) {
+  background-color: $color;
+  content: "";
+  display: block;
+  height: $height;
+  width: $width;
+
+  @if $position {
+    position: absolute;
+    left: 50%;
+    margin-left: -$width/2;
   }
 }
 

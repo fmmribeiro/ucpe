@@ -13,9 +13,11 @@
 @import "drupal-bootstrap/component/tabs";
 @import "drupal-bootstrap/component/toolbar";
 
+@import "ucpe/base";
 @import "ucpe/variables";
 @import "ucpe/fonts";
 @import "ucpe/typography";
+@import "ucpe/components";
 
 // jQuery UI style overrides.
 @import "drupal-bootstrap/jquery-ui/autocomplete";
