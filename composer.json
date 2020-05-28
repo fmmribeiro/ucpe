@@ -128,7 +128,7 @@
             "drush sql:drop -y",
             "zcat database.sql.gz | drush sqlc",
             "drush updb -y",
-            "drush cex -y",
+            "drush cim -y",
             "git checkout local_config"
         ]
     },
