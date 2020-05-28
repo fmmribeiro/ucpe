@@ -38,12 +38,12 @@ widgets:
       submit_text: 'Add Image'
     uuid: dc8436e9-4874-40c5-9d2f-922cea7c2ba0
     weight: 2
-    label: 'All Image'
+    label: 'Add Image'
     id: entity_form
   924e0c97-210b-4032-85a1-97ee0ec8c642:
     settings:
       entity_type: media
-      bundle: video
+      bundle: remote_video
       form_mode: default
       submit_text: 'Save video'
     uuid: 924e0c97-210b-4032-85a1-97ee0ec8c642

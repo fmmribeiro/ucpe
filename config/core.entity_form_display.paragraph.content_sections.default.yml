@@ -11,4 +11,5 @@ mode: default
 content: {  }
 hidden:
   created: true
+  field_blockquotes: true
   status: true
