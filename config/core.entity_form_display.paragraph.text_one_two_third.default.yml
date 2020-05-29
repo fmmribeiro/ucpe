@@ -31,4 +31,5 @@ content:
     region: content
 hidden:
   created: true
+  field_c: true
   status: true
