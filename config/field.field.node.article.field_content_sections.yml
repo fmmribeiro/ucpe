@@ -7,6 +7,7 @@ dependencies:
     - node.type.article
     - paragraphs.paragraphs_type.blockquotes
     - paragraphs.paragraphs_type.full_width_content
+    - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.text_one_two_third
@@ -35,6 +36,7 @@ settings:
       text_one_two_third: text_one_two_third
       text_two_one_third: text_two_one_third
       horizontal_rule: horizontal_rule
+      header_s_: header_s_
       three_up_statistics_combo: three_up_statistics_combo
     target_bundles_drag_drop:
       blockquotes:
@@ -73,10 +75,16 @@ settings:
       content_sections:
         weight: 17
         enabled: false
+      header_s_:
+        enabled: true
+        weight: 21
       three_up_statistic:
         weight: 23
         enabled: false
       three_up_statistics_combo:
         enabled: true
         weight: 28
+      three_up_statistics_combined:
+        weight: 31
+        enabled: false
 field_type: entity_reference_revisions

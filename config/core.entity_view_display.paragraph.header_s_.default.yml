@@ -1,0 +1,23 @@
+uuid: dc3d1733-1b8a-4343-9d2c-b4cacfdd1634
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_s_.field_content_section_header
+    - field.field.paragraph.header_s_.field_header_type
+    - paragraphs.paragraphs_type.header_s_
+id: paragraph.header_s_.default
+targetEntityType: paragraph
+bundle: header_s_
+mode: default
+content:
+  field_content_section_header:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_header_type: true
