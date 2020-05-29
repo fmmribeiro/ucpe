@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - block_content.type.image_content_width_
+    - entity_browser.browser.image_browser
     - field.field.block_content.image_content_width_.body
+    - field.field.block_content.image_content_width_.field_content_width_image
     - field.field.block_content.image_content_width_.field_image_attribution_2
     - field.field.block_content.image_content_width_.field_image_content_width
   module:
-    - media_library
+    - entity_browser
     - text
 id: block_content.image_content_width_.default
 targetEntityType: block_content
@@ -34,10 +36,18 @@ content:
     type: text_textfield
     region: content
   field_image_content_width:
-    type: media_library_widget
+    type: entity_browser_entity_reference
     weight: 1
     settings:
-      media_types: {  }
+      entity_browser: image_browser
+      field_widget_display: rendered_entity
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
     third_party_settings: {  }
     region: content
   info:

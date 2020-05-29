@@ -1,0 +1,46 @@
+uuid: e9131fbc-f778-4e30-90f4-bbcdc5c1a553
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.program_owner.field_link_to_website
+    - taxonomy.vocabulary.program_owner
+  module:
+    - link
+    - path
+id: taxonomy_term.program_owner.default
+targetEntityType: taxonomy_term
+bundle: program_owner
+mode: default
+content:
+  field_link_to_website:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true

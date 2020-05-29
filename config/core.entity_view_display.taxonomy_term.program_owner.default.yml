@@ -1,0 +1,35 @@
+uuid: c730ce4b-80e9-41f9-a334-f8816d7c44be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.program_owner.field_link_to_website
+    - taxonomy.vocabulary.program_owner
+  module:
+    - link
+    - text
+id: taxonomy_term.program_owner.default
+targetEntityType: taxonomy_term
+bundle: program_owner
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link_to_website:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
