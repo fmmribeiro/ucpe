@@ -1,0 +1,70 @@
+uuid: 0b751fbe-9b28-43d1-9bea-61352d75983b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_stats_3_
+    - paragraphs.paragraphs_type.three_up_statistic
+    - paragraphs.paragraphs_type.three_up_statistics_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.three_up_statistics_combo.field_add_stats_3_
+field_name: field_add_stats_3_
+entity_type: paragraph
+bundle: three_up_statistics_combo
+label: 'Add Stats (3)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      three_up_statistic: three_up_statistic
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 15
+        enabled: false
+      blockquotes:
+        weight: 16
+        enabled: false
+      content_sections:
+        weight: 17
+        enabled: false
+      full_width_content:
+        weight: 18
+        enabled: false
+      horizontal_rule:
+        weight: 19
+        enabled: false
+      intro_paragraph:
+        weight: 20
+        enabled: false
+      in_brief:
+        weight: 21
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 22
+        enabled: false
+      perspectives_and_story_header:
+        weight: 23
+        enabled: false
+      statistics:
+        weight: 24
+        enabled: false
+      text_one_two_third:
+        weight: 25
+        enabled: false
+      text_two_one_third:
+        weight: 26
+        enabled: false
+      three_up_statistic:
+        enabled: true
+        weight: 27
+      three_up_statistics_combo:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

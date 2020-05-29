@@ -1,0 +1,28 @@
+uuid: 7eff4506-8030-419c-bd27-1b27d47249b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.three_up_statistics_combo.field_add_stats_3_
+    - paragraphs.paragraphs_type.three_up_statistics_combo
+  module:
+    - ds
+    - entity_reference_revisions
+id: paragraph.three_up_statistics_combo.preview
+targetEntityType: paragraph
+bundle: three_up_statistics_combo
+mode: preview
+content:
+  field_add_stats_3_:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden: {  }
