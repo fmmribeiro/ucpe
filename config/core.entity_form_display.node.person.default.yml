@@ -128,5 +128,4 @@ hidden:
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true
-  field_name: true
-  field_title: true
+  field_contact_x: true

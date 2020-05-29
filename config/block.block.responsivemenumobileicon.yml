@@ -1,0 +1,20 @@
+uuid: b8d37fbd-860b-4cf5-abbd-442f428188b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - ucpe_theme
+id: responsivemenumobileicon
+theme: ucpe_theme
+region: navigation
+weight: -8
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility: {  }
