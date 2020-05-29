@@ -1,4 +1,4 @@
-uuid: a1baeeae-fbb0-4a37-9e8d-e18fbe102656
+uuid: 0a813a7c-480f-428a-b0fb-6ce338b3c392
 langcode: en
 status: true
 dependencies:
@@ -17,9 +17,9 @@ content:
   field_statistics_3_up_:
     type: entity_reference_revisions_entity_view
     weight: 0
-    label: hidden
+    label: above
     settings:
-      view_mode: default
+      view_mode: preview
       link: ''
     third_party_settings:
       ds:

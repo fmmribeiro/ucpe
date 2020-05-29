@@ -1,10 +1,10 @@
-uuid: fe14a575-079a-4bf4-bc37-482a3f67a158
+uuid: 3c2a479d-4a49-4e41-a1fd-893ea11596b8
 langcode: en
 status: true
 dependencies: {  }
 id: three_up_statistics_combined
-label: 'Three-up Statistics'
+label: 'Three up statistics combined'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Paragraph type to combine the 3 individual 3-up blocks'
 behavior_plugins: {  }

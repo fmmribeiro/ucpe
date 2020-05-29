@@ -67,10 +67,19 @@ settings:
       horizontal_rule:
         enabled: true
         weight: 13
+      blockquote:
+        weight: 15
+        enabled: false
+      content_sections:
+        weight: 17
+        enabled: false
       three_up_statistic:
         weight: 23
         enabled: false
+      text_two_thirds_one_third:
+        weight: 27
+        enabled: false
       three_up_statistics_combined:
         enabled: true
-        weight: 24
+        weight: 30
 field_type: entity_reference_revisions

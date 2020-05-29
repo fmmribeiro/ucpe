@@ -1,4 +1,4 @@
-uuid: 6ed3a1b3-3f8c-4d20-92be-8d35aa33886a
+uuid: 76144a70-101b-4a3e-b356-f9ae4f516cb0
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ field_name: field_statistics_3_up_
 entity_type: paragraph
 bundle: three_up_statistics_combined
 label: 'Statistics (3-up)'
-description: 'Add 3 statistics with text.'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -25,40 +25,49 @@ settings:
     target_bundles:
       three_up_statistic: three_up_statistic
     target_bundles_drag_drop:
-      blockquotes:
-        weight: 13
-        enabled: false
-      full_width_content:
-        weight: 14
-        enabled: false
-      horizontal_rule:
-        weight: 15
-        enabled: false
-      intro_paragraph:
+      blockquote:
         weight: 16
         enabled: false
-      in_brief:
+      blockquotes:
         weight: 17
         enabled: false
-      perspectives_and_case_study_hero:
+      content_sections:
         weight: 18
         enabled: false
-      perspectives_and_story_header:
+      full_width_content:
         weight: 19
         enabled: false
-      statistics:
+      horizontal_rule:
         weight: 20
         enabled: false
-      text_one_two_third:
+      intro_paragraph:
         weight: 21
         enabled: false
-      text_two_one_third:
+      in_brief:
         weight: 22
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 23
+        enabled: false
+      perspectives_and_story_header:
+        weight: 24
+        enabled: false
+      statistics:
+        weight: 25
+        enabled: false
+      text_one_two_third:
+        weight: 26
+        enabled: false
+      text_two_one_third:
+        weight: 27
+        enabled: false
+      text_two_thirds_one_third:
+        weight: 28
         enabled: false
       three_up_statistic:
         enabled: true
-        weight: 23
+        weight: 29
       three_up_statistics_combined:
-        weight: 24
+        weight: 30
         enabled: false
 field_type: entity_reference_revisions
