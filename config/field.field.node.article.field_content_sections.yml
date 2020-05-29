@@ -11,7 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.text_one_two_third
     - paragraphs.paragraphs_type.text_two_one_third
-    - paragraphs.paragraphs_type.three_up_statistics_combined
+    - paragraphs.paragraphs_type.three_up_statistics_combo
   module:
     - entity_reference_revisions
 id: node.article.field_content_sections
@@ -35,7 +35,7 @@ settings:
       text_one_two_third: text_one_two_third
       text_two_one_third: text_two_one_third
       horizontal_rule: horizontal_rule
-      three_up_statistics_combined: three_up_statistics_combined
+      three_up_statistics_combo: three_up_statistics_combo
     target_bundles_drag_drop:
       blockquotes:
         enabled: true
@@ -67,10 +67,16 @@ settings:
       horizontal_rule:
         enabled: true
         weight: 13
+      blockquote:
+        weight: 15
+        enabled: false
+      content_sections:
+        weight: 17
+        enabled: false
       three_up_statistic:
         weight: 23
         enabled: false
-      three_up_statistics_combined:
+      three_up_statistics_combo:
         enabled: true
-        weight: 24
+        weight: 28
 field_type: entity_reference_revisions
