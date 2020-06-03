@@ -1,6 +1,6 @@
 uuid: 86aa94a0-0181-49dc-b7e2-6d379244237c
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - block_content.type.blockquote_photo_and_link_

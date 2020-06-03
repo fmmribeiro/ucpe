@@ -1,9 +1,10 @@
-uuid: 64faeada-c663-49e5-b145-1a68e6913489
+uuid: bf8e9346-6593-4ca2-8c48-71f35d465380
 langcode: en
 status: true
 dependencies:
   config:
     - block_content.type.blockquote_photo_and_link_
+    - core.entity_view_mode.block_content.blockquotes
     - field.field.block_content.blockquote_photo_and_link_.body
     - field.field.block_content.blockquote_photo_and_link_.field_blockquote_image
     - field.field.block_content.blockquote_photo_and_link_.field_quote_attribute
@@ -42,10 +43,10 @@ third_party_settings:
       right:
         - body
         - field_read_their_story
-id: block_content.blockquote_photo_and_link_.default
+id: block_content.blockquote_photo_and_link_.blockquotes
 targetEntityType: block_content
 bundle: blockquote_photo_and_link_
-mode: default
+mode: blockquotes
 content:
   body:
     label: hidden
