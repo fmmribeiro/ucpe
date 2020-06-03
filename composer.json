@@ -131,6 +131,17 @@
             "drush updb -y",
             "drush cim -y",
             "git checkout local_config"
+        ],
+        "pull-pantheon-config": [
+            "terminus backup:create ucpe.dev --element=db",
+            "rm -f /app/database.sql.gz",
+            "terminus backup:get ucpe.dev --element=db --to=/app/database.sql.gz",
+            "drush sql:drop -y",
+            "zcat database.sql.gz | drush sqlc",
+            "drush updb -y",
+            "drush cex -y",
+            "drush cim -y",
+            "git checkout local_config"
         ]
     },
     "extra": {
