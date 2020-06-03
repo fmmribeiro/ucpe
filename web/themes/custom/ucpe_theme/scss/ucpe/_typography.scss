@@ -200,3 +200,24 @@ strong,
 thead,
 dt {
 }
+
+// OFFSET ANY STYLES THAT AFFECT THE MENU background
+#toolbar-administration {
+  font-size: 12px !important;
+}
+ul.toolbar-menu,
+nav.tabs ul.nav-tabs {
+  li {
+    margin: 0;
+    padding-left: inherit;
+    &:before {
+      display: none;
+    }
+    ul li:before {
+      display: none;
+    }
+    a {
+      font-size: 14px !important;
+    }
+  }
+}
