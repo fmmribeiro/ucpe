@@ -1,3 +1,10 @@
+::selection {
+  background: $mustard; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $mustard; /* Gecko Browsers */
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -21,11 +28,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $sans-serif-font;
+  font-family: $serif-font;
 }
 
 h1 {
-  @include font($serif-font, 5rem, blue, $serif-semibold, 5rem);
+  //@include heading_XL($maroon);
+  //span {@include heading_XL($maroon);}
 }
 
 h2 {
@@ -51,6 +59,7 @@ p {
     $sans-serif-regular,
     $baseline * 1.5
   );
+  margin-bottom: $baseline * 1.5 !important;
 }
 
 ol,
@@ -110,7 +119,13 @@ blockquote {
     border-left: 4px $salmon solid;
     padding-left: $baseline * 3.5;
     font-style: $italic;
-    @include font($serif-font, 1.625rem, $black, $serif-regular, 2.5rem);
+    @include font(
+      $serif-font,
+      $baseline * 1.625,
+      $black,
+      $serif-regular,
+      $baseline * 2.5
+    );
 
     p {
       font-family: inherit;
@@ -120,10 +135,10 @@ blockquote {
       font-style: normal;
       @include font(
         $sans-serif-font,
-        1rem,
+        $baseline,
         $black,
         $sans-serif-regular,
-        1.5rem
+        $baseline * 1.5
       );
     }
   }
