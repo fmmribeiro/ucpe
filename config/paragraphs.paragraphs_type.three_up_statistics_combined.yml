@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: three_up_statistics_combined
-label: 'Three-up Statistics'
+label: 'Three up statistics combined'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Paragraph type to combine the 3 individual 3-up blocks'
 behavior_plugins: {  }

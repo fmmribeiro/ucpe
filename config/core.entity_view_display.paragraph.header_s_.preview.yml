@@ -1,0 +1,32 @@
+uuid: 9cc8fbeb-d122-4094-b13e-4f7ec2ae15bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.header_s_.field_content_section_header
+    - field.field.paragraph.header_s_.field_header_type
+    - paragraphs.paragraphs_type.header_s_
+  module:
+    - options
+id: paragraph.header_s_.preview
+targetEntityType: paragraph
+bundle: header_s_
+mode: preview
+content:
+  field_content_section_header:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

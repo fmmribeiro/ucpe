@@ -1,0 +1,29 @@
+uuid: 63b8cdda-a918-42d1-88a8-caa1eab6115d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_statistics_combo.field_add_stats_3_
+    - paragraphs.paragraphs_type.three_up_statistics_combo
+  module:
+    - paragraphs
+id: paragraph.three_up_statistics_combo.default
+targetEntityType: paragraph
+bundle: three_up_statistics_combo
+mode: default
+content:
+  field_add_stats_3_:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: three_up_statistic
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

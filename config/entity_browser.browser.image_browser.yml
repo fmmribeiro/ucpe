@@ -11,7 +11,7 @@ name: image_browser
 label: 'Image Browser'
 display: modal
 display_configuration:
-  width: '650'
+  width: '500'
   height: '500'
   link_text: 'Select images'
   auto_open: false
@@ -23,7 +23,7 @@ widgets:
   742e40f6-d8a1-4fdc-968f-b875e5627a9e:
     settings:
       view: media_library
-      view_display: entity_browser_1
+      view_display: media_image_select
       submit_text: 'Select entities'
       auto_select: false
     uuid: 742e40f6-d8a1-4fdc-968f-b875e5627a9e

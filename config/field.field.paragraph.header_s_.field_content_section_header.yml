@@ -1,0 +1,19 @@
+uuid: 2842f18c-8f8b-41c5-a29d-d4a7e92870b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_section_header
+    - paragraphs.paragraphs_type.header_s_
+id: paragraph.header_s_.field_content_section_header
+field_name: field_content_section_header
+entity_type: paragraph
+bundle: header_s_
+label: 'Content Section Header'
+description: 'Enter the text for the header'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

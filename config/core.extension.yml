@@ -55,6 +55,7 @@ module:
   redirect: 0
   redis: 0
   responsive_image: 0
+  responsive_menu: 0
   search: 0
   simple_sitemap: 0
   smart_trim: 0

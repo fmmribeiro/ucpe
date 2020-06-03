@@ -17,9 +17,9 @@ content:
   field_statistics_3_up_:
     type: entity_reference_revisions_entity_view
     weight: 0
-    label: hidden
+    label: above
     settings:
-      view_mode: default
+      view_mode: preview
       link: ''
     third_party_settings:
       ds:

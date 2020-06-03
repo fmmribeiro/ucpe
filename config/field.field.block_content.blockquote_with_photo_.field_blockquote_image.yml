@@ -22,7 +22,8 @@ settings:
     target_bundles:
       image: image
     sort:
-      field: _none
+      field: name
+      direction: ASC
     auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference

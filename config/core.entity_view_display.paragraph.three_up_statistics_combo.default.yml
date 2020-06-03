@@ -1,0 +1,24 @@
+uuid: 25c3fcc4-0930-4cac-9afc-95807a670b13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_statistics_combo.field_add_stats_3_
+    - paragraphs.paragraphs_type.three_up_statistics_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.three_up_statistics_combo.default
+targetEntityType: paragraph
+bundle: three_up_statistics_combo
+mode: default
+content:
+  field_add_stats_3_:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

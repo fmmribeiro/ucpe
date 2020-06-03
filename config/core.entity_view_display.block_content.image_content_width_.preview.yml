@@ -52,4 +52,5 @@ content:
       image_link: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_content_width_image: true
