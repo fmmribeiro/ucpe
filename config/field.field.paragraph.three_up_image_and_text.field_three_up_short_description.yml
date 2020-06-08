@@ -1,0 +1,27 @@
+uuid: 94646e28-7791-4195-94fc-7c9b22427170
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_three_up_short_description
+    - paragraphs.paragraphs_type.three_up_image_and_text
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
+id: paragraph.three_up_image_and_text.field_three_up_short_description
+field_name: field_three_up_short_description
+entity_type: paragraph
+bundle: three_up_image_and_text
+label: 'Short Description'
+description: 'Enter one short sentence.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
