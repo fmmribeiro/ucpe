@@ -1,0 +1,38 @@
+uuid: d5387880-eb87-4c36-939c-155cb6d15bb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_illust_img_combo.field_add_image_text_3_
+    - field.field.paragraph.three_up_illust_img_combo.field_optional_title
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
+  module:
+    - paragraphs
+id: paragraph.three_up_illust_img_combo.default
+targetEntityType: paragraph
+bundle: three_up_illust_img_combo
+mode: default
+content:
+  field_add_image_text_3_:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: three_up_image_and_text
+    third_party_settings: {  }
+    region: content
+  field_optional_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

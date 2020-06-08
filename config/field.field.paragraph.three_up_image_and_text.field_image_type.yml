@@ -1,0 +1,21 @@
+uuid: 2f45656d-70d2-4e81-84b3-3bb1bbd769d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_type
+    - paragraphs.paragraphs_type.three_up_image_and_text
+  module:
+    - options
+id: paragraph.three_up_image_and_text.field_image_type
+field_name: field_image_type
+entity_type: paragraph
+bundle: three_up_image_and_text
+label: 'Image Type'
+description: 'Choose what type of images you will be using: photos (png, jpg) or an illustration (svg)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

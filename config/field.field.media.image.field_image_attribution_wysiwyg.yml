@@ -1,0 +1,27 @@
+uuid: fae22508-45b2-49c8-9c61-e29f349431c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_attribution_wysiwyg
+    - media.type.image
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: media.image.field_image_attribution_wysiwyg
+field_name: field_image_attribution_wysiwyg
+entity_type: media
+bundle: image
+label: 'Image Attribution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

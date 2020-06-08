@@ -1,0 +1,20 @@
+uuid: bd1b444c-41b6-4d37-9829-e1fb8d1091ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_three_up_short_description
+field_name: field_three_up_short_description
+entity_type: paragraph
+type: text
+settings:
+  max_length: 400
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

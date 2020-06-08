@@ -12,6 +12,7 @@ dependencies:
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.text_one_two_third
     - paragraphs.paragraphs_type.text_two_one_third
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
     - paragraphs.paragraphs_type.three_up_statistics_combo
   module:
     - entity_reference_revisions
@@ -38,6 +39,7 @@ settings:
       horizontal_rule: horizontal_rule
       header_s_: header_s_
       three_up_statistics_combo: three_up_statistics_combo
+      three_up_illust_img_combo: three_up_illust_img_combo
     target_bundles_drag_drop:
       blockquotes:
         enabled: true
@@ -84,7 +86,10 @@ settings:
       three_up_statistics_combo:
         enabled: true
         weight: 28
-      three_up_statistics_combined:
+      three_up_illust_img_combo:
+        enabled: true
         weight: 31
+      three_up_image_and_text:
+        weight: 32
         enabled: false
 field_type: entity_reference_revisions

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.blockquote_image
+    - field.field.media.image.field_image_attribution_wysiwyg
     - field.field.media.image.field_media_image
     - image.style.blockquote_image
     - media.type.image
@@ -31,6 +32,7 @@ content:
     region: content
 hidden:
   created: true
+  field_image_attribution_wysiwyg: true
   name: true
   thumbnail: true
   uid: true

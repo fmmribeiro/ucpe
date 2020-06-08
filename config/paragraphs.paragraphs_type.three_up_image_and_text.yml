@@ -1,0 +1,10 @@
+uuid: 285fe4b3-2672-48c4-9076-c191a115cd2d
+langcode: en
+status: true
+dependencies: {  }
+id: three_up_image_and_text
+label: 'Three-up Illustration/Image and Text'
+icon_uuid: null
+icon_default: null
+description: 'Illustration or image with text.'
+behavior_plugins: {  }
