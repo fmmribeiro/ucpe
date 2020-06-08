@@ -43,11 +43,11 @@ settings:
       horizontal_rule:
         weight: 23
         enabled: false
-      intro_paragraph:
-        weight: 24
-        enabled: false
       in_brief:
         weight: 25
+        enabled: false
+      intro_paragraph:
+        weight: 24
         enabled: false
       perspectives_and_case_study_hero:
         weight: 26

@@ -1,0 +1,10 @@
+uuid: a6b4f1d8-10cd-4c8b-be03-09d1520ac9a0
+langcode: en
+status: true
+dependencies: {  }
+id: large_image_with_caption_left_or
+label: 'Large Image with Caption (Left or Right)'
+icon_uuid: null
+icon_default: null
+description: 'Add an image with caption and optional image attribution and align either left or right. '
+behavior_plugins: {  }

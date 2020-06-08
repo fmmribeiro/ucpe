@@ -1,0 +1,31 @@
+uuid: fe1a3dfc-9eb8-4f76-8691-532ce9643994
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.storage.paragraph.field_image_with_caption
+    - paragraphs.paragraphs_type.large_image_with_caption_left_or
+  module:
+    - entity_reference_revisions
+id: paragraph.large_image_with_caption_left_or.field_image_with_caption
+field_name: field_image_with_caption
+entity_type: paragraph
+bundle: large_image_with_caption_left_or
+label: 'Add Image with Caption (Left or Right)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      left_or_right_image_with_caption: left_or_right_image_with_caption
+    sort:
+      field: info
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference_revisions
