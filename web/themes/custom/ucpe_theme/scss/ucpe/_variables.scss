@@ -2,6 +2,75 @@ html {
   font-size: 16px;
 }
 
+//helpers
+@mixin listreset() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+//RFS Function
+
+$baseline: 1rem;
+
+$minScreen: 20rem;
+$maxScreen: 50rem;
+$minFont: 0.875rem;
+$maxFont: 1.125rem;
+
+// $h1: 2rem;
+// $h2: 1.5rem;
+// $h3: 1.25rem;
+// $h4: 1rem;
+// $h5: 0.875rem;
+// $h6: 0.75rem;
+
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: $min-vw) {
+      @each $property in $properties {
+        #{$property}: calc(
+          #{$min-value} +
+            #{strip-unit($max-value - $min-value)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+    }
+
+    @media screen and (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
+}
+
+body {
+  line-height: $baseline;
+  margin: 0 auto;
+}
+
 @mixin make-container-fluid() {
   padding-right: 15px;
   padding-left: 15px;
@@ -14,14 +83,15 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  @media (min-width: 768px) {
-    width: 750px;
+
+  @include screen("tablet-wide") {
+    max-width: 960px;
   }
-  @media (min-width: 992px) {
-    width: 970px;
+  @include screen("desktop") {
+    max-width: 1200px;
   }
-  @media (min-width: 1200px) {
-    width: 1170px;
+  @include screen("desktop-wide") {
+    max-width: 1440px;
   }
 }
 
@@ -33,8 +103,8 @@ $breakpoints: (
   "phablet": 560px,
   "tablet-small": 640px,
   "tablet": 768px,
-  "tablet-wide": 1024px,
-  "desktop": 1248px,
+  "tablet-wide": 993px,
+  "desktop": 1201px,
   "desktop-wide": 1440px
 );
 
@@ -93,6 +163,175 @@ $italic: italic;
   }
 }
 
+// HEADERS
+@mixin heading_XL($color) {
+  @include font(
+    $serif-font,
+    #{$baseline * 3.5},
+    $color,
+    $serif-bold,
+    #{$baseline * 1.5}
+  );
+}
+
+@mixin heading_L($color) {
+  @include font(
+    $serif-font,
+    #{$baseline * 3},
+    $color,
+    $serif-bold,
+    #{$baseline * 1.5}
+  );
+}
+
+@mixin heading_M($color) {
+  @include font(
+    $serif-font,
+    #{$baseline * 2},
+    $color,
+    $serif-bold,
+    #{$baseline * 1.5}
+  );
+}
+@mixin heading_S($color) {
+  @include font(
+    $serif-font,
+    #{$baseline * 1.5},
+    $color,
+    $serif-bold,
+    #{$baseline * 1.65}
+  );
+}
+@mixin heading_XS($color) {
+  @include font(
+    $serif-font,
+    #{$baseline * 1.125},
+    $color,
+    $serif-bold,
+    #{$baseline}
+  );
+}
+
+//BODY COPY
+@mixin bodycopy_XL($color, $bold: false) {
+  @include font($sans-serif-font, #{$baseline * 1.5}, $color, (), #{$baseline});
+  @if $bold {
+    font-weight: $sans-serif-semibold;
+  } @else {
+    font-weight: $sans-serif-regular;
+  }
+}
+
+@mixin bodycopy_L($color, $bold: false) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 1.125},
+    $color,
+    (),
+    #{$baseline * 1.8}
+  );
+  @if $bold {
+    font-weight: $sans-serif-semibold;
+  } @else {
+    font-weight: $sans-serif-regular;
+  }
+}
+
+@mixin bodycopy_M($color, $bold: false) {
+  @include font($sans-serif-font, #{$baseline}, $color, (), #{$baseline * 1.8});
+  @if $bold {
+    font-weight: $sans-serif-semibold;
+  } @else {
+    font-weight: $sans-serif-regular;
+  }
+}
+
+@mixin bodycopy_S($color, $bold: false) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 0.875},
+    $color,
+    (),
+    #{$baseline * 1.4}
+  );
+  @if $bold {
+    font-weight: $sans-serif-semibold;
+  } @else {
+    font-weight: $sans-serif-regular;
+  }
+}
+
+@mixin bodycopy_XS($color, $bold: false) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 0.75},
+    $color,
+    (),
+    #{$baseline * 1.4}
+  );
+  @if $bold {
+    font-weight: $sans-serif-semibold;
+  } @else {
+    font-weight: $sans-serif-regular;
+  }
+}
+
+//UTILITY
+@mixin utility_XL($color) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 1.25},
+    $color,
+    $sans-serif-semibold,
+    #{$baseline * 1.2}
+  );
+  text-transform: uppercase;
+}
+
+@mixin utility_L($color) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline},
+    $color,
+    $sans-serif-semibold,
+    #{$baseline * 1.8}
+  );
+  text-transform: uppercase;
+}
+
+@mixin utility_M($color) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 0.875},
+    $color,
+    $sans-serif-semibold,
+    #{$baseline * 1.8}
+  );
+  text-transform: uppercase;
+}
+
+@mixin utility_S($color) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 0.8125},
+    $color,
+    $sans-serif-regular,
+    #{$baseline * 1.4}
+  );
+  text-transform: uppercase;
+}
+
+@mixin utility_XS($color) {
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 0.75},
+    $color,
+    $sans-serif-semibold,
+    #{$baseline * 1.4}
+  );
+  text-transform: uppercase;
+}
+
 // COLORS
 // primary
 $maroon: #800000;
@@ -127,67 +366,7 @@ $black: #110f0f;
 $black_02: #585858;
 $black_03: #767676;
 
-//RFS Function
-
-$baseline: 1rem;
-
-$minScreen: 20rem;
-$maxScreen: 50rem;
-$minFont: 0.875rem;
-$maxFont: 1.125rem;
-
-$h1: 2rem;
-$h2: 1.5rem;
-$h3: 1.25rem;
-$h4: 1rem;
-$h5: 0.875rem;
-$h6: 0.75rem;
-
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
-
-    @media screen and (min-width: $min-vw) {
-      @each $property in $properties {
-        #{$property}: calc(
-          #{$min-value} +
-            #{strip-unit($max-value - $min-value)} *
-            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
-        );
-      }
-    }
-
-    @media screen and (min-width: $max-vw) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
-  }
-}
-
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: border-box;
-  height: 100%;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
-}
-
-body {
-  line-height: $baseline;
-  margin: 0 auto;
-}
+//HELPFUL MIXINS
 
 @mixin responsive-ratio($x, $y, $pseudo: false) {
   $padding: unquote(($y / $x) * 100 + "%");

@@ -1,0 +1,177 @@
+footer.footer {
+  background-color: $bg-02;
+  padding: $baseline * 5 0 0;
+
+  .wrapper {
+    @include make-container();
+  }
+
+  .top {
+    @include make-row();
+    padding-bottom: $baseline * 3.5;
+  }
+
+  .bottom {
+    @include make-container-fluid();
+    background-color: $maroon;
+    padding: $baseline 0;
+
+    p {
+      @include bodycopy_S($white, $bold: false) margin-bottom: 0 !important;
+    }
+  }
+
+  .brand {
+    @include make-sm-column(12);
+    @include make-md-column(3);
+
+    img {
+      max-width: 300px;
+      margin-bottom: $baseline * 2;
+      @include screen("tablet-wide") {
+        max-width: 80%;
+        margin-bottom: $baseline * 4;
+      }
+    }
+    address {
+      @include bodycopy_M($black, $bold: false);
+      margin-bottom: $baseline * 2;
+    }
+  }
+
+  h3 {
+    @include utility_S($black_02);
+    margin: 0 0 $baseline;
+    display: block;
+  }
+
+  .find_your_fit {
+    @include make-sm-column(6);
+    @include make-md-column(5);
+    margin-bottom: $baseline * 2;
+
+    border-right: solid 1px $divider-gray;
+  }
+
+  .fyf,
+  .lm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    .fyf_item {
+      padding-right: $baseline;
+
+      a,
+      a:active,
+      a:visited,
+      a:focus {
+        @include heading_XS($black);
+        border-bottom: solid 2px $maroon;
+        display: inline-block;
+        line-height: $baseline * 1.5;
+        margin-bottom: $baseline/2;
+        text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $maroon;
+        }
+      }
+
+      p {
+        @include bodycopy_S($black, $bold: false);
+      }
+    }
+  }
+
+  .lm_social {
+    @include make-sm-column(6);
+    @include make-md-column(4);
+    @include screen("tablet-wide") {
+      padding-left: $baseline * 3;
+    }
+
+    .lm {
+      @include listreset();
+
+      li {
+        padding: 0 $baseline 0 0;
+
+        a,
+        a:active,
+        a:visited,
+        a:focus {
+          border-bottom: solid 2px $black_03;
+          @include bodycopy_S($black, $bold: false);
+          text-decoration: none;
+          transition: all 0.5s;
+
+          &:hover {
+            border-color: $maroon;
+            color: $maroon;
+          }
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .social {
+      padding-top: $baseline * 5;
+      ul {
+        @include listreset();
+
+        li {
+          display: inline-block;
+          padding: 0;
+
+          &:before {
+            display: none;
+          }
+          a,
+          a:active,
+          a:visited,
+          a:focus {
+            font-size: $baseline * 1.75;
+            margin-right: $baseline;
+            text-decoration: none;
+
+            span {
+              visibility: hidden;
+              display: none;
+            }
+            &:before {
+              transition: all 0.5s;
+            }
+            &.twitter:before {
+              @include iconfont($maroon, "\54");
+            }
+            &.facebook:before {
+              @include iconfont($maroon, "\46");
+            }
+            &.linkdin:before {
+              @include iconfont($maroon, "\4c");
+            }
+            &.instagram:before {
+              @include iconfont($maroon, "\49");
+            }
+
+            &:hover:before {
+              color: darken($maroon, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
