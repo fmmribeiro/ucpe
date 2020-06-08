@@ -1,0 +1,58 @@
+uuid: d2cf82eb-ef46-4feb-bb28-a08fe8001041
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - core.entity_view_mode.block_content.preview
+    - field.field.block_content.left_or_right_image_with_caption.field_align
+    - field.field.block_content.left_or_right_image_with_caption.field_caption
+    - field.field.block_content.left_or_right_image_with_caption.field_image_attribution_2
+    - field.field.block_content.left_or_right_image_with_caption.field_image_l_r_caption
+    - image.style.thumbnail
+  module:
+    - media
+    - smart_trim
+    - text
+id: block_content.left_or_right_image_with_caption.preview
+targetEntityType: block_content
+bundle: left_or_right_image_with_caption
+mode: preview
+content:
+  field_caption:
+    type: smart_trim
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+      summary_handler: full
+    third_party_settings: {  }
+  field_image_attribution_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_l_r_caption:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_align: true

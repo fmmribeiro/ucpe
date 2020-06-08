@@ -1,0 +1,25 @@
+uuid: ce853bbc-7517-4b04-ac19-452907621a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.large_image_with_caption_left_or.field_image_with_caption
+    - paragraphs.paragraphs_type.large_image_with_caption_left_or
+  module:
+    - entity_reference_revisions
+id: paragraph.large_image_with_caption_left_or.preview
+targetEntityType: paragraph
+bundle: large_image_with_caption_left_or
+mode: preview
+content:
+  field_image_with_caption:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

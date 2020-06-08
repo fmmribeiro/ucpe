@@ -1,0 +1,21 @@
+uuid: 93e0c1ff-1598-4d97-af48-dee424273d27
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.storage.block_content.field_align
+  module:
+    - options
+id: block_content.left_or_right_image_with_caption.field_align
+field_name: field_align
+entity_type: block_content
+bundle: left_or_right_image_with_caption
+label: Align
+description: 'Choose which side you want the image to be on.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

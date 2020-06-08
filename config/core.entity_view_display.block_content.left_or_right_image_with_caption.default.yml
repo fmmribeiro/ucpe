@@ -1,0 +1,42 @@
+uuid: 83314ece-ade5-411c-87f3-d1e6f4b3ee1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.field.block_content.left_or_right_image_with_caption.field_align
+    - field.field.block_content.left_or_right_image_with_caption.field_caption
+    - field.field.block_content.left_or_right_image_with_caption.field_image_attribution_2
+    - field.field.block_content.left_or_right_image_with_caption.field_image_l_r_caption
+  module:
+    - text
+id: block_content.left_or_right_image_with_caption.default
+targetEntityType: block_content
+bundle: left_or_right_image_with_caption
+mode: default
+content:
+  field_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_attribution_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image_l_r_caption:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_align: true
