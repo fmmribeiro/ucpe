@@ -1,0 +1,31 @@
+uuid: 0b11fb2c-21c3-4a63-995a-2b07eeaf4b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_content_width
+    - block_content.type.cta_full_width
+    - field.storage.paragraph.field_add_cta
+    - paragraphs.paragraphs_type.cta
+id: paragraph.cta.field_add_cta
+field_name: field_add_cta
+entity_type: paragraph
+bundle: cta
+label: 'Add CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      cta_content_width: cta_content_width
+      cta_full_width: cta_full_width
+    sort:
+      field: info
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: cta_content_width
+field_type: entity_reference

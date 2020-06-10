@@ -1,0 +1,8 @@
+uuid: bc306a0c-0a74-48be-9418-548647b153e9
+langcode: en
+status: true
+dependencies: {  }
+id: cta_full_width
+label: 'CTA: Full-Width'
+revision: 0
+description: 'Text and button on the left, image on the right. '
