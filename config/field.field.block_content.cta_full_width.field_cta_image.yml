@@ -1,0 +1,29 @@
+uuid: 6ced50da-02b0-4ca8-8d12-66c6543f29fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_full_width
+    - field.storage.block_content.field_cta_image
+    - media.type.image
+id: block_content.cta_full_width.field_cta_image
+field_name: field_cta_image
+entity_type: block_content
+bundle: cta_full_width
+label: Image
+description: 'Portrait image format will work best. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

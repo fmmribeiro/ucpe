@@ -1,0 +1,8 @@
+uuid: 3e5cbb63-bfdf-41a3-be21-eb1f004a301b
+langcode: en
+status: true
+dependencies: {  }
+id: cta_content_width
+label: 'CTA: Content Width'
+revision: 0
+description: 'Text and link on the right, image on the left.'

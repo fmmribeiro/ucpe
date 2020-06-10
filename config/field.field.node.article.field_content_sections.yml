@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content_sections
     - node.type.article
     - paragraphs.paragraphs_type.blockquotes
+    - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
@@ -39,6 +40,7 @@ settings:
       text_two_one_third: text_two_one_third
       horizontal_rule: horizontal_rule
       header_s_: header_s_
+      cta: cta
       large_image_with_caption_left_or: large_image_with_caption_left_or
       three_up_statistics_combo: three_up_statistics_combo
       three_up_illust_img_combo: three_up_illust_img_combo
@@ -52,6 +54,9 @@ settings:
       content_sections:
         weight: 17
         enabled: false
+      cta:
+        enabled: true
+        weight: 24
       full_width_content:
         enabled: true
         weight: -17

@@ -1,0 +1,23 @@
+uuid: 8998a91a-298c-4fce-9385-5de6dc8adaba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.cta.field_add_cta
+    - paragraphs.paragraphs_type.cta
+id: paragraph.cta.preview
+targetEntityType: paragraph
+bundle: cta
+mode: preview
+content:
+  field_add_cta:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
