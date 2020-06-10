@@ -8,10 +8,8 @@ dependencies:
     - field.field.paragraph.three_up_image_and_text.field_three_up_image
     - field.field.paragraph.three_up_image_and_text.field_three_up_short_description
     - field.field.paragraph.three_up_image_and_text.field_three_up_title
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.three_up_image_and_text
   module:
-    - media
     - text
 id: paragraph.three_up_image_and_text.preview
 targetEntityType: paragraph
@@ -19,12 +17,12 @@ bundle: three_up_image_and_text
 mode: preview
 content:
   field_three_up_image:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
-      image_link: ''
+      view_mode: blockquote_image
+      link: false
     third_party_settings: {  }
     region: content
   field_three_up_short_description:

@@ -1,0 +1,19 @@
+uuid: 1ef9a68a-0ba6-4cad-9eb2-53af91a61fed
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_tertiary_button
+field_name: field_tertiary_button
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

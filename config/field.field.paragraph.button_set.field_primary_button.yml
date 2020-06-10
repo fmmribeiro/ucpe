@@ -1,0 +1,23 @@
+uuid: ede632ed-d743-49ea-b3fd-43a41ccbb498
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_primary_button
+    - paragraphs.paragraphs_type.button_set
+  module:
+    - link
+id: paragraph.button_set.field_primary_button
+field_name: field_primary_button
+entity_type: paragraph
+bundle: button_set
+label: 'Primary Button'
+description: 'Add a primary button (gold)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

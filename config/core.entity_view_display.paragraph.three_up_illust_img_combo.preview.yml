@@ -9,19 +9,17 @@ dependencies:
     - paragraphs.paragraphs_type.three_up_illust_img_combo
   module:
     - ds
-    - entity_reference_revisions
+    - paragraphs
 id: paragraph.three_up_illust_img_combo.preview
 targetEntityType: paragraph
 bundle: three_up_illust_img_combo
 mode: preview
 content:
   field_add_image_text_3_:
-    type: entity_reference_revisions_entity_view
+    type: paragraph_summary
     weight: 1
     label: above
-    settings:
-      view_mode: preview
-      link: ''
+    settings: {  }
     third_party_settings:
       ds:
         ds_limit: ''
