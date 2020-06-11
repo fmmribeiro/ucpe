@@ -74,7 +74,6 @@
         "jcalderonzumba/gastonjs": "^1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
         "mikey179/vfsstream": "^1.2",
-        "phpunit/phpunit": "^4.8",
         "squizlabs/php_codesniffer": "^3.4.0",
         "symfony/css-selector": "^2.8"
     },
@@ -175,9 +174,6 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
-        "platform": {
-            "php": "7.0.8"
-        }
+        "sort-packages": true
     }
 }
