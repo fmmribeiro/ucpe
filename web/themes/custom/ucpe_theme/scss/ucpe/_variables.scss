@@ -193,6 +193,7 @@ $italic: italic;
     #{$baseline * 1.5}
   );
 }
+
 @mixin heading_S($color) {
   @include font(
     $serif-font,
@@ -208,13 +209,19 @@ $italic: italic;
     #{$baseline * 1.125},
     $color,
     $serif-bold,
-    #{$baseline}
+    #{$baseline * 1.35}
   );
 }
 
 //BODY COPY
 @mixin bodycopy_XL($color, $bold: false) {
-  @include font($sans-serif-font, #{$baseline * 1.5}, $color, (), #{$baseline});
+  @include font(
+    $sans-serif-font,
+    #{$baseline * 1.5},
+    $color,
+    (),
+    #{$baseline * 2}
+  );
   @if $bold {
     font-weight: $sans-serif-semibold;
   } @else {
@@ -392,6 +399,30 @@ $black_03: #767676;
     position: absolute;
     left: 50%;
     margin-left: -$width/2;
+  }
+}
+
+// Responsive Video
+@mixin video() {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 }
 

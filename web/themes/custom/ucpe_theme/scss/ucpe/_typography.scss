@@ -51,7 +51,9 @@ h5 {
 h6 {
 }
 
-p {
+p,
+p:last-child,
+p:last-of-type {
   @include font(
     $sans-serif-font,
     $baseline,
@@ -59,7 +61,7 @@ p {
     $sans-serif-regular,
     $baseline * 1.5
   );
-  margin-bottom: $baseline * 1.5 !important;
+  margin-bottom: $baseline * 1.5;
 }
 
 ol,
@@ -81,6 +83,8 @@ ul {
 
     ul {
       margin: $baseline/2 0;
+      padding: 0;
+
       li:before {
         @include iconfont($black, "\66");
       }
@@ -119,27 +123,20 @@ blockquote {
     border-left: 4px $salmon solid;
     padding-left: $baseline * 3.5;
     font-style: $italic;
-    @include font(
-      $serif-font,
-      $baseline * 1.625,
-      $black,
-      $serif-regular,
-      $baseline * 2.5
-    );
 
     p {
-      font-family: inherit;
+      @include font(
+        $serif-font,
+        $baseline * 1.625,
+        $black,
+        $serif-regular,
+        $baseline * 2.5
+      );
     }
 
     footer {
+      @include bodycopy_M($black, $bold: false);
       font-style: normal;
-      @include font(
-        $sans-serif-font,
-        $baseline,
-        $black,
-        $sans-serif-regular,
-        $baseline * 1.5
-      );
     }
   }
 
@@ -159,29 +156,39 @@ blockquote {
 
     .q {
       border-left: 0;
+      padding-left: 0;
+      @include screen("phablet") {
+        padding-left: $baseline * 3.5;
+      }
     }
   }
 
-  a {
-    font-style: normal;
-    @include font($sans-serif-font, 1rem, $plum, $sans-serif-semibold, 1.5rem);
-    padding-bottom: 2px;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-      &:after {
-        padding-left: $baseline/2;
-      }
+  &.link {
+    .headshot {
+      margin-bottom: $baseline * 4;
     }
 
-    &:after {
-      @include iconfont(inherit, "\66");
-      font-size: 1.5rem;
-      vertical-align: middle;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+    a {
+      font-style: normal;
+      @include bodycopy_M($black, $bold: true);
+      padding-bottom: 2px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        &:after {
+          padding-left: $baseline/2;
+        }
+      }
+
+      &:after {
+        @include iconfont(inherit, "\66");
+        font-size: 1.5rem;
+        vertical-align: middle;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
     }
   }
 }
