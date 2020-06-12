@@ -6642,7 +6642,7 @@ nav.tabs ul.nav-tabs li {
     position: relative;
     right: 0;
     display: inline-block;
-    transition: .3s; }
+    transition: 0.3s; }
   .learnmore:hover {
     text-decoration: none; }
     .learnmore:hover:after {
@@ -6675,7 +6675,7 @@ nav.tabs ul.nav-tabs li {
     position: relative;
     right: 0;
     display: inline-block;
-    transition: .1s; }
+    transition: 0.1s; }
   .btn.external:after, .btn.arrow-right:after, .btn.arrow-down:after {
     margin-left: 10px; }
   .btn.external:after {
@@ -6814,7 +6814,8 @@ nav.tabs ul.nav-tabs li {
     color: #110f0f;
     font-weight: 500;
     line-height: 4rem; }
-  .stat_number .pre, .stat_number .post {
+  .stat_number .pre,
+  .stat_number .post {
     font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
     font-size: 2rem;
     color: #110f0f;
@@ -7077,7 +7078,7 @@ nav.tabs ul.nav-tabs li {
       @media only screen and (min-width: 768px) {
         .cta_aos .wrapper .content:before {
           background-color: #800000;
-          content: '';
+          content: "";
           height: calc(100% + 1rem);
           position: absolute;
           right: 0;
@@ -7093,14 +7094,15 @@ nav.tabs ul.nav-tabs li {
       @media only screen and (min-width: 768px) {
         .cta_aos .wrapper .content:after {
           background-color: #eae5e1;
-          content: '';
+          content: "";
           position: absolute;
           height: 150%;
           left: -15px;
           bottom: -100%;
           width: 1000rem;
           z-index: -5; } }
-      .cta_aos .wrapper .content h3, .cta_aos .wrapper .content p {
+      .cta_aos .wrapper .content h3,
+      .cta_aos .wrapper .content p {
         color: #ffffff; }
       .cta_aos .wrapper .content h3 {
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7195,7 +7197,8 @@ nav.tabs ul.nav-tabs li {
   .story_profile dl {
     margin-bottom: 0; }
     @media only screen and (min-width: 768px) {
-      .story_profile dl dt, .story_profile dl dd {
+      .story_profile dl dt,
+      .story_profile dl dd {
         float: left; } }
     .story_profile dl dt {
       font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
@@ -7428,7 +7431,8 @@ nav.tabs ul.nav-tabs li {
       .related_content_grid .secondary_content .secondary_editorial:after {
         clear: both; }
       @media only screen and (max-width: 767px) {
-        .related_content_grid .secondary_content .secondary_editorial .img, .related_content_grid .secondary_content .secondary_editorial .content {
+        .related_content_grid .secondary_content .secondary_editorial .img,
+        .related_content_grid .secondary_content .secondary_editorial .content {
           padding: 0 !important;
           margin: 1rem 0 !important; } }
       .related_content_grid .secondary_content .secondary_editorial .img {
