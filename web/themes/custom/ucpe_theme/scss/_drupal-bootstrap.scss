@@ -17,7 +17,9 @@
 @import "ucpe/fonts";
 @import "ucpe/typography";
 @import "ucpe/components";
+@import "ucpe/images";
 @import "ucpe/base";
+
 @import "ucpe/footer";
 
 // jQuery UI style overrides.
@@ -33,22 +35,15 @@ ul {
 
 // Page header.
 .page-header {
-  margin-top: 0;
+  // margin-top: 0;
 }
 
 // Footer.
 .footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #e5e5e5;
-}
-
-// Paragraphs.
-p:last-child,
-.form-group:last-child,
-.panel:last-child {
-  margin-bottom: 0;
+  // margin-top: 45px;
+  // padding-top: 35px;
+  // padding-bottom: 36px;
+  // border-top: 1px solid #e5e5e5;
 }
 
 // Help region.
