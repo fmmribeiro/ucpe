@@ -10,7 +10,6 @@ module:
   config_suite: 0
   devel: 0
   stage_file_proxy: 0
-  twig_vardumper: 0
   twig_xdebug: 0
 theme: {  }
 blacklist:
