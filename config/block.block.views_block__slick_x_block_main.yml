@@ -1,0 +1,30 @@
+uuid: 44a78d99-a7c9-49d7-911e-cbac087b6340
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.slick_x
+  module:
+    - system
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__slick_x_block_main
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:slick_x-block_main'
+settings:
+  id: 'views_block:slick_x-block_main'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /perspectives/perspective-test
+    negate: false
+    context_mapping: {  }

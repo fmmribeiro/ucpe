@@ -1,0 +1,10 @@
+uuid: c6f3da9d-31a9-4d92-b938-d7b3dd3fc76a
+langcode: en
+status: true
+dependencies: {  }
+id: carousel
+label: Carousel
+icon_uuid: null
+icon_default: null
+description: 'Combine Images and captions into a carousel. '
+behavior_plugins: {  }

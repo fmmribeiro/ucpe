@@ -1,0 +1,15 @@
+uuid: a577c4e7-a45f-47b8-b495-ea503a8f8a65
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.image_carousel
+    - field.field.paragraph.carousel.field_slides
+    - paragraphs.paragraphs_type.carousel
+id: paragraph.carousel.image_carousel
+targetEntityType: paragraph
+bundle: carousel
+mode: image_carousel
+content: {  }
+hidden:
+  field_slides: true

@@ -1,0 +1,52 @@
+uuid: af0fd346-ffc6-42fe-9746-c20e5123b0f4
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - slick_example
+_core:
+  default_config_hash: zTNrS9LttMmv-gsriGCkYy-n_BHuIxhfbZCwJXMFcoA
+id: x_carousel
+name: x_carousel
+label: 'X Carousel'
+weight: -8
+group: ''
+skin: boxed-carousel
+breakpoints: 2
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    centerMode: true
+    centerPadding: 20px
+    dots: true
+    initialSlide: 2
+    lazyLoad: ''
+    slidesToShow: 3
+    speed: 1000
+    swipeToSlide: true
+    cssEase: 'cubic-bezier(0.950, 0.050, 0.795, 0.035)'
+    variableWidth: true
+    waitForAnimate: false
+  responsives:
+    responsive:
+      -
+        breakpoint: 900
+        unslick: false
+        settings:
+          centerMode: true
+          centerPadding: 20px
+          slidesToShow: 3
+          speed: 1000
+          swipeToSlide: true
+          waitForAnimate: false
+      -
+        breakpoint: 641
+        unslick: false
+        settings:
+          centerMode: true
+          centerPadding: 20px
+          speed: 1000
+          swipeToSlide: true
+          waitForAnimate: false

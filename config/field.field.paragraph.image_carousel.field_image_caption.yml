@@ -1,0 +1,19 @@
+uuid: a5170481-6676-4488-ab95-c840c9d8b709
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_caption
+    - paragraphs.paragraphs_type.image_carousel
+id: paragraph.image_carousel.field_image_caption
+field_name: field_image_caption
+entity_type: paragraph
+bundle: image_carousel
+label: 'Image Caption'
+description: 'Add a caption to the image.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

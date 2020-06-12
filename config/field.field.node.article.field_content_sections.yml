@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.image_carousel_combo
     - paragraphs.paragraphs_type.large_image_with_caption_left_or
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.text_one_two_third
@@ -46,6 +47,7 @@ settings:
       large_image_with_caption_left_or: large_image_with_caption_left_or
       three_up_statistics_combo: three_up_statistics_combo
       three_up_illust_img_combo: three_up_illust_img_combo
+      image_carousel_combo: image_carousel_combo
     target_bundles_drag_drop:
       blockquote:
         weight: -30
@@ -71,6 +73,12 @@ settings:
       horizontal_rule:
         enabled: true
         weight: -37
+      image_carousel:
+        weight: 32
+        enabled: false
+      image_carousel_combo:
+        enabled: true
+        weight: 33
       in_brief:
         weight: -36
         enabled: false

@@ -1,0 +1,27 @@
+uuid: 21509cf8-d768-4d97-8287-4a436cea7d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_caption
+    - paragraphs.paragraphs_type.image_carousel
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.image_carousel.field_carousel_caption
+field_name: field_carousel_caption
+entity_type: paragraph
+bundle: image_carousel
+label: Caption
+description: 'Add a caption to accompany the image. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
