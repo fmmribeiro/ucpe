@@ -1,0 +1,37 @@
+uuid: 0a00163b-ce8f-4650-b93a-ebce0625e509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta.field_add_cta
+    - paragraphs.paragraphs_type.cta
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.cta.default
+targetEntityType: paragraph
+bundle: cta
+mode: default
+content:
+  field_add_cta:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true

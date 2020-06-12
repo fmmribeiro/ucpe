@@ -1,0 +1,29 @@
+uuid: 972f7d74-06d9-4178-8e33-994d3541c9cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_content_width
+    - field.storage.block_content.field_cta_image
+    - media.type.image
+id: block_content.cta_content_width.field_cta_image
+field_name: field_cta_image
+entity_type: block_content
+bundle: cta_content_width
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

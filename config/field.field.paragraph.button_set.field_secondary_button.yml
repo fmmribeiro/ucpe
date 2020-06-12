@@ -1,0 +1,23 @@
+uuid: 39da7a70-0ae9-4e7a-9d4d-0123da31a242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_secondary_button
+    - paragraphs.paragraphs_type.button_set
+  module:
+    - link
+id: paragraph.button_set.field_secondary_button
+field_name: field_secondary_button
+entity_type: paragraph
+bundle: button_set
+label: 'Secondary Button'
+description: 'Add a secondary button (white with maroon outline)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

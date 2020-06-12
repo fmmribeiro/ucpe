@@ -1,0 +1,29 @@
+uuid: f9dfb487-82e5-4292-92fd-855c88973f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_three_up_image
+    - media.type.image
+    - paragraphs.paragraphs_type.three_up_image_and_text
+id: paragraph.three_up_image_and_text.field_three_up_image
+field_name: field_three_up_image
+entity_type: paragraph
+bundle: three_up_image_and_text
+label: Image
+description: '223x167px. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

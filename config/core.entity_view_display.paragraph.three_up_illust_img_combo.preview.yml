@@ -1,0 +1,35 @@
+uuid: 066737e5-ebbe-44dd-b1af-29ffd83c1d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.three_up_illust_img_combo.field_add_image_text_3_
+    - field.field.paragraph.three_up_illust_img_combo.field_optional_title
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
+  module:
+    - ds
+    - paragraphs
+id: paragraph.three_up_illust_img_combo.preview
+targetEntityType: paragraph
+bundle: three_up_illust_img_combo
+mode: preview
+content:
+  field_add_image_text_3_:
+    type: paragraph_summary
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+  field_optional_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

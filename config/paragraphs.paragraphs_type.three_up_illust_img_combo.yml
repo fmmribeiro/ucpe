@@ -1,0 +1,10 @@
+uuid: ffb5fdaa-737c-4a39-9c9f-d3f6adb1b33a
+langcode: en
+status: true
+dependencies: {  }
+id: three_up_illust_img_combo
+label: 'Three-up Illustration/Image and Text Combo'
+icon_uuid: null
+icon_default: null
+description: 'Combines the 3 pieces together'
+behavior_plugins: {  }

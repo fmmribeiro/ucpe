@@ -1,0 +1,37 @@
+uuid: 0bb0ec8f-faf4-4775-9199-c77828b44ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.large_image_with_caption_left_or.field_image_with_caption
+    - paragraphs.paragraphs_type.large_image_with_caption_left_or
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.large_image_with_caption_left_or.default
+targetEntityType: paragraph
+bundle: large_image_with_caption_left_or
+mode: default
+content:
+  field_image_with_caption:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true

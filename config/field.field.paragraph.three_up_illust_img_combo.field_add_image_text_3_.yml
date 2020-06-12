@@ -1,0 +1,79 @@
+uuid: 976ec6bd-f8d3-4455-90cd-79ba472838a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_image_text_3_
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
+    - paragraphs.paragraphs_type.three_up_image_and_text
+  module:
+    - entity_reference_revisions
+id: paragraph.three_up_illust_img_combo.field_add_image_text_3_
+field_name: field_add_image_text_3_
+entity_type: paragraph
+bundle: three_up_illust_img_combo
+label: 'Add Image/Text (3)'
+description: 'Add 3 image/text items'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      three_up_image_and_text: three_up_image_and_text
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 18
+        enabled: false
+      blockquotes:
+        weight: 19
+        enabled: false
+      content_sections:
+        weight: 20
+        enabled: false
+      full_width_content:
+        weight: 21
+        enabled: false
+      header_s_:
+        weight: 22
+        enabled: false
+      horizontal_rule:
+        weight: 23
+        enabled: false
+      in_brief:
+        weight: 25
+        enabled: false
+      intro_paragraph:
+        weight: 24
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 26
+        enabled: false
+      perspectives_and_story_header:
+        weight: 27
+        enabled: false
+      statistics:
+        weight: 28
+        enabled: false
+      text_one_two_third:
+        weight: 29
+        enabled: false
+      text_two_one_third:
+        weight: 30
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 31
+        enabled: false
+      three_up_image_and_text:
+        enabled: true
+        weight: 32
+      three_up_statistic:
+        weight: 33
+        enabled: false
+      three_up_statistics_combo:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

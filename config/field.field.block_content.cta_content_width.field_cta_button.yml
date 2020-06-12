@@ -1,0 +1,23 @@
+uuid: ecc714ac-3974-49a2-820d-5ac9d185c1b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_content_width
+    - field.storage.block_content.field_cta_button
+  module:
+    - link
+id: block_content.cta_content_width.field_cta_button
+field_name: field_cta_button
+entity_type: block_content
+bundle: cta_content_width
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

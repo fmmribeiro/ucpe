@@ -1,0 +1,27 @@
+uuid: 2f66b645-514f-4e43-9f23-0f10c76a8b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.storage.block_content.field_image_attribution_2
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.left_or_right_image_with_caption.field_image_attribution_2
+field_name: field_image_attribution_2
+entity_type: block_content
+bundle: left_or_right_image_with_caption
+label: 'Image Attribution'
+description: 'Name of photographer if required.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

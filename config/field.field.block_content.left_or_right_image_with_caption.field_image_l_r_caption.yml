@@ -1,0 +1,29 @@
+uuid: 77197f3b-6fc8-4782-972b-e7d2951f70d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.storage.block_content.field_image_l_r_caption
+    - media.type.image
+id: block_content.left_or_right_image_with_caption.field_image_l_r_caption
+field_name: field_image_l_r_caption
+entity_type: block_content
+bundle: left_or_right_image_with_caption
+label: Image
+description: 'Images should be at least 688x516'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

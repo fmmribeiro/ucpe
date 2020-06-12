@@ -6,12 +6,16 @@ dependencies:
     - field.storage.node.field_content_sections
     - node.type.article
     - paragraphs.paragraphs_type.blockquotes
+    - paragraphs.paragraphs_type.button_set
+    - paragraphs.paragraphs_type.cta
     - paragraphs.paragraphs_type.full_width_content
     - paragraphs.paragraphs_type.header_s_
     - paragraphs.paragraphs_type.horizontal_rule
+    - paragraphs.paragraphs_type.large_image_with_caption_left_or
     - paragraphs.paragraphs_type.statistics
     - paragraphs.paragraphs_type.text_one_two_third
     - paragraphs.paragraphs_type.text_two_one_third
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
     - paragraphs.paragraphs_type.three_up_statistics_combo
   module:
     - entity_reference_revisions
@@ -31,60 +35,79 @@ settings:
     negate: 0
     target_bundles:
       blockquotes: blockquotes
+      button_set: button_set
+      cta: cta
       full_width_content: full_width_content
+      header_s_: header_s_
+      horizontal_rule: horizontal_rule
       statistics: statistics
       text_one_two_third: text_one_two_third
       text_two_one_third: text_two_one_third
-      horizontal_rule: horizontal_rule
-      header_s_: header_s_
+      large_image_with_caption_left_or: large_image_with_caption_left_or
       three_up_statistics_combo: three_up_statistics_combo
+      three_up_illust_img_combo: three_up_illust_img_combo
     target_bundles_drag_drop:
+      blockquote:
+        weight: -30
+        enabled: false
       blockquotes:
         enabled: true
-        weight: -19
-      intro_paragraph:
-        weight: -18
+        weight: -43
+      button_set:
+        enabled: true
+        weight: -41
+      content_sections:
+        weight: -29
         enabled: false
+      cta:
+        enabled: true
+        weight: -40
       full_width_content:
         enabled: true
-        weight: -17
+        weight: -39
+      header_s_:
+        enabled: true
+        weight: -38
+      horizontal_rule:
+        enabled: true
+        weight: -37
       in_brief:
-        weight: -16
+        weight: -36
         enabled: false
+      intro_paragraph:
+        weight: -42
+        enabled: false
+      large_image_with_caption_left_or:
+        enabled: true
+        weight: -27
       perspectives_and_case_study_hero:
-        weight: -15
+        weight: -35
         enabled: false
       perspectives_and_story_header:
-        weight: -14
+        weight: -34
         enabled: false
       statistics:
         enabled: true
-        weight: -13
+        weight: -33
       text_one_two_third:
         enabled: true
-        weight: -12
+        weight: -32
       text_two_one_third:
         enabled: true
-        weight: -11
-      horizontal_rule:
+        weight: -31
+      three_up_illust_img_combo:
         enabled: true
-        weight: 13
-      blockquote:
-        weight: 15
+        weight: -25
+      three_up_image_and_text:
+        weight: -24
         enabled: false
-      content_sections:
-        weight: 17
-        enabled: false
-      header_s_:
-        enabled: true
-        weight: 21
       three_up_statistic:
-        weight: 23
+        weight: -28
+        enabled: false
+      three_up_statistics_combined:
+        weight: -23
         enabled: false
       three_up_statistics_combo:
         enabled: true
-        weight: 28
-      three_up_statistics_combined:
-        weight: 31
-        enabled: false
+        weight: -26
 field_type: entity_reference_revisions

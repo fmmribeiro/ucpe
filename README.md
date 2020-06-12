@@ -47,6 +47,13 @@ You must have the following on your machine to build this site:
     lando terminus auth:whoami
     ```
 
+    You can also get the list of available urls using `lando info` to get lots of information. You can also show urls for your lando site using:
+    
+    ```yaml
+    lando info | grep urls
+    ```
+    
+    
     If Pantheon doesn't know who you are, you can log in with:
 
     ```yaml

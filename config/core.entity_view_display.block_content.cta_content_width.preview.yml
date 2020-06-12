@@ -1,0 +1,98 @@
+uuid: 0ed479c9-7efb-46d9-9398-9fd3bd392e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_content_width
+    - core.entity_view_mode.block_content.preview
+    - field.field.block_content.cta_content_width.body
+    - field.field.block_content.cta_content_width.field_cta_button
+    - field.field.block_content.cta_content_width.field_cta_image
+    - field.field.block_content.cta_content_width.field_cta_title
+    - image.style.thumbnail
+  module:
+    - ds
+    - link
+    - media
+    - smart_trim
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+    regions:
+      left:
+        - field_cta_image
+      right:
+        - field_cta_title
+        - body
+        - field_cta_button
+id: block_content.cta_content_width.preview
+targetEntityType: block_content
+bundle: cta_content_width
+mode: preview
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 2
+    settings:
+      trim_length: 100
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: right
+  field_cta_button:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: right
+  field_cta_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: left
+  field_cta_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: right
+hidden: {  }

@@ -6,5 +6,5 @@ id: three_up_statistics_combo
 label: 'Three up statistics combo'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Paragraph type to combine the 3 individual 3-up blocks'
 behavior_plugins: {  }

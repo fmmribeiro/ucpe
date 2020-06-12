@@ -1,0 +1,33 @@
+uuid: 595ae359-94cb-488c-9665-c487b8d8ebd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_up_illust_img_combo.field_add_image_text_3_
+    - field.field.paragraph.three_up_illust_img_combo.field_optional_title
+    - paragraphs.paragraphs_type.three_up_illust_img_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.three_up_illust_img_combo.default
+targetEntityType: paragraph
+bundle: three_up_illust_img_combo
+mode: default
+content:
+  field_add_image_text_3_:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_optional_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

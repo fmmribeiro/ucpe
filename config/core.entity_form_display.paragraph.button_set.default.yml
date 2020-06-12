@@ -1,0 +1,70 @@
+uuid: 920170ed-e983-4c7d-a24b-dbf24f96c754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.button_set.field_primary_button
+    - field.field.paragraph.button_set.field_secondary_button
+    - field.field.paragraph.button_set.field_tertiary_button
+    - paragraphs.paragraphs_type.button_set
+  module:
+    - link_attributes
+id: paragraph.button_set.default
+targetEntityType: paragraph
+bundle: button_set
+mode: default
+content:
+  field_primary_button:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_secondary_button:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_tertiary_button:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        aria-label: true
+        id: false
+        name: false
+        rel: false
+        class: false
+        accesskey: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+hidden:
+  created: true
+  status: true

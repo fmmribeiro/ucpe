@@ -1,0 +1,54 @@
+uuid: a77c2626-a572-4325-8178-b171692aa663
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.button_set.field_primary_button
+    - field.field.paragraph.button_set.field_secondary_button
+    - field.field.paragraph.button_set.field_tertiary_button
+    - paragraphs.paragraphs_type.button_set
+  module:
+    - link
+id: paragraph.button_set.preview
+targetEntityType: paragraph
+bundle: button_set
+mode: preview
+content:
+  field_primary_button:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_secondary_button:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_tertiary_button:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

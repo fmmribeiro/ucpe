@@ -1,0 +1,27 @@
+uuid: 14833742-ff8c-477e-933c-6791591b6ae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.left_or_right_image_with_caption
+    - field.storage.block_content.field_caption
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.left_or_right_image_with_caption.field_caption
+field_name: field_caption
+entity_type: block_content
+bundle: left_or_right_image_with_caption
+label: Caption
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,44 @@
+uuid: c257aec6-99ca-4da2-855e-488bc336b34f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.three_up_image_and_text.field_image_type
+    - field.field.paragraph.three_up_image_and_text.field_three_up_image
+    - field.field.paragraph.three_up_image_and_text.field_three_up_short_description
+    - field.field.paragraph.three_up_image_and_text.field_three_up_title
+    - paragraphs.paragraphs_type.three_up_image_and_text
+  module:
+    - text
+id: paragraph.three_up_image_and_text.preview
+targetEntityType: paragraph
+bundle: three_up_image_and_text
+mode: preview
+content:
+  field_three_up_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: blockquote_image
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_three_up_short_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_three_up_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_image_type: true

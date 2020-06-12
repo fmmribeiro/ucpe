@@ -1,0 +1,19 @@
+uuid: f823a2f7-a5f5-42b5-8982-e9d70a1b361d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_three_up_title
+    - paragraphs.paragraphs_type.three_up_image_and_text
+id: paragraph.three_up_image_and_text.field_three_up_title
+field_name: field_three_up_title
+entity_type: paragraph
+bundle: three_up_image_and_text
+label: 'Image/Text Title'
+description: 'Title directly under image and above sentence. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

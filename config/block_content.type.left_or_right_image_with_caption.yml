@@ -1,0 +1,8 @@
+uuid: 0abfaf92-25ed-4fb9-a61e-03ccc14f9f72
+langcode: en
+status: true
+dependencies: {  }
+id: left_or_right_image_with_caption
+label: 'Left or Right Image with Caption'
+revision: 0
+description: 'Image with a caption that can align either right or left with caption and image attribution.'
