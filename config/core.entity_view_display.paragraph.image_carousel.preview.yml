@@ -1,0 +1,23 @@
+uuid: 4ffdbd4a-7aaf-4c3e-ba8f-dd204f7005a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.image_carousel.field_image_caption
+    - field.field.paragraph.image_carousel.field_image_ref_image
+    - paragraphs.paragraphs_type.image_carousel
+id: paragraph.image_carousel.preview
+targetEntityType: paragraph
+bundle: image_carousel
+mode: preview
+content:
+  field_image_caption:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_image_ref_image: true

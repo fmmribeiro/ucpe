@@ -1,0 +1,21 @@
+uuid: e3351ccc-53b5-4021-a700-7488bcc5f48f
+langcode: en
+status: true
+dependencies: {  }
+id: image_carousel
+name: image_carousel
+label: 'Image Carousel'
+weight: 0
+group: ''
+skin: ''
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    centerMode: true
+    dots: true
+    initialSlide: 2
+    lazyLoad: ondemand
+    slidesToShow: 3
+    speed: 1000

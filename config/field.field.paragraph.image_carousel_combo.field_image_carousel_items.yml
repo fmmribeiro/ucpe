@@ -1,0 +1,97 @@
+uuid: 78f6e8b5-677b-4f13-9d4f-1a4b51436fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_carousel_items
+    - paragraphs.paragraphs_type.image_carousel
+    - paragraphs.paragraphs_type.image_carousel_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.image_carousel_combo.field_image_carousel_items
+field_name: field_image_carousel_items
+entity_type: paragraph
+bundle: image_carousel_combo
+label: 'Image Carousel Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_carousel: image_carousel
+    target_bundles_drag_drop:
+      blockquote:
+        weight: 24
+        enabled: false
+      blockquotes:
+        weight: 25
+        enabled: false
+      button_set:
+        weight: 26
+        enabled: false
+      content_sections:
+        weight: 27
+        enabled: false
+      cta:
+        weight: 28
+        enabled: false
+      full_width_content:
+        weight: 29
+        enabled: false
+      header_s_:
+        weight: 30
+        enabled: false
+      horizontal_rule:
+        weight: 31
+        enabled: false
+      image_carousel:
+        enabled: true
+        weight: 32
+      image_carousel_combo:
+        weight: 33
+        enabled: false
+      in_brief:
+        weight: 35
+        enabled: false
+      intro_paragraph:
+        weight: 34
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 36
+        enabled: false
+      perspectives_and_case_study_hero:
+        weight: 37
+        enabled: false
+      perspectives_and_story_header:
+        weight: 38
+        enabled: false
+      statistics:
+        weight: 39
+        enabled: false
+      text_one_two_third:
+        weight: 40
+        enabled: false
+      text_two_one_third:
+        weight: 41
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 42
+        enabled: false
+      three_up_image_and_text:
+        weight: 43
+        enabled: false
+      three_up_statistic:
+        weight: 44
+        enabled: false
+      three_up_statistics_combined:
+        weight: 45
+        enabled: false
+      three_up_statistics_combo:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions
