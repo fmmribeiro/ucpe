@@ -6464,7 +6464,9 @@ h5,
 h6 {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif; }
 
-p, p:last-child, p:last-of-type {
+p,
+p:last-child,
+p:last-of-type {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #110f0f;
@@ -6890,7 +6892,7 @@ nav.tabs ul.nav-tabs li {
         font-size: 1.5rem;
         color: #800000;
         font-weight: 900;
-        line-height: 1.65rem;
+        line-height: 2rem;
         margin-top: 0; }
     .three-up-promo .col:nth-child(odd) {
       background-color: #f3f3f3; }
@@ -7188,7 +7190,7 @@ nav.tabs ul.nav-tabs li {
     font-size: 1.5rem;
     color: #110f0f;
     font-weight: 900;
-    line-height: 1.65rem;
+    line-height: 2rem;
     margin: 0 0 2rem; }
   .story_profile dl {
     margin-bottom: 0; }
@@ -7219,7 +7221,7 @@ nav.tabs ul.nav-tabs li {
       .story_profile dl dd p {
         margin-bottom: 0 !important; }
 
-.related_content_block {
+.related_program {
   margin-right: -15px;
   margin-left: -15px;
   position: relative;
@@ -7231,59 +7233,59 @@ nav.tabs ul.nav-tabs li {
   padding-right: 15px;
   padding-left: 15px;
   margin-bottom: 2rem; }
-  .related_content_block:before, .related_content_block:after {
+  .related_program:before, .related_program:after {
     display: table;
     content: " "; }
-  .related_content_block:after {
+  .related_program:after {
     clear: both; }
   @media (min-width: 768px) {
-    .related_content_block {
+    .related_program {
+      float: left;
+      width: 58.33333%; } }
+  @media (min-width: 992px) {
+    .related_program {
       float: left;
       width: 50%; } }
-  @media (min-width: 992px) {
-    .related_content_block {
-      float: left;
-      width: 41.66667%; } }
-  .related_content_block.right {
+  .related_program.right {
     float: right; }
     @media only screen and (min-width: 768px) {
-      .related_content_block.right {
+      .related_program.right {
         margin-left: 1rem;
         padding-left: 1rem; } }
     @media only screen and (min-width: 993px) {
-      .related_content_block.right {
+      .related_program.right {
         border-left: solid 1px #dcdcdc;
         margin-right: -16.66667%;
         margin-left: 2rem;
         padding-left: 2rem; } }
-  .related_content_block.left {
+  .related_program.left {
     float: left; }
     @media only screen and (min-width: 768px) {
-      .related_content_block.left {
+      .related_program.left {
         margin-right: 1rem;
         padding-right: 1rem; } }
     @media only screen and (min-width: 993px) {
-      .related_content_block.left {
+      .related_program.left {
         border-right: solid 1px #dcdcdc;
         margin-left: -16.6667%;
         margin-right: 2rem;
         padding-right: 2rem; } }
-  .related_content_block .img {
+  .related_program .img {
     background-color: #f3f3f3;
     margin-bottom: 3rem;
     padding: 1rem;
     position: relative;
     text-align: center; }
-    .related_content_block .img svg {
+    .related_program .img svg {
       fill: currentColor;
       color: #800000; }
-    .related_content_block .img .category {
+    .related_program .img .category {
       background-color: #ffffff;
       bottom: -40px;
-      padding: 0.5rem;
+      padding: 1rem;
       position: absolute;
       left: 0; }
-      .related_content_block .img .category .category_name {
+      .related_program .img .category .category_name {
         background-color: white;
         font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
         font-size: 0.75rem;
@@ -7291,17 +7293,192 @@ nav.tabs ul.nav-tabs li {
         font-weight: 500;
         line-height: 1.4rem;
         text-transform: uppercase;
-        left: -18px;
+        left: -24px;
         position: relative;
         padding: 2px;
         top: -12px; }
-  .related_content_block .content h4 {
+      .related_program .img .category .meta {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        color: #110f0f;
+        line-height: 1.4rem;
+        font-weight: 400;
+        display: block; }
+        @media only screen and (min-width: 993px) {
+          .related_program .img .category .meta {
+            display: inline;
+            position: relative;
+            top: -12px; } }
+        .related_program .img .category .meta .divider {
+          color: #dcdcdc;
+          margin: 0 0.5rem;
+          vertical-align: bottom;
+          font-size: 1.2rem; }
+  .related_program .content h4 {
     font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
     font-size: 1.125rem;
     color: #110f0f;
     font-weight: 900;
-    line-height: 1.35rem;
+    line-height: 1.5rem;
     margin-bottom: 1rem; }
+
+.related_content_grid {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    .related_content_grid {
+      float: left;
+      width: 100%; } }
+  .related_content_grid h2 {
+    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #800000;
+    line-height: 2rem;
+    font-weight: 500;
+    margin: 4rem 0; }
+  .related_content_grid .related_program {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .related_content_grid .related_program {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .related_content_grid .related_program {
+        float: left;
+        width: 41.66667%; } }
+    .related_content_grid .related_program .img {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .related_content_grid .related_program .img {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 1200px) {
+        .related_content_grid .related_program .img {
+          float: left;
+          width: 100%; } }
+    .related_content_grid .related_program .content {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      @media (min-width: 768px) {
+        .related_content_grid .related_program .content {
+          float: left;
+          width: 50%; } }
+      @media (min-width: 1200px) {
+        .related_content_grid .related_program .content {
+          float: left;
+          width: 100%; } }
+      .related_content_grid .related_program .content h4 {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.5rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 2rem; }
+  .related_content_grid .secondary_content {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .related_content_grid .secondary_content {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .related_content_grid .secondary_content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 1200px) {
+      .related_content_grid .secondary_content {
+        left: 8.33333%; } }
+    @media only screen and (max-width: 767px) {
+      .related_content_grid .secondary_content {
+        margin-left: -15px !important;
+        margin-right: -15px !important; } }
+    .related_content_grid .secondary_content .secondary_editorial {
+      margin-bottom: 2rem;
+      width: 100%; }
+      .related_content_grid .secondary_content .secondary_editorial:before, .related_content_grid .secondary_content .secondary_editorial:after {
+        display: table;
+        content: " "; }
+      .related_content_grid .secondary_content .secondary_editorial:after {
+        clear: both; }
+      @media only screen and (max-width: 767px) {
+        .related_content_grid .secondary_content .secondary_editorial .img, .related_content_grid .secondary_content .secondary_editorial .content {
+          padding: 0 !important;
+          margin: 1rem 0 !important; } }
+      .related_content_grid .secondary_content .secondary_editorial .img {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; }
+        @media (min-width: 768px) {
+          .related_content_grid .secondary_content .secondary_editorial .img {
+            float: left;
+            width: 33.33333%; } }
+      .related_content_grid .secondary_content .secondary_editorial .content {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px; }
+        @media (min-width: 768px) {
+          .related_content_grid .secondary_content .secondary_editorial .content {
+            float: left;
+            width: 66.66667%; } }
+      .related_content_grid .secondary_content .secondary_editorial .meta .type {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #800000;
+        font-weight: 500;
+        line-height: 1.8rem;
+        text-transform: uppercase; }
+      .related_content_grid .secondary_content .secondary_editorial .meta .divider {
+        color: #dcdcdc;
+        margin: 0 0.5rem;
+        vertical-align: middle;
+        font-size: 1.2rem; }
+      .related_content_grid .secondary_content .secondary_editorial .meta .date {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #110f0f;
+        line-height: 1.4rem;
+        font-weight: 400; }
+      .related_content_grid .secondary_content .secondary_editorial h4 {
+        font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+        font-size: 1.125rem;
+        color: #110f0f;
+        font-weight: 900;
+        line-height: 1.5rem; }
+      .related_content_grid .secondary_content .secondary_editorial .program_name {
+        font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        color: #110f0f;
+        line-height: 1.4rem;
+        font-weight: 500; }
 
 .headshot {
   display: block;
@@ -7344,7 +7521,11 @@ nav.tabs ul.nav-tabs li {
   padding: 0;
   overflow: hidden;
   padding-bottom: 56.25%; }
-  .video .embed-responsive-item, .video iframe, .video embed, .video object, .video video {
+  .video .embed-responsive-item,
+  .video iframe,
+  .video embed,
+  .video object,
+  .video video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7591,7 +7772,7 @@ footer.footer {
         font-size: 1.125rem;
         color: #110f0f;
         font-weight: 900;
-        line-height: 1.35rem;
+        line-height: 1.5rem;
         border-bottom: solid 2px #800000;
         display: inline-block;
         line-height: 1.5rem;

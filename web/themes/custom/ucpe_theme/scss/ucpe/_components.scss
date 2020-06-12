@@ -541,10 +541,10 @@
 
 // Related Content Block
 
-.related_content_block {
+.related_program {
   @include make-row();
-  @include make-sm-column(6);
-  @include make-md-column(5);
+  @include make-sm-column(7);
+  @include make-md-column(6);
   margin-bottom: $baseline * 2;
 
   &.right {
@@ -591,17 +591,33 @@
     .category {
       background-color: $white;
       bottom: -40px;
-      padding: $baseline/2;
+      padding: $baseline;
       position: absolute;
       left: 0;
 
       .category_name {
         background-color: white;
         @include utility_XS($black);
-        left: -18px;
+        left: -24px;
         position: relative;
         padding: 2px;
         top: -12px;
+      }
+
+      .meta {
+        @include bodycopy_XS($black, $bold: false);
+        display: block;
+        @include screen("tablet-wide") {
+          display: inline;
+          position: relative;
+          top: -12px;
+        }
+        .divider {
+          color: $divider-gray;
+          margin: 0 $baseline/2;
+          vertical-align: bottom;
+          font-size: $baseline * 1.2;
+        }
       }
     }
   }
@@ -609,6 +625,84 @@
     h4 {
       @include heading_XS($black);
       margin-bottom: $baseline;
+    }
+  }
+}
+
+.related_content_grid {
+  @include make-sm-column(12);
+
+  h2 {
+    @include bodycopy_XL($maroon, $bold: true);
+    margin: $baseline * 4 0;
+  }
+
+  .related_program {
+    @include make-sm-column(12);
+    @include make-lg-column(5);
+
+    .img {
+      @include make-sm-column(6);
+      @include make-lg-column(12);
+    }
+    .content {
+      @include make-sm-column(6);
+      @include make-lg-column(12);
+
+      h4 {
+        @include heading_S($black);
+      }
+    }
+  }
+
+  .secondary_content {
+    @include make-sm-column(12);
+    @include make-lg-column(5);
+    @include make-lg-column-push(1);
+    @include screen("tablet", $type: max) {
+      margin-left: -15px !important;
+      margin-right: -15px !important;
+    }
+
+    .secondary_editorial {
+      @include clearfix();
+      margin-bottom: $baseline * 2;
+      width: 100%;
+
+      @include screen("tablet", $type: max) {
+        .img,
+        .content {
+          padding: 0 !important;
+          margin: $baseline 0 !important;
+        }
+      }
+
+      .img {
+        @include make-sm-column(4);
+      }
+      .content {
+        @include make-sm-column(8);
+      }
+      .meta {
+        .type {
+          @include utility_M($maroon);
+        }
+        .divider {
+          color: $divider-gray;
+          margin: 0 $baseline/2;
+          vertical-align: middle;
+          font-size: $baseline * 1.2;
+        }
+        .date {
+          @include bodycopy_S($black);
+        }
+      }
+      h4 {
+        @include heading_XS($black);
+      }
+      .program_name {
+        @include bodycopy_S($black, $bold: true);
+      }
     }
   }
 }

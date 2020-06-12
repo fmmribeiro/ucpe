@@ -170,37 +170,34 @@ $italic: italic;
     #{$baseline * 3.5},
     $color,
     $serif-bold,
-    #{$baseline * 1.5}
+    #{$baseline * 1.75}
   );
 }
-
 @mixin heading_L($color) {
   @include font(
     $serif-font,
     #{$baseline * 3},
     $color,
     $serif-bold,
-    #{$baseline * 1.5}
+    #{$baseline * 1.75}
   );
 }
-
 @mixin heading_M($color) {
   @include font(
     $serif-font,
     #{$baseline * 2},
     $color,
     $serif-bold,
-    #{$baseline * 1.5}
+    #{$baseline * 1.75}
   );
 }
-
 @mixin heading_S($color) {
   @include font(
     $serif-font,
     #{$baseline * 1.5},
     $color,
     $serif-bold,
-    #{$baseline * 1.65}
+    #{$baseline * 2}
   );
 }
 @mixin heading_XS($color) {
@@ -209,7 +206,7 @@ $italic: italic;
     #{$baseline * 1.125},
     $color,
     $serif-bold,
-    #{$baseline * 1.35}
+    #{$baseline * 1.5}
   );
 }
 
