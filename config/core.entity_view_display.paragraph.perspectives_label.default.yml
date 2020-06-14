@@ -1,0 +1,21 @@
+uuid: 8b716d4f-4ac9-43f6-af26-9f76782efd52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.perspectives_label.field_pers
+    - paragraphs.paragraphs_type.perspectives_label
+id: paragraph.perspectives_label.default
+targetEntityType: paragraph
+bundle: perspectives_label
+mode: default
+content:
+  field_pers:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

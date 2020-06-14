@@ -1,0 +1,33 @@
+uuid: db5fd8c7-9ac5-4ee7-b739-a417afbe79d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_three_ups
+  module:
+    - ctools
+    - views
+  theme:
+    - ucpe_theme
+id: views_block__related_three_ups_related_articles
+theme: ucpe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:related_three_ups-related_articles'
+settings:
+  id: 'views_block:related_three_ups-related_articles'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

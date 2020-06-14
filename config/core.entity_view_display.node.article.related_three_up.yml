@@ -1,9 +1,9 @@
-uuid: 714e15c0-dc11-404f-ab04-db409ae49c57
+uuid: ae0287e3-97fb-4233-a27c-1488011eed70
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.related_three_up
     - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
@@ -18,45 +18,71 @@ dependencies:
     - field.field.node.article.field_topics
     - node.type.article
   module:
-    - text
+    - datetime
+    - ds
+    - entity_reference_revisions
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_hero_image
+        - field_date_written
+        - node_title
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
 _core:
-  default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
-id: node.article.teaser
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.related_three_up
 targetEntityType: node
 bundle: article
-mode: teaser
+mode: related_three_up
 content:
-  addtoany:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
+  field_date_written:
+    type: datetime_default
+    weight: 1
     region: content
-  body:
-    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: full_date
+    third_party_settings: {  }
+  field_hero_image:
+    type: entity_reference_revisions_entity_view
     weight: 0
     region: content
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
     label: hidden
+    settings:
+      view_mode: related_three_up
+      link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 3
     region: content
-  reading_time:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  addtoany: true
+  body: true
   field_areas_of_study: true
   field_author: true
   field_based_on: true
   field_content_sections: true
-  field_date_written: true
-  field_hero_image: true
   field_in_brief_perspective: true
   field_intro_paragraph: true
   field_lede: true
   field_related_programs: true
   field_topics: true
+  reading_time: true

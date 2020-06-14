@@ -1,0 +1,10 @@
+uuid: ce9fc543-441e-4dde-9ebb-b40c83968dcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.related_three_up
+label: 'Related Three-up'
+targetEntityType: paragraph
+cache: true

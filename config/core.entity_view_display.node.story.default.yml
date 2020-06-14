@@ -4,25 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.story.body
-    - field.field.node.story.field_date_and_lede
     - node.type.story
   module:
-    - entity_reference_revisions
     - user
 id: node.story.default
 targetEntityType: node
 bundle: story
 mode: default
 content:
-  field_date_and_lede:
-    weight: 1
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   links:
     weight: 0
     region: content

@@ -1,8 +1,9 @@
-uuid: 817a9b98-21ee-4f64-9040-ca310b3faa12
+uuid: eda76529-8c9a-4ee7-8d51-3a17e69b7a3d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.preview
     - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
@@ -23,18 +24,18 @@ dependencies:
     - user
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.default
+id: node.article.preview
 targetEntityType: node
 bundle: article
-mode: default
+mode: preview
 content:
   addtoany:
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_author:
-    weight: 12
+    weight: 11
     label: hidden
     settings:
       view_mode: teaser
@@ -43,7 +44,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_based_on:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       link: true
@@ -52,7 +53,7 @@ content:
     region: content
   field_content_sections:
     type: entity_reference_revisions_entity_view
-    weight: 11
+    weight: 10
     label: hidden
     settings:
       view_mode: default
@@ -61,7 +62,7 @@ content:
     region: content
   field_date_written:
     type: datetime_default
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -79,7 +80,7 @@ content:
     region: content
   field_in_brief_perspective:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -88,7 +89,7 @@ content:
     region: content
   field_intro_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 10
+    weight: 9
     label: hidden
     settings:
       view_mode: default
@@ -96,14 +97,14 @@ content:
     third_party_settings: {  }
     region: content
   field_lede:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_topics:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       link: false
@@ -111,12 +112,12 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   reading_time:
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }

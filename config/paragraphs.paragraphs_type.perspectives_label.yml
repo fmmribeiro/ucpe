@@ -1,0 +1,10 @@
+uuid: 27be424e-f69a-4c4f-8d08-c709eca9bce0
+langcode: en
+status: true
+dependencies: {  }
+id: perspectives_label
+label: 'Perspectives Label'
+icon_uuid: null
+icon_default: null
+description: 'The label that will be on the Perspectives articles'
+behavior_plugins: {  }
