@@ -1,0 +1,32 @@
+uuid: 97727515-f1a3-49fc-96b4-d68ab1c94e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.related_three_up
+    - field.field.paragraph.perspectives_and_case_study_hero.field_full_width_hero_image
+    - field.field.paragraph.perspectives_and_case_study_hero.field_image_attribution
+    - image.style.media_library
+    - paragraphs.paragraphs_type.perspectives_and_case_study_hero
+  module:
+    - svg_image
+id: paragraph.perspectives_and_case_study_hero.related_three_up
+targetEntityType: paragraph
+bundle: perspectives_and_case_study_hero
+mode: related_three_up
+content:
+  field_full_width_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: media_library
+      image_link: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: false
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_image_attribution: true

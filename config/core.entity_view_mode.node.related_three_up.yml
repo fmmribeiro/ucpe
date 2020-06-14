@@ -1,0 +1,10 @@
+uuid: 431b3bec-28d9-4ae3-9321-59803678967d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_three_up
+label: 'Related Three-up'
+targetEntityType: node
+cache: true

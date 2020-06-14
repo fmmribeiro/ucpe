@@ -1,0 +1,21 @@
+uuid: 79f12d66-30f1-4bd7-b789-2b8e099eef5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pers
+    - paragraphs.paragraphs_type.perspectives_label
+id: paragraph.perspectives_label.field_pers
+field_name: field_pers
+entity_type: paragraph
+bundle: perspectives_label
+label: 'Perspectives Label'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Perspectives
+default_value_callback: ''
+settings: {  }
+field_type: string
