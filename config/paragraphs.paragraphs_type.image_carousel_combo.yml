@@ -1,0 +1,10 @@
+uuid: 657f8c62-6d55-4f55-b042-e1b4bc1ad1b9
+langcode: en
+status: true
+dependencies: {  }
+id: image_carousel_combo
+label: 'Image Carousel'
+icon_uuid: null
+icon_default: null
+description: 'The combination of Image Carousel entries.'
+behavior_plugins: {  }

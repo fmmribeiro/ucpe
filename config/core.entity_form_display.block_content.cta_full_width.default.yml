@@ -4,15 +4,14 @@ status: true
 dependencies:
   config:
     - block_content.type.cta_full_width
-    - entity_browser.browser.image_browser
     - field.field.block_content.cta_full_width.body
     - field.field.block_content.cta_full_width.field_cta_button
     - field.field.block_content.cta_full_width.field_cta_image
     - field.field.block_content.cta_full_width.field_cta_title
   module:
     - allowed_formats
-    - entity_browser
     - link_attributes
+    - media_library
     - text
 id: block_content.cta_full_width.default
 targetEntityType: block_content
@@ -50,18 +49,10 @@ content:
     type: link_attributes
     region: content
   field_cta_image:
-    type: entity_browser_entity_reference
+    type: media_library_widget
     weight: 1
     settings:
-      entity_browser: image_browser
-      field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: default
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_replace: false
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_cta_title:

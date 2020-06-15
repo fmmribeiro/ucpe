@@ -5,25 +5,21 @@ dependencies:
   config:
     - core.entity_view_mode.node.read_their_story
     - field.field.node.story.body
-    - field.field.node.story.field_date_and_lede
+    - field.field.node.story.field_about_block
+    - field.field.node.story.field_content_sections
+    - field.field.node.story.field_date_written
+    - field.field.node.story.field_hero
+    - field.field.node.story.field_intro_paragraph
+    - field.field.node.story.field_lede
+    - field.field.node.story.field_written_by
     - node.type.story
   module:
-    - entity_reference_revisions
     - user
 id: node.story.read_their_story
 targetEntityType: node
 bundle: story
 mode: read_their_story
 content:
-  field_date_and_lede:
-    weight: 1
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   links:
     weight: 0
     region: content
@@ -37,3 +33,11 @@ content:
 hidden:
   addtoany: true
   body: true
+  field_about_block: true
+  field_content_sections: true
+  field_date_and_lede: true
+  field_date_written: true
+  field_hero: true
+  field_intro_paragraph: true
+  field_lede: true
+  field_written_by: true

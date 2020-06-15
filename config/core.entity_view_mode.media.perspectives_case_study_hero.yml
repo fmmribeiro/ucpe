@@ -1,0 +1,10 @@
+uuid: 05d57cd8-e3a0-4464-befa-c363924c2512
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.perspectives_case_study_hero
+label: 'Perspectives and Case Study Hero'
+targetEntityType: media
+cache: true

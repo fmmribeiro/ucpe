@@ -1,0 +1,19 @@
+uuid: 198ea2e1-1796-443f-8095-bc60ebb3dac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hometown
+    - paragraphs.paragraphs_type.about_student
+id: paragraph.about_student.field_hometown
+field_name: field_hometown
+entity_type: paragraph
+bundle: about_student
+label: Hometown
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

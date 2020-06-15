@@ -1,0 +1,25 @@
+uuid: 046b1a0c-d6ae-41c5-b404-e6c906c3bb6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.related_story_hero
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - paragraphs.paragraphs_type.heroes
+id: paragraph.heroes.related_story_hero
+targetEntityType: paragraph
+bundle: heroes
+mode: related_story_hero
+content:
+  field_hero:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: related_story_image
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_attribution: true

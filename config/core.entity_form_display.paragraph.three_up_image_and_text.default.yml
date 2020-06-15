@@ -3,14 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.image_browser
     - field.field.paragraph.three_up_image_and_text.field_image_type
     - field.field.paragraph.three_up_image_and_text.field_three_up_image
     - field.field.paragraph.three_up_image_and_text.field_three_up_short_description
     - field.field.paragraph.three_up_image_and_text.field_three_up_title
     - paragraphs.paragraphs_type.three_up_image_and_text
   module:
-    - entity_browser
+    - media_library
     - text
 id: paragraph.three_up_image_and_text.default
 targetEntityType: paragraph
@@ -24,18 +23,10 @@ content:
     type: options_select
     region: content
   field_three_up_image:
-    type: entity_browser_entity_reference
+    type: media_library_widget
     weight: 0
     settings:
-      entity_browser: image_browser
-      field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: media_library
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_replace: false
+      media_types: {  }
     third_party_settings: {  }
     region: content
   field_three_up_short_description:

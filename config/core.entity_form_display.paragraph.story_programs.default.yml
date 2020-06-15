@@ -1,0 +1,34 @@
+uuid: ca5f1de8-58f1-49c3-bda7-48c29ea07f00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.story_programs.field_class_of
+    - field.field.paragraph.story_programs.field_program
+    - paragraphs.paragraphs_type.story_programs
+id: paragraph.story_programs.default
+targetEntityType: paragraph
+bundle: story_programs
+mode: default
+content:
+  field_class_of:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_program:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 8fe5ac58-c793-4f67-9cfb-421812505757
+langcode: en
+status: true
+dependencies: {  }
+id: about_person
+label: 'Story: About Instructor'
+icon_uuid: null
+icon_default: null
+description: 'About instructor paragraph for Story content type. '
+behavior_plugins: {  }

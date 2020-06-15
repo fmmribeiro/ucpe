@@ -1,0 +1,32 @@
+uuid: aa9bee9a-b217-476f-805e-540b8ce3fee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.program_hero
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - paragraphs.paragraphs_type.heroes
+id: paragraph.heroes.program_hero
+targetEntityType: paragraph
+bundle: heroes
+mode: program_hero
+content:
+  field_hero:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: program_hero
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_attribution:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

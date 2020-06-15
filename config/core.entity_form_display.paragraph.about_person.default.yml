@@ -1,0 +1,63 @@
+uuid: 48633f50-9add-45bd-8d3b-dd6a197cc6ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_person.field_about
+    - field.field.paragraph.about_person.field_courses
+    - field.field.paragraph.about_person.field_division
+    - field.field.paragraph.about_person.field_position
+    - field.field.paragraph.about_person.field_program
+    - paragraphs.paragraphs_type.about_person
+id: paragraph.about_person.default
+targetEntityType: paragraph
+bundle: about_person
+mode: default
+content:
+  field_about:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_courses:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_division:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_position:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_program:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

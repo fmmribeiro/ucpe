@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - block_content.type.left_or_right_image_with_caption
-    - entity_browser.browser.image_browser
+    - field.field.block_content.left_or_right_image_with_caption.body
     - field.field.block_content.left_or_right_image_with_caption.field_align
     - field.field.block_content.left_or_right_image_with_caption.field_caption
     - field.field.block_content.left_or_right_image_with_caption.field_image_attribution_2
     - field.field.block_content.left_or_right_image_with_caption.field_image_l_r_caption
   module:
     - allowed_formats
-    - entity_browser
+    - media_library
     - text
 id: block_content.left_or_right_image_with_caption.default
 targetEntityType: block_content
@@ -44,18 +44,10 @@ content:
     type: text_textfield
     region: content
   field_image_l_r_caption:
-    type: entity_browser_entity_reference
+    type: media_library_widget
     weight: 2
     settings:
-      entity_browser: image_browser
-      field_widget_display: rendered_entity
-      field_widget_display_settings:
-        view_mode: media_library
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      field_widget_replace: false
+      media_types: {  }
     third_party_settings: {  }
     region: content
   info:

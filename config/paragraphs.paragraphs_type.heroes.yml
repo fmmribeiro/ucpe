@@ -1,0 +1,10 @@
+uuid: 84498306-72d7-4315-af65-98fa0842b699
+langcode: en
+status: true
+dependencies: {  }
+id: heroes
+label: Heroes
+icon_uuid: null
+icon_default: null
+description: 'Hero image and attribution field'
+behavior_plugins: {  }

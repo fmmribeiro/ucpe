@@ -1,0 +1,10 @@
+uuid: 841b0aac-133e-40f2-bec0-ccedbd60b4a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.related_story_image
+label: 'Related Story Image'
+targetEntityType: media
+cache: true

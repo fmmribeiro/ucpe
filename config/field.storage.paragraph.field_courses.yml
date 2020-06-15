@@ -1,0 +1,21 @@
+uuid: 6cdd6f8a-57ba-463d-bea8-21ab99bcd728
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_courses
+field_name: field_courses
+entity_type: paragraph
+type: string
+settings:
+  max_length: 400
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

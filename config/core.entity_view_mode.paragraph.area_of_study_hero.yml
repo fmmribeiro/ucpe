@@ -1,0 +1,10 @@
+uuid: 71974e7e-8f35-48de-81ba-e4eca7fbb98d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.area_of_study_hero
+label: 'Area of Study Hero'
+targetEntityType: paragraph
+cache: true

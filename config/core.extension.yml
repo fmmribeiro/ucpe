@@ -4,6 +4,8 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
+  blazy: 0
+  blazy_ui: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -58,6 +60,10 @@ module:
   responsive_menu: 0
   search: 0
   simple_sitemap: 0
+  slick: 0
+  slick_paragraphs: 0
+  slick_ui: 0
+  slick_views: 0
   smart_trim: 0
   svg_image: 0
   svg_image_responsive: 0

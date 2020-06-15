@@ -1,0 +1,28 @@
+uuid: 82dcb468-3efa-4067-a3c9-102011afe093
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.related_three_up
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - image.style.medium
+    - paragraphs.paragraphs_type.heroes
+  module:
+    - media
+id: paragraph.heroes.related_three_up
+targetEntityType: paragraph
+bundle: heroes
+mode: related_three_up
+content:
+  field_hero:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_attribution: true

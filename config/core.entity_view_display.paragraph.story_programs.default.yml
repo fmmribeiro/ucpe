@@ -1,0 +1,30 @@
+uuid: 4f1f01f6-7149-416a-afe7-d852325af914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.story_programs.field_class_of
+    - field.field.paragraph.story_programs.field_program
+    - paragraphs.paragraphs_type.story_programs
+id: paragraph.story_programs.default
+targetEntityType: paragraph
+bundle: story_programs
+mode: default
+content:
+  field_class_of:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_program:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

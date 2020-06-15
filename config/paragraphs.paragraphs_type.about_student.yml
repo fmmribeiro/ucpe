@@ -1,0 +1,10 @@
+uuid: e62847ad-0911-42a2-9ff4-cd4ca663faa8
+langcode: en
+status: true
+dependencies: {  }
+id: about_student
+label: 'Story: About Student'
+icon_uuid: null
+icon_default: null
+description: 'Enter the about info to accompany the story about this student.'
+behavior_plugins: {  }

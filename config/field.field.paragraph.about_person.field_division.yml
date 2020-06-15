@@ -1,0 +1,29 @@
+uuid: 162854aa-d260-4c3e-b5fa-fb4dd0e8ce40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_division
+    - paragraphs.paragraphs_type.about_person
+    - taxonomy.vocabulary.program_owner
+id: paragraph.about_person.field_division
+field_name: field_division
+entity_type: paragraph
+bundle: about_person
+label: Division
+description: 'Enter the division (school) the person is from. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program_owner: program_owner
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

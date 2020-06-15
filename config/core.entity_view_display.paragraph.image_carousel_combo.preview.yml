@@ -1,0 +1,26 @@
+uuid: 217d6eb9-99aa-4149-9e58-4e5e989ba68a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.image_carousel_combo.field_image_carousel_items
+    - paragraphs.paragraphs_type.image_carousel_combo
+  module:
+    - ds
+    - paragraphs
+id: paragraph.image_carousel_combo.preview
+targetEntityType: paragraph
+bundle: image_carousel_combo
+mode: preview
+content:
+  field_image_carousel_items:
+    type: paragraph_summary
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden: {  }
