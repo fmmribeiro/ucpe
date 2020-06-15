@@ -1,0 +1,35 @@
+uuid: 4d6b57ac-2719-495b-9f43-0f4f353b401d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.heroes
+  module:
+    - media
+id: paragraph.heroes.preview
+targetEntityType: paragraph
+bundle: heroes
+mode: preview
+content:
+  field_hero:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_image_attribution:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

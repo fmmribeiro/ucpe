@@ -1,0 +1,10 @@
+uuid: 57735b93-740d-4162-99d0-cbca191c444c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.story_hero
+label: 'Story Hero'
+targetEntityType: media
+cache: true

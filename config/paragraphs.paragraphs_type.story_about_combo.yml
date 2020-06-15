@@ -1,0 +1,10 @@
+uuid: 7f628a3d-f1cd-428d-9423-feb2d440bb1f
+langcode: en
+status: true
+dependencies: {  }
+id: story_about_combo
+label: 'Story: About Combo'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

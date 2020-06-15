@@ -1,0 +1,10 @@
+uuid: fee39eed-7049-4956-944f-9ea464c2908b
+langcode: en
+status: true
+dependencies: {  }
+id: story_programs
+label: 'Story: Programs'
+icon_uuid: null
+icon_default: null
+description: 'Accompanies the student profile about section to add multiple programs if needed. '
+behavior_plugins: {  }

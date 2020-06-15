@@ -1,0 +1,37 @@
+uuid: ad216fe8-ed5a-4aaa-b128-e3dd05b1902f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.story_about_combo.field_add_about_section
+    - paragraphs.paragraphs_type.story_about_combo
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.story_about_combo.default
+targetEntityType: paragraph
+bundle: story_about_combo
+mode: default
+content:
+  field_add_about_section:
+    type: inline_entity_form_complex
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,35 @@
+uuid: 7276ee60-393f-4716-97a8-5a66525b490b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - paragraphs.paragraphs_type.heroes
+  module:
+    - media_library
+id: paragraph.heroes.default
+targetEntityType: paragraph
+bundle: heroes
+mode: default
+content:
+  field_hero:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types:
+        - image
+        - remote_video
+    third_party_settings: {  }
+    region: content
+  field_image_attribution:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

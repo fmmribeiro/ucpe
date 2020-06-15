@@ -1,0 +1,19 @@
+uuid: 2130a1a7-63e7-48f8-bfe1-bb8c9ae679bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.about_person
+id: paragraph.about_person.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: about_person
+label: Position
+description: 'Enter the person''s professional position.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

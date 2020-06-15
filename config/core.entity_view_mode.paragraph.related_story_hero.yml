@@ -1,0 +1,10 @@
+uuid: 3fe173c1-85b0-430c-b136-d7e8835c723e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.related_story_hero
+label: 'Related Story Hero'
+targetEntityType: paragraph
+cache: true

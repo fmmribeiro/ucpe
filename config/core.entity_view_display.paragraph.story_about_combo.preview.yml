@@ -1,0 +1,23 @@
+uuid: 6a5dcd30-a0ee-4752-8b63-bdb5b63aeeaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.story_about_combo.field_add_about_section
+    - paragraphs.paragraphs_type.story_about_combo
+  module:
+    - paragraphs
+id: paragraph.story_about_combo.preview
+targetEntityType: paragraph
+bundle: story_about_combo
+mode: preview
+content:
+  field_add_about_section:
+    type: paragraph_summary
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

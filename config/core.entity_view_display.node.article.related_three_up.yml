@@ -10,17 +10,18 @@ dependencies:
     - field.field.node.article.field_based_on
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_date_written
-    - field.field.node.article.field_hero_image
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_image
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
     - field.field.node.article.field_related_programs
+    - field.field.node.article.field_tags
     - field.field.node.article.field_topics
     - node.type.article
   module:
     - datetime
     - ds
-    - entity_reference_revisions
     - user
 third_party_settings:
   ds:
@@ -59,15 +60,6 @@ content:
       timezone_override: ''
       format_type: full_date
     third_party_settings: {  }
-  field_hero_image:
-    type: entity_reference_revisions_entity_view
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      view_mode: related_three_up
-      link: ''
-    third_party_settings: {  }
   links:
     weight: 3
     region: content
@@ -79,10 +71,19 @@ hidden:
   field_areas_of_study: true
   field_author: true
   field_based_on: true
+  field_blockquote: true
+  field_blockquote_perspectives: true
   field_content_sections: true
+  field_date_and_lede: true
+  field_hero: true
+  field_image: true
   field_in_brief_perspective: true
   field_intro_paragraph: true
   field_lede: true
+  field_perspectives_hero: true
+  field_perspectives_label: true
+  field_read_time: true
   field_related_programs: true
+  field_tags: true
   field_topics: true
   reading_time: true

@@ -1,0 +1,10 @@
+uuid: d4634626-3162-46fb-8cf1-f5e1b76efac3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.program_hero
+label: 'Program Hero'
+targetEntityType: media
+cache: true

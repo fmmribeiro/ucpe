@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: image_carousel_combo
-label: 'Image Carousel Combo'
+label: 'Image Carousel'
 icon_uuid: null
 icon_default: null
 description: 'The combination of Image Carousel entries.'

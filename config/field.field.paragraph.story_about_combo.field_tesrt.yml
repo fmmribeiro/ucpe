@@ -1,0 +1,21 @@
+uuid: 7c5a6d52-f24f-401c-b8c1-a2f6185e9283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tesrt
+    - paragraphs.paragraphs_type.story_about_combo
+id: paragraph.story_about_combo.field_tesrt
+field_name: field_tesrt
+entity_type: paragraph
+bundle: story_about_combo
+label: tesrt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraphs_type'
+  handler_settings: {  }
+field_type: entity_reference

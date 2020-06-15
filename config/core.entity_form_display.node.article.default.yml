@@ -9,11 +9,13 @@ dependencies:
     - field.field.node.article.field_based_on
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_date_written
-    - field.field.node.article.field_hero_image
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_image
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
     - field.field.node.article.field_related_programs
+    - field.field.node.article.field_tags
     - field.field.node.article.field_topics
     - node.type.article
   module:
@@ -100,17 +102,24 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_hero_image:
-    type: entity_reference_paragraphs
+  field_hero:
     weight: 0
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: media_embed
+    type: inline_entity_form_complex
     region: content
   field_in_brief_perspective:
     type: entity_reference_paragraphs
@@ -209,4 +218,12 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_blockquote: true
+  field_blockquote_perspectives: true
+  field_date_and_lede: true
+  field_image: true
+  field_perspectives_hero: true
+  field_perspectives_label: true
+  field_read_time: true
+  field_tags: true
   sticky: true

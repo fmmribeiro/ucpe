@@ -1,0 +1,10 @@
+uuid: 1871d016-e449-49d3-b639-3d391d47ad70
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.area_of_study_hero
+label: 'Area of Study Hero'
+targetEntityType: media
+cache: true

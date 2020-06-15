@@ -1,0 +1,21 @@
+uuid: 08cc111b-f85b-42e6-9c5d-8a751ff77d23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_test
+    - paragraphs.paragraphs_type.story_about_combo
+id: paragraph.story_about_combo.field_test
+field_name: field_test
+entity_type: paragraph
+bundle: story_about_combo
+label: test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

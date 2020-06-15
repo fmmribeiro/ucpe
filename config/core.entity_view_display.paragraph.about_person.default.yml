@@ -1,0 +1,57 @@
+uuid: fdbda65d-9f68-41fb-938a-8c6eb12ccb13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_person.field_about
+    - field.field.paragraph.about_person.field_courses
+    - field.field.paragraph.about_person.field_division
+    - field.field.paragraph.about_person.field_position
+    - field.field.paragraph.about_person.field_program
+    - paragraphs.paragraphs_type.about_person
+id: paragraph.about_person.default
+targetEntityType: paragraph
+bundle: about_person
+mode: default
+content:
+  field_about:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_courses:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_division:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_position:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_program:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

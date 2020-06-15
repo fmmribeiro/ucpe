@@ -1,0 +1,20 @@
+uuid: b3ed72cc-3b27-4ad1-b4b4-83d67e7716ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_hero
+field_name: field_hero
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

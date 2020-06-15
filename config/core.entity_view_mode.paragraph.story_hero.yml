@@ -1,0 +1,10 @@
+uuid: b4e873cf-0513-4929-96b0-337195d1d4f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.story_hero
+label: 'Story Hero'
+targetEntityType: paragraph
+cache: true

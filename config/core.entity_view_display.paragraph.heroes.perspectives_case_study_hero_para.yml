@@ -1,0 +1,32 @@
+uuid: 431e0f48-2386-436b-afc6-08f8529aa3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.perspectives_case_study_hero_para
+    - field.field.paragraph.heroes.field_hero
+    - field.field.paragraph.heroes.field_image_attribution
+    - paragraphs.paragraphs_type.heroes
+id: paragraph.heroes.perspectives_case_study_hero_para
+targetEntityType: paragraph
+bundle: heroes
+mode: perspectives_case_study_hero_para
+content:
+  field_hero:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: perspectives_case_study_hero
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image_attribution:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
