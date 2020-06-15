@@ -14,13 +14,13 @@
  * - right: content of right region
  */
 #}
-<blockquote class="w_hs link">
+<blockquote class="w_hs">
   <figure class="headshot">
   	{{ left.field_blockquote_image }}
-  	<figcaption>{{ left.field_quote_attribute|field_value }}</figcaption>
   </figure>
+
   <div class="q">
   	{{ right.body }}
-    <a class="learnmore" href="{{ right.field_read_their_story[0]['#url'] }}">{{ right.field_read_their_story[0]['#title'] }}</a>
+    <footer>{{ right.field_quote_attribute|field_value }}</footer>
   </div>
 </blockquote>
