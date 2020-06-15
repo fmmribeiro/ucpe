@@ -1,0 +1,111 @@
+uuid: 055cc131-3708-4f83-9ee5-55b70d9fcf2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_about_section
+    - paragraphs.paragraphs_type.about_person
+    - paragraphs.paragraphs_type.about_student
+    - paragraphs.paragraphs_type.story_about_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.story_about_combo.field_add_about_section
+field_name: field_add_about_section
+entity_type: paragraph
+bundle: story_about_combo
+label: 'Add About Section'
+description: 'Add about info for either instructor or student.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_person: about_person
+      about_student: about_student
+    target_bundles_drag_drop:
+      about_person:
+        enabled: true
+        weight: 28
+      about_student:
+        enabled: true
+        weight: 29
+      blockquote:
+        weight: 30
+        enabled: false
+      blockquotes:
+        weight: 31
+        enabled: false
+      button_set:
+        weight: 32
+        enabled: false
+      content_sections:
+        weight: 33
+        enabled: false
+      cta:
+        weight: 34
+        enabled: false
+      full_width_content:
+        weight: 35
+        enabled: false
+      header_s_:
+        weight: 36
+        enabled: false
+      heroes:
+        weight: 37
+        enabled: false
+      horizontal_rule:
+        weight: 38
+        enabled: false
+      image_carousel:
+        weight: 39
+        enabled: false
+      image_carousel_combo:
+        weight: 40
+        enabled: false
+      in_brief:
+        weight: 42
+        enabled: false
+      intro_paragraph:
+        weight: 41
+        enabled: false
+      large_image_with_caption_left_or:
+        weight: 43
+        enabled: false
+      perspectives_label:
+        weight: 44
+        enabled: false
+      statistics:
+        weight: 45
+        enabled: false
+      story_about_combo:
+        weight: 46
+        enabled: false
+      story_programs:
+        weight: 47
+        enabled: false
+      text_one_two_third:
+        weight: 48
+        enabled: false
+      text_two_one_third:
+        weight: 49
+        enabled: false
+      three_up_illust_img_combo:
+        weight: 50
+        enabled: false
+      three_up_image_and_text:
+        weight: 51
+        enabled: false
+      three_up_statistic:
+        weight: 52
+        enabled: false
+      three_up_statistics_combined:
+        weight: 53
+        enabled: false
+      three_up_statistics_combo:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

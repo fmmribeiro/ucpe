@@ -1,0 +1,19 @@
+uuid: 0ca087ca-ed95-4b98-86e5-4cec28fb4643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about
+    - paragraphs.paragraphs_type.about_student
+id: paragraph.about_student.field_about
+field_name: field_about
+entity_type: paragraph
+bundle: about_student
+label: About
+description: 'Add person''s first name. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

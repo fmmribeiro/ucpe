@@ -1,0 +1,10 @@
+uuid: f3a2c460-8298-48f5-8645-81219637238f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.perspectives_case_study_hero_para
+label: 'Perspectives and Case Study Hero'
+targetEntityType: paragraph
+cache: true

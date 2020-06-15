@@ -9,11 +9,13 @@ dependencies:
     - field.field.node.article.field_based_on
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_date_written
-    - field.field.node.article.field_hero_image
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_image
     - field.field.node.article.field_in_brief_perspective
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
     - field.field.node.article.field_related_programs
+    - field.field.node.article.field_tags
     - field.field.node.article.field_topics
     - node.type.article
   module:
@@ -29,12 +31,12 @@ bundle: article
 mode: default
 content:
   addtoany:
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_author:
-    weight: 12
+    weight: 11
     label: hidden
     settings:
       view_mode: teaser
@@ -43,7 +45,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_based_on:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       link: true
@@ -52,7 +54,7 @@ content:
     region: content
   field_content_sections:
     type: entity_reference_revisions_entity_view
-    weight: 11
+    weight: 10
     label: hidden
     settings:
       view_mode: default
@@ -61,25 +63,25 @@ content:
     region: content
   field_date_written:
     type: datetime_default
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings:
       timezone_override: ''
       format_type: full_date
     third_party_settings: {  }
-  field_hero_image:
-    type: entity_reference_revisions_entity_view
+  field_hero:
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: perspectives_case_study_hero_para
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   field_in_brief_perspective:
     type: entity_reference_revisions_entity_view
-    weight: 9
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -88,7 +90,7 @@ content:
     region: content
   field_intro_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 10
+    weight: 9
     label: hidden
     settings:
       view_mode: default
@@ -96,14 +98,14 @@ content:
     third_party_settings: {  }
     region: content
   field_lede:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_topics:
-    weight: 6
+    weight: 5
     label: hidden
     settings:
       link: false
@@ -111,16 +113,24 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   reading_time:
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   body: true
   field_areas_of_study: true
+  field_blockquote: true
+  field_blockquote_perspectives: true
+  field_date_and_lede: true
+  field_image: true
+  field_perspectives_hero: true
+  field_perspectives_label: true
+  field_read_time: true
   field_related_programs: true
+  field_tags: true

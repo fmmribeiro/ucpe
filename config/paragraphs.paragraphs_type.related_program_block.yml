@@ -1,0 +1,10 @@
+uuid: 37b50786-fa27-41bd-a604-882e3ca584d3
+langcode: en
+status: true
+dependencies: {  }
+id: related_program_block
+label: 'Related Program Block'
+icon_uuid: null
+icon_default: null
+description: 'Add a related Program.'
+behavior_plugins: {  }

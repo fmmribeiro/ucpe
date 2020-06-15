@@ -1,0 +1,24 @@
+uuid: b6e29c63-3a84-4cbb-a706-2ec5250ad324
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.story_about_combo.field_add_about_section
+    - paragraphs.paragraphs_type.story_about_combo
+  module:
+    - entity_reference_revisions
+id: paragraph.story_about_combo.default
+targetEntityType: paragraph
+bundle: story_about_combo
+mode: default
+content:
+  field_add_about_section:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

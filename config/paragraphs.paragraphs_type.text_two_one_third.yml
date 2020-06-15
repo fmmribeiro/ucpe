@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: text_two_one_third
-label: 'Text (⅔ + ⅓)'
+label: 'Content: (⅔ + ⅓)'
 icon_uuid: null
 icon_default: null
 description: 'Add content in the format of a (⅔ + ⅓) column format.'

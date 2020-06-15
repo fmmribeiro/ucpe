@@ -1,0 +1,21 @@
+uuid: 19328490-ce4d-4c94-b769-e560344c0e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_program_block.field_related_program
+    - paragraphs.paragraphs_type.related_program_block
+id: paragraph.related_program_block.default
+targetEntityType: paragraph
+bundle: related_program_block
+mode: default
+content:
+  field_related_program:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

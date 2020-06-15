@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: full_width_content
-label: 'Full-Width Content'
+label: 'Content: Full-Width'
 icon_uuid: null
 icon_default: null
 description: 'Content that spans the full-width of the content area. '

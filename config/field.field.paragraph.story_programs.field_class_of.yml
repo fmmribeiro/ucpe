@@ -1,0 +1,19 @@
+uuid: 82d538c5-b915-4bb1-ba94-3cb0eefe358e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class_of
+    - paragraphs.paragraphs_type.story_programs
+id: paragraph.story_programs.field_class_of
+field_name: field_class_of
+entity_type: paragraph
+bundle: story_programs
+label: 'Class of'
+description: 'Enter the year the student graduated or will graduate. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

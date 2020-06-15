@@ -1,0 +1,29 @@
+uuid: cb71c309-a516-4f0d-a8d6-467255716476
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_program
+    - paragraphs.paragraphs_type.story_programs
+    - taxonomy.vocabulary.program
+id: paragraph.story_programs.field_program
+field_name: field_program
+entity_type: paragraph
+bundle: story_programs
+label: Program
+description: 'Enter the program(s) associated with this student. '
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      program: program
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
