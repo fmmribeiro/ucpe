@@ -7,7 +7,30 @@ dependencies:
     - field.field.block_content.blockquote.body
     - field.field.block_content.blockquote.field_quote_attribute
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - body
+        - field_quote_attribute
 id: block_content.blockquote.default
 targetEntityType: block_content
 bundle: blockquote
@@ -19,7 +42,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: ds_content
   field_quote_attribute:
     weight: 1
     label: hidden
@@ -27,5 +50,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
 hidden: {  }

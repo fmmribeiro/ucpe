@@ -137,6 +137,7 @@ blockquote {
     footer {
       @include bodycopy_M($black, $bold: false);
       font-style: normal;
+      margin-top: $baseline;
     }
   }
 
@@ -167,28 +168,10 @@ blockquote {
     .headshot {
       margin-bottom: $baseline * 4;
     }
-
     a {
       font-style: normal;
-      @include bodycopy_M($black, $bold: true);
-      padding-bottom: 2px;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: none;
-        &:after {
-          padding-left: $baseline/2;
-        }
-      }
-
-      &:after {
-        @include iconfont(inherit, "\66");
-        font-size: 1.5rem;
-        vertical-align: middle;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-      }
+      display: block;
+      margin-top: $baseline;
     }
   }
 }
