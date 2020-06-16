@@ -1,32 +1,33 @@
-uuid: 68115a79-2dd8-4849-9c1c-a9a5c45020de
+uuid: 7d8c4a48-d100-47c1-9b3c-e049debbb707
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.related_three_ups
+    - views.view.additional_areas_of_study
   module:
     - ctools
     - views
   theme:
     - ucpe_theme
-id: views_block__related_three_ups_block_2
+id: views_block__additional_areas_of_study_block_1
 theme: ucpe_theme
 region: content
-weight: -1
+weight: -3
 provider: null
-plugin: 'views_block:related_three_ups-block_2'
+plugin: 'views_block:additional_areas_of_study-block_1'
 settings:
-  id: 'views_block:related_three_ups-block_2'
+  id: 'views_block:additional_areas_of_study-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      story: story
+      area_of_study: area_of_study
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

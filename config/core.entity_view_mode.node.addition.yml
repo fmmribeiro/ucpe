@@ -1,0 +1,10 @@
+uuid: 4cc863d7-0038-4385-a7e8-8657ce7a3e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.addition
+label: 'Additional Areas of Study'
+targetEntityType: node
+cache: true
