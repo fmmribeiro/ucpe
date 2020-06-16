@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.article.field_intro_paragraph
     - field.field.node.article.field_lede
     - field.field.node.article.field_related_programs
-    - field.field.node.article.field_tags
     - field.field.node.article.field_topics
     - node.type.article
   module:
@@ -68,5 +67,4 @@ hidden:
   field_perspectives_label: true
   field_read_time: true
   field_related_programs: true
-  field_tags: true
   field_topics: true

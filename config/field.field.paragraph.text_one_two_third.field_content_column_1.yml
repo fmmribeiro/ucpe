@@ -19,7 +19,7 @@ entity_type: paragraph
 bundle: text_one_two_third
 label: 'Content Column 1'
 description: '1/3 Column'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

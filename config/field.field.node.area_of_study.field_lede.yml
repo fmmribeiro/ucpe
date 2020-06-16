@@ -1,0 +1,27 @@
+uuid: 079d910a-be27-43a0-9a0e-f29fd90dca7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lede
+    - node.type.area_of_study
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.area_of_study.field_lede
+field_name: field_lede
+entity_type: node
+bundle: area_of_study
+label: Lede
+description: 'Short text directly under the title.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

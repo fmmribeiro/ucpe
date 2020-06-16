@@ -1,0 +1,18 @@
+uuid: 67d8f32b-52d1-4d37-bc58-706769cb0463
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:93e67521-3ca9-400f-b8da-f517649e7b83'
+name: 'Area of Study'
+type: area_of_study
+description: 'Content type for <em>area of study</em> landing pages. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

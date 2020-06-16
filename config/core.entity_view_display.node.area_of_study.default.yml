@@ -1,0 +1,101 @@
+uuid: f0493c58-92ef-414e-9aa7-da0c0ecdbbfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.area_of_study.field_areas_of_study
+    - field.field.node.area_of_study.field_hero
+    - field.field.node.area_of_study.field_intro_area_study_text
+    - field.field.node.area_of_study.field_lede
+    - field.field.node.area_of_study.field_tagline
+    - field.field.node.area_of_study.field_view_programs_cta
+    - node.type.area_of_study
+  module:
+    - ds
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_lede
+        - field_hero
+        - field_view_programs_cta
+        - field_intro_area_study_text
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.area_of_study.default
+targetEntityType: node
+bundle: area_of_study
+mode: default
+content:
+  field_hero:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: area_of_study_hero
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_intro_area_study_text:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+  field_lede:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_view_programs_cta:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  links:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_areas_of_study: true
+  field_tagline: true

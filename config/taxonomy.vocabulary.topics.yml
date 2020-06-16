@@ -1,0 +1,8 @@
+uuid: a4cbc2f2-2554-4bcb-b6f5-3aa16cd7d97b
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Topics for perspective articles'
+weight: 0
