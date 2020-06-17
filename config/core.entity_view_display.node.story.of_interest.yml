@@ -1,9 +1,9 @@
-uuid: 4d210b66-9fcf-47f0-9a4e-20a3a793bc5b
+uuid: 0a96e5c7-c7d6-4ca8-ba2a-852a1ec16c8a
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.related_three_up
+    - core.entity_view_mode.node.of_interest
     - field.field.node.story.body
     - field.field.node.story.field_about_block
     - field.field.node.story.field_content_sections
@@ -22,41 +22,40 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      library: null
+      id: ds_2col
+      library: ds/ds_2col
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
         wrappers:
-          ds_content: div
+          left: div
+          right: div
         outer_wrapper: div
         attributes: ''
-        link_attribute: content
+        link_attribute: ''
         link_custom: ''
         classes:
           layout_class: {  }
-          ds_content: {  }
+          left: {  }
+          right: {  }
     regions:
-      ds_content:
+      left:
         - field_hero
+      right:
         - field_date_written
         - node_title
-        - links
+        - field_related_program_tag
     fields:
       node_title:
         plugin_id: node_title
         weight: 2
         label: hidden
         formatter: default
-        settings:
-          wrapper: h3
-          class: ''
-          link: false
-id: node.story.related_three_up
+id: node.story.of_interest
 targetEntityType: node
 bundle: story
-mode: related_three_up
+mode: of_interest
 content:
   field_date_written:
     weight: 1
@@ -66,21 +65,26 @@ content:
       format_type: full_date
     third_party_settings: {  }
     type: datetime_default
-    region: ds_content
+    region: right
   field_hero:
     type: entity_reference_revisions_entity_view
     weight: 0
-    region: ds_content
     label: hidden
     settings:
-      view_mode: related_story_hero
+      view_mode: of_in
       link: ''
     third_party_settings: {  }
-  links:
+    region: left
+  field_related_program_tag:
+    type: entity_reference_label
     weight: 3
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
+    region: right
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: '1'
 hidden:
   addtoany: true
   body: true
@@ -89,6 +93,6 @@ hidden:
   field_date_and_lede: true
   field_intro_paragraph: true
   field_lede: true
-  field_related_program_tag: true
   field_written_by: true
+  links: true
   reading_time: true

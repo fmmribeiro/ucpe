@@ -1,8 +1,9 @@
-uuid: 817a9b98-21ee-4f64-9040-ca310b3faa12
+uuid: 67e1ee33-e5ca-4e7f-a324-c4aa9af561ef
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.of_interest
     - field.field.node.article.body
     - field.field.node.article.field_areas_of_study
     - field.field.node.article.field_author
@@ -21,41 +22,34 @@ dependencies:
     - datetime
     - ds
     - entity_reference_revisions
-    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      library: null
+      id: ds_2col
+      library: ds/ds_2col
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
         wrappers:
-          ds_content: div
+          left: div
+          right: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
         classes:
           layout_class: {  }
-          ds_content: {  }
+          left: {  }
+          right: {  }
     regions:
-      ds_content:
+      left:
         - field_hero
+      right:
         - field_date_written
         - node_title
-        - field_lede
-        - field_based_on
-        - reading_time
         - field_topics
-        - addtoany
-        - field_in_brief_perspective
-        - field_intro_paragraph
-        - field_content_sections
-        - links
-        - field_author
     fields:
       node_title:
         plugin_id: node_title
@@ -63,116 +57,61 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          wrapper: h1
+          wrapper: h3
           class: ''
           link: false
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.default
+id: node.article.of_interest
 targetEntityType: node
 bundle: article
-mode: default
+mode: of_interest
 content:
-  addtoany:
-    weight: 7
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  field_author:
-    weight: 12
-    label: hidden
-    settings:
-      view_mode: teaser
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_entity_view
-    region: ds_content
-  field_based_on:
-    weight: 4
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_content_sections:
-    type: entity_reference_revisions_entity_view
-    weight: 10
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
   field_date_written:
     type: datetime_default
     weight: 1
-    region: ds_content
+    region: right
     label: hidden
     settings:
       timezone_override: ''
-      format_type: full_date
+      format_type: abbreviated_date
     third_party_settings: {  }
   field_hero:
     weight: 0
     label: hidden
     settings:
-      view_mode: perspectives_case_study_hero_para
+      view_mode: of_in
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
-    region: ds_content
-  field_in_brief_perspective:
-    type: entity_reference_revisions_entity_view
-    weight: 8
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_intro_paragraph:
-    type: entity_reference_revisions_entity_view
-    weight: 9
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
-  field_lede:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
+    region: left
   field_topics:
-    weight: 6
+    type: entity_reference_label
+    weight: 3
+    region: right
     label: hidden
     settings:
       link: false
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  links:
-    weight: 11
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
-  reading_time:
-    weight: 5
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
+  addtoany: true
   body: true
   field_areas_of_study: true
+  field_author: true
+  field_based_on: true
   field_blockquote: true
   field_blockquote_perspectives: true
+  field_content_sections: true
   field_date_and_lede: true
   field_image: true
+  field_in_brief_perspective: true
+  field_intro_paragraph: true
+  field_lede: true
   field_perspectives_hero: true
   field_perspectives_label: true
   field_read_time: true
   field_related_programs: true
+  links: true
+  reading_time: true
