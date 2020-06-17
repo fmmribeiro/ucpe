@@ -6555,7 +6555,8 @@ blockquote {
       color: #110f0f;
       line-height: 1.8rem;
       font-weight: 400;
-      font-style: normal; }
+      font-style: normal;
+      margin-top: 1rem; }
   blockquote.w_hs figure {
     margin-left: auto;
     margin-right: auto; }
@@ -6574,32 +6575,8 @@ blockquote {
     margin-bottom: 4rem; }
   blockquote.link a {
     font-style: normal;
-    font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    color: #110f0f;
-    line-height: 1.8rem;
-    font-weight: 500;
-    padding-bottom: 2px;
-    text-decoration: none; }
-    blockquote.link a:hover {
-      text-decoration: none; }
-      blockquote.link a:hover:after {
-        padding-left: 0.5rem; }
-    blockquote.link a:after {
-      font-family: "ucpe_icons" !important;
-      font-style: normal !important;
-      font-weight: normal !important;
-      font-variant: normal !important;
-      text-transform: none !important;
-      speak: none;
-      line-height: 1rem;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: inherit;
-      content: "f";
-      font-size: 1.5rem;
-      vertical-align: middle;
-      transition: all 0.3s; }
+    display: block;
+    margin-top: 1rem; }
 
 #toolbar-administration {
   font-size: 12px !important; }
@@ -6640,7 +6617,7 @@ nav.tabs ul.nav-tabs li {
     font-size: 1.25rem;
     vertical-align: -5px;
     position: relative;
-    right: 0;
+    right: -5px;
     display: inline-block;
     transition: 0.3s; }
   .learnmore:hover {
