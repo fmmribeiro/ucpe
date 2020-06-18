@@ -9,7 +9,23 @@ dependencies:
     - field.field.paragraph.three_up_image_and_text.field_three_up_title
     - paragraphs.paragraphs_type.three_up_image_and_text
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: three_up_block
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      top:
+        - field_three_up_image
+      bottom:
+        - field_three_up_title
+        - field_three_up_short_description
 id: paragraph.three_up_image_and_text.default
 targetEntityType: paragraph
 bundle: three_up_image_and_text
@@ -23,14 +39,14 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: content
+    region: top
   field_three_up_short_description:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: bottom
   field_three_up_title:
     weight: 1
     label: hidden
@@ -38,6 +54,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: bottom
 hidden:
   field_image_type: true

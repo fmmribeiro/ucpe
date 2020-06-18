@@ -13,5 +13,7 @@ three_up_block:
   type: partial
   template: templates/ds-layouts/three-up-block
   regions:
-    visible:
-      label: Visible
+    top:
+      label: Top
+    bottom:
+      label: Bottom

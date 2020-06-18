@@ -9,7 +9,32 @@ dependencies:
     - field.field.block_content.three_up_statistic.field_post_number
     - field.field.block_content.three_up_statistic.field_pre_number
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: 'class="three-up-promo"'
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - body
+        - field_post_number
+        - field_pre_number
+        - field_number
 id: block_content.three_up_statistic.default
 targetEntityType: block_content
 bundle: three_up_statistic
@@ -21,7 +46,7 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: ds_content
   field_number:
     weight: 3
     label: hidden
@@ -29,19 +54,19 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
   field_post_number:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_pre_number:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
 hidden: {  }

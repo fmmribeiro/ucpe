@@ -14,17 +14,18 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: three_up_block
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
     regions:
-      content:
+      top:
         - field_before_number
         - field_number
         - field_after_number
+      bottom:
         - field_statistic_sentence
 id: paragraph.three_up_statistic.default
 targetEntityType: paragraph
@@ -34,7 +35,7 @@ content:
   field_after_number:
     type: smart_trim
     weight: 2
-    region: content
+    region: top
     label: hidden
     settings:
       trim_length: 600
@@ -64,11 +65,11 @@ content:
       trim_options: {  }
     third_party_settings: {  }
     type: smart_trim
-    region: content
+    region: top
   field_number:
     type: smart_trim
     weight: 1
-    region: content
+    region: top
     label: hidden
     settings:
       trim_length: 600
@@ -85,7 +86,7 @@ content:
   field_statistic_sentence:
     type: smart_trim
     weight: 3
-    region: content
+    region: bottom
     label: hidden
     settings:
       trim_length: 600

@@ -5,10 +5,33 @@ dependencies:
   config:
     - block_content.type.image_content_width_
     - field.field.block_content.image_content_width_.body
+    - field.field.block_content.image_content_width_.field_content_width_image
     - field.field.block_content.image_content_width_.field_image_attribution_2
     - field.field.block_content.image_content_width_.field_image_content_width
   module:
+    - ds
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - body
+        - field_content_width_image
+        - field_image_content_width
+        - field_image_attribution_2
 id: block_content.image_content_width_.default
 targetEntityType: block_content
 bundle: image_content_width_

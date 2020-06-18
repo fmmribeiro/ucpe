@@ -16,7 +16,7 @@ $baseline: 1rem;
 $minScreen: 20rem;
 $maxScreen: 50rem;
 $minFont: 0.875rem;
-$maxFont: 1.125rem;
+$maxFont: 1rem;
 
 // $h1: 2rem;
 // $h2: 1.5rem;
@@ -203,7 +203,7 @@ $italic: italic;
 @mixin heading_XS($color) {
   @include font(
     $serif-font,
-    #{$baseline * 1.125},
+    #{$baseline * 1.25},
     $color,
     $serif-bold,
     #{$baseline * 1.5}

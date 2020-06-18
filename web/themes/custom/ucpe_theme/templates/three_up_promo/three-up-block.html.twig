@@ -10,17 +10,20 @@
  * @ingroup themeable
  */
 #}
-{%
-set classes = [
-'three-up-block',
-]
-%}
+
 {% if content %}
-    <div{{ attributes.addClass(classes) }}>
-        {{ title_prefix }}
-        {{ title_suffix }}
-        <div class="layout-region layout-region--content">
-            {{ content.visible }}
-        </div>
-    </div>
+
+      {{ title_prefix }}
+      {{ title_suffix }}
+      <div class="col">
+        <div class="top">
+          {{ content.top }}
+				</div>
+				<div class="bottom">
+					<div class="blurb">
+						{{ content.bottom }}
+					</div>
+				</div>
+			</div>
+
 {% endif %}

@@ -1,11 +1,12 @@
 //Buttons
 
 .learnmore {
-  @include bodycopy_M($black, $bold: true);
+  @include bodycopy_M($plum, $bold: true);
   text-decoration: none;
 
   &:after {
     @include iconfont(inherit, "\3e");
+    color: $maroon;
     font-size: 1.25rem;
     vertical-align: -5px;
     position: relative;
@@ -304,24 +305,25 @@
 
 // CTA
 
-.cta,
-.cta_full {
-  background-color: $bg_03;
-}
-
 .cta {
-  padding: $baseline * 1.5 0;
-  @include make-sm-column(8);
+  @include clearfix();
+  margin: $baseline * 3 0;
 
   @include screen("tablet") {
     display: flex;
     align-items: center;
   }
 
+  .wrapper {
+    background-color: $bg_03;
+    @include make-sm-column(8);
+    padding: $baseline * 1.5 0;
+  }
+
   .content {
     @include make-sm-column(8);
-    a.btn {
-      padding-left: 0;
+    h3 {
+      @include heading_XS($black);
     }
   }
   figure.cta_photo {
@@ -330,6 +332,7 @@
 }
 
 .cta_full {
+  background-color: $bg_03;
   padding: $baseline * 3 0;
 
   .row {
