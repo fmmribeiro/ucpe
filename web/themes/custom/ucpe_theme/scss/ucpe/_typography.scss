@@ -191,6 +191,22 @@ thead,
 dt {
 }
 
+// HR
+
+hr {
+  border-width: 0 !important;
+  height: 2px;
+  margin: $baseline * 3 0;
+
+  &:before {
+    border-top: solid 3px $salmon;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 25%;
+  }
+}
+
 // OFFSET ANY STYLES THAT AFFECT THE MENU background
 #toolbar-administration {
   font-size: 12px !important;

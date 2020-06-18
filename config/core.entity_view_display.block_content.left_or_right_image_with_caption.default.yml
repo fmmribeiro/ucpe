@@ -4,31 +4,84 @@ status: true
 dependencies:
   config:
     - block_content.type.left_or_right_image_with_caption
+    - field.field.block_content.left_or_right_image_with_caption.body
     - field.field.block_content.left_or_right_image_with_caption.field_align
     - field.field.block_content.left_or_right_image_with_caption.field_caption
     - field.field.block_content.left_or_right_image_with_caption.field_image_attribution_2
     - field.field.block_content.left_or_right_image_with_caption.field_image_l_r_caption
   module:
+    - ds
+    - options
+    - smart_trim
     - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - body
+        - field_align
+        - field_image_l_r_caption
+        - field_caption
+        - field_image_attribution_2
 id: block_content.left_or_right_image_with_caption.default
 targetEntityType: block_content
 bundle: left_or_right_image_with_caption
 mode: default
 content:
+  body:
+    type: smart_trim
+    weight: 0
+    region: ds_content
+    label: above
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
+  field_align:
+    type: list_key
+    weight: 0
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_caption:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_image_attribution_2:
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_image_l_r_caption:
     type: entity_reference_entity_view
     weight: 0
@@ -37,7 +90,5 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: content
-hidden:
-  body: true
-  field_align: true
+    region: ds_content
+hidden: {  }

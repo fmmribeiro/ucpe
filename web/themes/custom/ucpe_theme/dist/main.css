@@ -6255,10 +6255,10 @@ html {
     font-size: 0.875rem; }
     @media screen and (min-width: 20rem) {
       html {
-        font-size: calc( 0.875rem + 0.25 * ((100vw - 20rem) / 30)); } }
+        font-size: calc( 0.875rem + 0.125 * ((100vw - 20rem) / 30)); } }
     @media screen and (min-width: 50rem) {
       html {
-        font-size: 1.125rem; } }
+        font-size: 1rem; } }
 
 body {
   line-height: 1rem;
@@ -6578,6 +6578,17 @@ blockquote {
     display: block;
     margin-top: 1rem; }
 
+hr {
+  border-width: 0 !important;
+  height: 2px;
+  margin: 3rem 0; }
+  hr:before {
+    border-top: solid 3px #e54b4b;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 25%; }
+
 #toolbar-administration {
   font-size: 12px !important; }
 
@@ -6598,7 +6609,7 @@ nav.tabs ul.nav-tabs li {
 .learnmore {
   font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  color: #110f0f;
+  color: #350e20;
   line-height: 1.8rem;
   font-weight: 500;
   text-decoration: none; }
@@ -6614,6 +6625,7 @@ nav.tabs ul.nav-tabs li {
     -moz-osx-font-smoothing: grayscale;
     color: inherit;
     content: ">";
+    color: #800000;
     font-size: 1.25rem;
     vertical-align: -5px;
     position: relative;
@@ -6877,24 +6889,28 @@ nav.tabs ul.nav-tabs li {
       .three-up-promo .col:nth-child(odd) .top {
         background: linear-gradient(180deg, #ffffff 50%, #f3f3f3 50%); }
 
-.cta,
-.cta_full {
-  background-color: #eaeaea; }
-
 .cta {
-  padding: 1.5rem 0;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
-  @media (min-width: 768px) {
-    .cta {
-      float: left;
-      width: 66.66667%; } }
+  margin: 3rem 0; }
+  .cta:before, .cta:after {
+    display: table;
+    content: " "; }
+  .cta:after {
+    clear: both; }
   @media only screen and (min-width: 768px) {
     .cta {
       display: flex;
       align-items: center; } }
+  .cta .wrapper {
+    background-color: #eaeaea;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 1.5rem 0; }
+    @media (min-width: 768px) {
+      .cta .wrapper {
+        float: left;
+        width: 66.66667%; } }
   .cta .content {
     position: relative;
     min-height: 1px;
@@ -6904,8 +6920,12 @@ nav.tabs ul.nav-tabs li {
       .cta .content {
         float: left;
         width: 66.66667%; } }
-    .cta .content a.btn {
-      padding-left: 0; }
+    .cta .content h3 {
+      font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
+      font-size: 1.25rem;
+      color: #110f0f;
+      font-weight: 900;
+      line-height: 1.5rem; }
   .cta figure.cta_photo {
     position: relative;
     min-height: 1px;
@@ -6917,6 +6937,7 @@ nav.tabs ul.nav-tabs li {
         width: 33.33333%; } }
 
 .cta_full {
+  background-color: #eaeaea;
   padding: 3rem 0; }
   @media only screen and (min-width: 768px) {
     .cta_full .row {
@@ -7296,7 +7317,7 @@ nav.tabs ul.nav-tabs li {
           font-size: 1.2rem; }
   .related_program .content h4 {
     font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #110f0f;
     font-weight: 900;
     line-height: 1.5rem;
@@ -7450,7 +7471,7 @@ nav.tabs ul.nav-tabs li {
         font-weight: 400; }
       .related_content_grid .secondary_content .secondary_editorial h4 {
         font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         color: #110f0f;
         font-weight: 900;
         line-height: 1.5rem; }
@@ -7528,10 +7549,6 @@ figure.story_img {
     content: " "; }
   figure.story_img:after {
     clear: both; }
-  @media only screen and (min-width: 768px) {
-    figure.story_img {
-      margin-left: -16.66667%;
-      margin-right: -16.66667%; } }
   figure.story_img.full .img {
     position: relative;
     min-height: 1px;
@@ -7578,25 +7595,29 @@ figure.story_img {
 figure.content_img {
   margin-right: -15px;
   margin-left: -15px;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 2rem; }
   figure.content_img:before, figure.content_img:after {
     display: table;
     content: " "; }
   figure.content_img:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 640px) {
+    figure.content_img {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media only screen and (min-width: 640px) and (min-width: 768px) {
     figure.content_img {
       float: left;
       width: 66.66667%; } }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 1201px) {
+    figure.content_img {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media only screen and (min-width: 1201px) and (min-width: 992px) {
     figure.content_img {
       float: left;
       width: 58.33333%; } }
@@ -7609,7 +7630,6 @@ figure.content_img {
     @media only screen and (min-width: 993px) {
       figure.content_img.right {
         border-left: solid 1px #dcdcdc;
-        margin-right: -16.66667%;
         margin-left: 2rem;
         padding-left: 2rem; } }
   figure.content_img.left {
@@ -7621,7 +7641,6 @@ figure.content_img {
     @media only screen and (min-width: 993px) {
       figure.content_img.left {
         border-right: solid 1px #dcdcdc;
-        margin-left: -16.6667%;
         margin-right: 2rem;
         padding-right: 2rem; } }
 
@@ -7750,7 +7769,7 @@ footer.footer {
       footer.footer .lm .fyf_item a:visited,
       footer.footer .lm .fyf_item a:focus {
         font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif;
-        font-size: 1.125rem;
+        font-size: 1.25rem;
         color: #110f0f;
         font-weight: 900;
         line-height: 1.5rem;
