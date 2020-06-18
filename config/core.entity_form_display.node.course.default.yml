@@ -1,48 +1,36 @@
-uuid: 86463ff9-0cd4-4cdb-b5e7-81f57fae302e
+uuid: 5309bb8e-a4cd-4c4c-b9a1-78cb9bec3984
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.person.field_bio
-    - field.field.node.person.field_course_s_
-    - field.field.node.person.field_email
-    - field.field.node.person.field_first_name
-    - field.field.node.person.field_headshot
-    - field.field.node.person.field_job_title
-    - field.field.node.person.field_last_name
-    - field.field.node.person.field_title
-    - node.type.person
+    - field.field.node.course.field_areas_of_study
+    - field.field.node.course.field_content_sections
+    - field.field.node.course.field_course_code
+    - field.field.node.course.field_related_program_tag
+    - field.field.node.course.field_topics
+    - node.type.course
   module:
-    - media_library
     - paragraphs
     - path
-    - text
-id: node.person.default
+id: node.course.default
 targetEntityType: node
-bundle: person
+bundle: course
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_bio:
-    type: entity_reference_paragraphs
-    weight: 5
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: full_width_content
+  field_areas_of_study:
+    weight: 4
+    settings: {  }
     third_party_settings: {  }
+    type: options_select
     region: content
-  field_course_s_:
-    type: entity_reference_paragraphs
-    weight: 7
+  field_content_sections:
+    weight: 5
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -51,49 +39,31 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
-  field_email:
-    weight: 6
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
-    region: content
-  field_first_name:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_headshot:
-    type: media_library_widget
+  field_course_code:
     weight: 1
     settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_job_title:
-    weight: 4
-    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
     region: content
-  field_last_name:
+  field_related_program_tag:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_topics:
     weight: 3
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: text_textfield
+    type: options_select
     region: content
   path:
     type: path
-    weight: 12
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -101,21 +71,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
@@ -128,7 +98,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -137,14 +107,8 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 13
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_conta: true
-  field_contact_email: true
-  field_contact_first_name_link: true
-  field_contact_x: true
-  field_name: true
-  field_title: true
+hidden: {  }
