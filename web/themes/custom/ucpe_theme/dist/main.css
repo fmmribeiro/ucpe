@@ -6456,7 +6456,12 @@ a {
   a:hover {
     color: #670000; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Noe Text", Garamond, Georgia, " Times New Roman", Times, serif; }
 
 p,
