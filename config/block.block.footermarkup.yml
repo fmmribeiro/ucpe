@@ -1,0 +1,25 @@
+uuid: 3df9c426-bd3a-4e9d-9e60-a6f476444c58
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b1985fba-c47a-4004-adbd-79edba4fd942'
+  module:
+    - block_content
+  theme:
+    - ucpe_theme
+id: footermarkup
+theme: ucpe_theme
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:b1985fba-c47a-4004-adbd-79edba4fd942'
+settings:
+  id: 'block_content:b1985fba-c47a-4004-adbd-79edba4fd942'
+  label: 'Footer Markup'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
