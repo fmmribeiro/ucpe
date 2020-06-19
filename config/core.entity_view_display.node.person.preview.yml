@@ -22,15 +22,6 @@ targetEntityType: node
 bundle: person
 mode: preview
 content:
-  field_bio:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      view_mode: preview
-      link: ''
-    third_party_settings: {  }
   field_course_s_:
     type: entity_reference_revisions_entity_view
     weight: 3
@@ -58,6 +49,7 @@ content:
     third_party_settings: {  }
 hidden:
   addtoany: true
+  field_bio: true
   field_conta: true
   field_contact_email: true
   field_contact_first_name_link: true

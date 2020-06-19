@@ -1,8 +1,9 @@
-uuid: 6f7c3cc2-774a-4ca0-9c8b-cfd775e67276
+uuid: 0d3a4119-674d-4176-92cc-b52efc424b8f
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.instructor_pages
     - field.field.node.person.field_bio
     - field.field.node.person.field_course_s_
     - field.field.node.person.field_email
@@ -44,18 +45,18 @@ third_party_settings:
         - field_job_title
         - field_bio
         - field_course_s_
-id: node.person.default
+id: node.person.instructor_pages
 targetEntityType: node
 bundle: person
-mode: default
+mode: instructor_pages
 content:
   field_bio:
+    type: text_default
     weight: 4
+    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: ds_content
   field_course_s_:
     type: entity_reference_revisions_entity_view
     weight: 5
