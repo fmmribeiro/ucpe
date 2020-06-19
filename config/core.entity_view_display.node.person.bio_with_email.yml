@@ -15,7 +15,6 @@ dependencies:
     - node.type.person
   module:
     - ds
-    - entity_reference_revisions
     - smart_trim
     - text
     - user
@@ -51,14 +50,12 @@ bundle: person
 mode: bio_with_email
 content:
   field_bio:
-    type: entity_reference_revisions_entity_view
+    type: text_default
     weight: 4
-    label: hidden
-    settings:
-      view_mode: person_trimmed_bio
-      link: ''
-    third_party_settings: {  }
     region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_email:
     type: email_mailto
     weight: 5

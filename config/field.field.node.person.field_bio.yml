@@ -1,112 +1,27 @@
-uuid: 20b90665-1048-439f-b423-d492e7a0fae4
+uuid: d0074a20-1818-48d5-b550-e7ded7827613
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_bio
     - node.type.person
-    - paragraphs.paragraphs_type.full_width_content
   module:
-    - entity_reference_revisions
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    full_html: full_html
+    basic_html: '0'
+    plain_text: '0'
 id: node.person.field_bio
 field_name: field_bio
 entity_type: node
 bundle: person
 label: Bio
-description: ''
-required: false
+description: 'Add the person bio. '
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:paragraph'
-  handler_settings:
-    negate: 0
-    target_bundles:
-      full_width_content: full_width_content
-    target_bundles_drag_drop:
-      about_person:
-        weight: 29
-        enabled: false
-      about_student:
-        weight: 30
-        enabled: false
-      blockquote:
-        weight: 31
-        enabled: false
-      blockquotes:
-        weight: 32
-        enabled: false
-      button_set:
-        weight: 33
-        enabled: false
-      content_sections:
-        weight: 34
-        enabled: false
-      cta:
-        weight: 35
-        enabled: false
-      full_width_content:
-        enabled: true
-        weight: 36
-      header_s_:
-        weight: 37
-        enabled: false
-      heroes:
-        weight: 38
-        enabled: false
-      horizontal_rule:
-        weight: 39
-        enabled: false
-      image_carousel:
-        weight: 40
-        enabled: false
-      image_carousel_combo:
-        weight: 41
-        enabled: false
-      in_brief:
-        weight: 45
-        enabled: false
-      instructor_program_and_courses:
-        weight: 42
-        enabled: false
-      instructor_program_courses_combo:
-        weight: 43
-        enabled: false
-      intro_paragraph:
-        weight: 44
-        enabled: false
-      large_image_with_caption_left_or:
-        weight: 46
-        enabled: false
-      related_program_block:
-        weight: 47
-        enabled: false
-      statistics:
-        weight: 48
-        enabled: false
-      story_about_combo:
-        weight: 49
-        enabled: false
-      story_programs:
-        weight: 50
-        enabled: false
-      text_one_two_third:
-        weight: 51
-        enabled: false
-      text_two_one_third:
-        weight: 52
-        enabled: false
-      three_up_illust_img_combo:
-        weight: 53
-        enabled: false
-      three_up_image_and_text:
-        weight: 54
-        enabled: false
-      three_up_statistic:
-        weight: 55
-        enabled: false
-      three_up_statistics_combo:
-        weight: 56
-        enabled: false
-field_type: entity_reference_revisions
+settings: {  }
+field_type: text_long

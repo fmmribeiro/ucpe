@@ -1,18 +1,16 @@
-uuid: 48909310-024e-43ee-9f90-8778479d2abb
+uuid: f95669fb-1f34-4f28-8ed5-cd8e6c9d73a9
 langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference_revisions
     - node
-    - paragraphs
+    - text
 id: node.field_bio
 field_name: field_bio
 entity_type: node
-type: entity_reference_revisions
-settings:
-  target_type: paragraph
-module: entity_reference_revisions
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

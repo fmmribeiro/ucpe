@@ -1,9 +1,9 @@
-uuid: f46043de-44ce-4547-9c2d-4be297d93754
+uuid: 0d3a4119-674d-4176-92cc-b52efc424b8f
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.bio_without_email
+    - core.entity_view_mode.node.instructor_pages
     - field.field.node.person.field_bio
     - field.field.node.person.field_course_s_
     - field.field.node.person.field_email
@@ -15,6 +15,7 @@ dependencies:
     - node.type.person
   module:
     - ds
+    - entity_reference_revisions
     - smart_trim
     - text
     - user
@@ -43,10 +44,11 @@ third_party_settings:
         - field_title
         - field_job_title
         - field_bio
-id: node.person.bio_without_email
+        - field_course_s_
+id: node.person.instructor_pages
 targetEntityType: node
 bundle: person
-mode: bio_without_email
+mode: instructor_pages
 content:
   field_bio:
     type: text_default
@@ -55,6 +57,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_course_s_:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
   field_headshot:
     type: entity_reference_entity_view
     weight: 1
@@ -99,7 +110,6 @@ hidden:
   field_contact_email: true
   field_contact_first_name_link: true
   field_contact_x: true
-  field_course_s_: true
   field_email: true
   field_first_name: true
   field_last_name: true

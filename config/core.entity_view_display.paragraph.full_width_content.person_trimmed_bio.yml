@@ -1,6 +1,6 @@
 uuid: 8a817678-5fd6-494b-ad23-def97384b596
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.paragraph.person_trimmed_bio
@@ -12,20 +12,23 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes: {  }
+        label: ''
         wrappers:
-          content: div
+          ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
     regions:
-      content:
+      ds_content:
         - field_full_width_content
 id: paragraph.full_width_content.person_trimmed_bio
 targetEntityType: paragraph
@@ -36,19 +39,19 @@ content:
     weight: 0
     label: hidden
     settings:
-      trim_length: 400
+      trim_length: 300
       trim_type: chars
       trim_suffix: ...
       wrap_class: trimmed
       more_link: true
-      more_text: 'View more'
+      more_text: More
       more_class: more-link
       trim_options:
+        text: true
         trim_zero: true
-        text: false
       wrap_output: false
       summary_handler: full
     third_party_settings: {  }
     type: smart_trim
-    region: content
+    region: ds_content
 hidden: {  }

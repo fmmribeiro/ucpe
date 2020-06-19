@@ -50,13 +50,11 @@ bundle: person
 mode: default
 content:
   field_bio:
-    type: entity_reference_revisions_entity_view
     weight: 4
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
+    type: text_default
     region: ds_content
   field_course_s_:
     type: entity_reference_revisions_entity_view

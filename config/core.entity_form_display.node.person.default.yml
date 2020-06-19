@@ -13,8 +13,9 @@ dependencies:
     - field.field.node.person.field_title
     - node.type.person
   module:
+    - entity_browser_entity_form
+    - inline_entity_form
     - media_library
-    - paragraphs
     - path
     - text
 id: node.person.default
@@ -29,28 +30,31 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bio:
-    type: entity_reference_paragraphs
     weight: 5
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: full_width_content
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
     region: content
   field_course_s_:
-    type: entity_reference_paragraphs
+    type: inline_entity_form_complex
     weight: 7
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
+      form_mode: default
+      revision: true
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
     region: content
   field_email:
     weight: 6
